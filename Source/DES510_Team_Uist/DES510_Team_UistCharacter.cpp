@@ -66,6 +66,7 @@ void ADES510_Team_UistCharacter::SetupPlayerInputComponent(UInputComponent* Play
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ADES510_Team_UistCharacter::Look);
+
 	}
 	else
 	{
