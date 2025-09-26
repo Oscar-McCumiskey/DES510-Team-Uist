@@ -49,6 +49,7 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Input")
 	UInputAction* MouseLookAction;
 
+
 public:
 
 	/** Constructor */
