@@ -4,6 +4,7 @@
 #include "PossessableAppliance.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include <Components/CapsuleComponent.h>
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
@@ -14,9 +15,21 @@ APossessableAppliance::APossessableAppliance()
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	// Character rotation only changes in Yaw, to prevent the capsule from changing orientation.
+	bUseControllerRotationPitch = false;
+	bUseControllerRotationRoll = false;
+	bUseControllerRotationYaw = false;
+
+	// Create capsule component
+	CapsuleComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Capsule Component"));
+	RootComponent = CapsuleComponent;
+	CapsuleComponent->InitCapsuleSize(96.0f, 96.0f);
+	CapsuleComponent->SetMobility(EComponentMobility::Static);
+	CapsuleComponent->SetEnableGravity(false);
+
 	// Create static mesh
 	StaticMesh = CreateOptionalDefaultSubobject<UStaticMeshComponent>(TEXT("Appliance Model"));
-	RootComponent = StaticMesh;
+	StaticMesh->SetupAttachment(RootComponent);
 	StaticMesh->SetMobility(EComponentMobility::Static);
 	StaticMesh->SetEnableGravity(false);
 
@@ -51,6 +64,14 @@ void APossessableAppliance::SetupPlayerInputComponent(UInputComponent* PlayerInp
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+	if (APlayerController* PlayerController = Cast<APlayerController>(Controller))
+	{
+		if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer()))
+		{
+			Subsystem->AddMappingContext(InputMappingContext, 0);
+		}
+	}
+
 	// Set up action bindings
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
 	{
@@ -58,12 +79,12 @@ void APossessableAppliance::SetupPlayerInputComponent(UInputComponent* PlayerInp
 		EnhancedInputComponent->BindAction(AbilityOneAction, ETriggerEvent::Triggered, this, &APossessableAppliance::AbilityOne);
 		EnhancedInputComponent->BindAction(AbilityTwoAction, ETriggerEvent::Triggered, this, &APossessableAppliance::AbilityTwo);
 
+		// Interact
+		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Interact);
+
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Look);
 		EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Look);
-
-		if (GEngine)
-			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, TEXT("Input Successful"));
 	}
 	else
 	{
@@ -93,6 +114,11 @@ void APossessableAppliance::AbilityTwo(const FInputActionValue& Value)
 	DoAbilityTwo();
 }
 
+void APossessableAppliance::Interact(const FInputActionValue& Value)
+{
+	DoInteract();
+}
+
 void APossessableAppliance::DoLook(float Yaw, float Pitch)
 {
 	if (GetController() != nullptr)
@@ -106,14 +132,16 @@ void APossessableAppliance::DoLook(float Yaw, float Pitch)
 void APossessableAppliance::DoAbilityOne()
 {
 	// Ability One Logic
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Ability1"));
 }
 
 void APossessableAppliance::DoAbilityTwo()
 {
 	// Ability Two Logic
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Ability2"));
+}
+
+void APossessableAppliance::DoInteract()
+{
+	// Interact Logic
+	Controller->Possess(Possessor);
 }
 

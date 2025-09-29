@@ -8,6 +8,7 @@
 
 class USpringArmComponent;
 class UCameraComponent;
+class UCapsuleComponent;
 class UInputAction;
 struct FInputActionValue;
 
@@ -15,6 +16,9 @@ UCLASS()
 class DES510_TEAM_UIST_API APossessableAppliance : public APawn
 {
 	GENERATED_BODY()
+
+	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UCapsuleComponent> CapsuleComponent;
 
 	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UStaticMeshComponent> StaticMesh;
@@ -35,6 +39,10 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	/** Appliance Mapping Context */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputMappingContext* InputMappingContext;
+
 	/** Look Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* LookAction;
@@ -50,6 +58,12 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* AbilityTwoAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputAction* InteractAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	APawn* Possessor;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -64,6 +78,8 @@ protected:
 
 	void AbilityTwo(const FInputActionValue& Value);
 
+	void Interact(const FInputActionValue& Value);
+
 public:
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
@@ -75,6 +91,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoAbilityTwo();
+
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	virtual void DoInteract();
 
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
