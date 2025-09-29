@@ -1,0 +1,104 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Pawn.h"
+#include "PossessableAppliance.generated.h"
+
+class USpringArmComponent;
+class UCameraComponent;
+class UCapsuleComponent;
+class UInputAction;
+struct FInputActionValue;
+
+UCLASS()
+class DES510_TEAM_UIST_API APossessableAppliance : public APawn
+{
+	GENERATED_BODY()
+
+	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UCapsuleComponent> CapsuleComponent;
+
+	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UStaticMeshComponent> StaticMesh;
+
+	/** Camera boom positioning the camera behind the character */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	USpringArmComponent* CameraBoom;
+
+	/** Follow camera */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	UCameraComponent* FollowCamera;
+
+public:
+	// Sets default values for this pawn's properties
+	APossessableAppliance();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+	/** Appliance Mapping Context */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputMappingContext* InputMappingContext;
+
+	/** Look Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputAction* LookAction;
+
+	/** Mouse Look Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputAction* MouseLookAction;
+
+	/** Ability Input Actions */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputAction* AbilityOneAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputAction* AbilityTwoAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputAction* InteractAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	APawn* Possessor;
+
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+protected:
+	// Called to bind functionality to input
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	void Look(const FInputActionValue& Value);
+
+	void AbilityOne(const FInputActionValue& Value);
+
+	void AbilityTwo(const FInputActionValue& Value);
+
+	void Interact(const FInputActionValue& Value);
+
+public:
+
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	virtual void DoLook(float Yaw, float Pitch);
+
+	// Execute Abilities
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	virtual void DoAbilityOne();
+
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	virtual void DoAbilityTwo();
+
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	virtual void DoInteract();
+
+	/** Returns CameraBoom subobject **/
+	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+
+	/** Returns FollowCamera subobject **/
+	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+};
