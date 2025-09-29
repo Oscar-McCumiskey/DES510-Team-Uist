@@ -6,10 +6,26 @@
 #include "GameFramework/Pawn.h"
 #include "PossessableAppliance.generated.h"
 
+class USpringArmComponent;
+class UCameraComponent;
+class UInputAction;
+struct FInputActionValue;
+
 UCLASS()
 class DES510_TEAM_UIST_API APossessableAppliance : public APawn
 {
 	GENERATED_BODY()
+
+	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UStaticMeshComponent> StaticMesh;
+
+	/** Camera boom positioning the camera behind the character */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	USpringArmComponent* CameraBoom;
+
+	/** Follow camera */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	UCameraComponent* FollowCamera;
 
 public:
 	// Sets default values for this pawn's properties
@@ -19,11 +35,51 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	/** Look Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputAction* LookAction;
+
+	/** Mouse Look Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputAction* MouseLookAction;
+
+	/** Ability Input Actions */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputAction* AbilityOneAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputAction* AbilityTwoAction;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+protected:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	void Look(const FInputActionValue& Value);
+
+	void AbilityOne(const FInputActionValue& Value);
+
+	void AbilityTwo(const FInputActionValue& Value);
+
+public:
+
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	virtual void DoLook(float Yaw, float Pitch);
+
+	// Execute Abilities
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	virtual void DoAbilityOne();
+
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	virtual void DoAbilityTwo();
+
+	/** Returns CameraBoom subobject **/
+	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+
+	/** Returns FollowCamera subobject **/
+	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
 };
