@@ -51,6 +51,25 @@ void APossessableAppliance::SetupPlayerInputComponent(UInputComponent* PlayerInp
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+	// Set up action bindings
+	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
+	{
+		// Abilities
+		EnhancedInputComponent->BindAction(AbilityOneAction, ETriggerEvent::Triggered, this, &APossessableAppliance::AbilityOne);
+		EnhancedInputComponent->BindAction(AbilityTwoAction, ETriggerEvent::Triggered, this, &APossessableAppliance::AbilityTwo);
+
+		// Looking
+		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Look);
+		EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Look);
+
+		if (GEngine)
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, TEXT("Input Successful"));
+	}
+	else
+	{
+		if (GEngine)
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, TEXT("Input Failed"));
+	}
 }
 
 void APossessableAppliance::Look(const FInputActionValue& Value)
@@ -87,10 +106,14 @@ void APossessableAppliance::DoLook(float Yaw, float Pitch)
 void APossessableAppliance::DoAbilityOne()
 {
 	// Ability One Logic
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Ability1"));
 }
 
 void APossessableAppliance::DoAbilityTwo()
 {
 	// Ability Two Logic
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Ability2"));
 }
 
