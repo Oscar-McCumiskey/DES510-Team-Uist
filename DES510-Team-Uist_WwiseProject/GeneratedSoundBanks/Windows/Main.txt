@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	599745230	AkEvent_Test			\Default Work Unit\AkEvent_Test	
+
