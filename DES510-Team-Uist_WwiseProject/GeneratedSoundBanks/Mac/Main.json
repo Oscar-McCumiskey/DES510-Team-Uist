@@ -10,24 +10,38 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{EBA60621-1507-AD85-E71A-3A8ED1D3750E}",
+    "Hash": "{2658BA4E-F4AF-17B4-692A-6D97E49254E6}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "325289162",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_TestAudio.wav",
+      "CachePath": "9A/{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem"
+     }
+    ],
     "Events": [
      {
       "Id": "599745230",
       "Name": "AkEvent_Test",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_Test",
       "GUID": "{24BB487A-68B9-475B-B129-99BF610B0D28}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "1.4872109",
+      "DurationMax": "1.4872109",
+      "MediaRefs": [
+       {
+        "Id": "325289162"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{38DA31F0-DF81-AB40-F6CB-B9F2C40CE034}"
+  "FileHash": "{F5CCFAA9-D458-4675-1A2F-B1DD0817F5B3}"
  }
 }

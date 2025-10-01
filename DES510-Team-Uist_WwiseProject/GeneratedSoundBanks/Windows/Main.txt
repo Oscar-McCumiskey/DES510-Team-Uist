@@ -1,3 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	599745230	AkEvent_Test			\Default Work Unit\AkEvent_Test	
 
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	325289162	TestAudio	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\9A\{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestAudio		262440
+
