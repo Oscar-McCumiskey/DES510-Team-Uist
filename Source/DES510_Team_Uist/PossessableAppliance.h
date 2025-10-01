@@ -53,10 +53,10 @@ protected:
 
 	/** Ability Input Actions */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
-	UInputAction* AbilityOneAction;
+	UInputAction* Ability1Action;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
-	UInputAction* AbilityTwoAction;
+	UInputAction* Ability2Action;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* InteractAction;
@@ -74,9 +74,9 @@ protected:
 
 	void Look(const FInputActionValue& Value);
 
-	void AbilityOne(const FInputActionValue& Value);
+	void Ability1(const FInputActionValue& Value);
 
-	void AbilityTwo(const FInputActionValue& Value);
+	void Ability2(const FInputActionValue& Value);
 
 	void Interact(const FInputActionValue& Value);
 
@@ -87,10 +87,10 @@ public:
 
 	// Execute Abilities
 	UFUNCTION(BlueprintCallable, Category = "Input")
-	virtual void DoAbilityOne();
+	virtual void DoAbility1();
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
-	virtual void DoAbilityTwo();
+	virtual void DoAbility2();
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoInteract();
