@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{BC310F7A-F28C-325E-08E7-0747A28E5DA8}",
+    "Hash": "{F2B558E3-7CAE-CA83-D594-E87018354ABD}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_GameplayFeedback_PlayerPossessionFeedback_IT1_V.1.0.wav",
-      "CachePath": "72/{7228A9C5-3468-52DE-A83A-EB5349054267}.wem"
+      "CachePath": "6F/{6FFB4306-F314-26AC-84D7-46E917A9CED0}.wem"
      }
     ],
     "Events": [
@@ -39,8 +39,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerPossession_PLAY",
       "GUID": "{4415C4ED-9727-4BFC-9D0C-5E0890015B11}",
       "DurationType": "OneShot",
-      "DurationMin": "0.6173482",
-      "DurationMax": "0.6173482",
+      "DurationMin": "0.52055776",
+      "DurationMax": "0.52055776",
       "MediaRefs": [
        {
         "Id": "747685228"
@@ -64,6 +64,6 @@
     ]
    }
   ],
-  "FileHash": "{9E6DE2EE-DCB6-91FD-7B0B-5213BE5939D2}"
+  "FileHash": "{72F5E174-903B-937F-F009-0578CEA3C54D}"
  }
 }

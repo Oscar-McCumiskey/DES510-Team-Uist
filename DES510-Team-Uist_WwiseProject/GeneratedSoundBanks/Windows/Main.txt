@@ -4,5 +4,5 @@ Event	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	331698486	TestAudio	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\9A\{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestAudio		262440
-	747685228	SFX_PlayerPossession	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\72\{7228A9C5-3468-52DE-A83A-EB5349054267}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_PlayerPossession		108996
+	747685228	SFX_PlayerPossession	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\6F\{6FFB4306-F314-26AC-84D7-46E917A9CED0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_PlayerPossession		91924
 
