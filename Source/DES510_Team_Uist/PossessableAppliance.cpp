@@ -76,8 +76,8 @@ void APossessableAppliance::SetupPlayerInputComponent(UInputComponent* PlayerInp
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
 	{
 		// Abilities
-		EnhancedInputComponent->BindAction(AbilityOneAction, ETriggerEvent::Triggered, this, &APossessableAppliance::AbilityOne);
-		EnhancedInputComponent->BindAction(AbilityTwoAction, ETriggerEvent::Triggered, this, &APossessableAppliance::AbilityTwo);
+		EnhancedInputComponent->BindAction(Ability1Action, ETriggerEvent::Triggered, this, &APossessableAppliance::Ability1);
+		EnhancedInputComponent->BindAction(Ability2Action, ETriggerEvent::Triggered, this, &APossessableAppliance::Ability1);
 
 		// Interact
 		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Interact);
@@ -102,16 +102,16 @@ void APossessableAppliance::Look(const FInputActionValue& Value)
 	DoLook(LookAxisVector.X, LookAxisVector.Y);
 }
 
-void APossessableAppliance::AbilityOne(const FInputActionValue& Value)
+void APossessableAppliance::Ability1(const FInputActionValue& Value)
 {
 	// Use Ability One
-	DoAbilityOne();
+	DoAbility1();
 }
 
-void APossessableAppliance::AbilityTwo(const FInputActionValue& Value)
+void APossessableAppliance::Ability2(const FInputActionValue& Value)
 {
 	// Use Ability Two
-	DoAbilityTwo();
+	DoAbility2();
 }
 
 void APossessableAppliance::Interact(const FInputActionValue& Value)
@@ -129,12 +129,12 @@ void APossessableAppliance::DoLook(float Yaw, float Pitch)
 	}
 }
 
-void APossessableAppliance::DoAbilityOne()
+void APossessableAppliance::DoAbility1()
 {
 	// Ability One Logic
 }
 
-void APossessableAppliance::DoAbilityTwo()
+void APossessableAppliance::DoAbility2()
 {
 	// Ability Two Logic
 }
