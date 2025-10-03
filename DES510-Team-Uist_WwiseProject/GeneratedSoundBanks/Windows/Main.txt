@@ -1,6 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	599745230	AkEvent_Test			\Default Work Unit\AkEvent_Test	
+	1010233608	AkEvent_PlayerPossession_PLAY			\Default Work Unit\AkEvent_PlayerPossession_PLAY	
+	3030068654	AkEvent_BackgroundMusicLoop_PLAY			\Default Work Unit\AkEvent_BackgroundMusicLoop_PLAY	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	178769545	MSC_BackgroundMusicTrack_1	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\51\{5141A9EE-BFC1-3DE2-0F84-AE2FD8A2293A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\MSC_BackgroundMusicTrack_1		3830656
 	331698486	TestAudio	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\9A\{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestAudio		262440
+	747685228	SFX_PlayerPossession	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\18\{185AE428-7593-0C65-8861-57062D73B95E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_PlayerPossession		91924
 

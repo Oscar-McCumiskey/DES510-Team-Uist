@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{87B6C39B-52BD-909C-A572-81539EF7AEF6}",
+    "Hash": "{1A1A73DF-A5E3-86FA-BBDD-C90ECA365134}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "178769545",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MSC_EnvironmentalAmbience_LOFI_MusicTrack_IT1_V.1.0.wav",
+      "CachePath": "51/{5141A9EE-BFC1-3DE2-0F84-AE2FD8A2293A}.wem"
+     },
      {
       "Id": "331698486",
       "Language": "SFX",
@@ -22,9 +30,43 @@
       "Location": "Memory",
       "ShortName": "SFX_TestAudio.wav",
       "CachePath": "9A/{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem"
+     },
+     {
+      "Id": "747685228",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_GameplayFeedback_PlayerPossessionFeedback_IT1_V.1.0.wav",
+      "CachePath": "18/{185AE428-7593-0C65-8861-57062D73B95E}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "3030068654",
+      "Name": "AkEvent_BackgroundMusicLoop_PLAY",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_BackgroundMusicLoop_PLAY",
+      "GUID": "{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "178769545"
+       }
+      ]
+     },
+     {
+      "Id": "1010233608",
+      "Name": "AkEvent_PlayerPossession_PLAY",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerPossession_PLAY",
+      "GUID": "{4415C4ED-9727-4BFC-9D0C-5E0890015B11}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.52055776",
+      "DurationMax": "0.52055776",
+      "MediaRefs": [
+       {
+        "Id": "747685228"
+       }
+      ]
+     },
      {
       "Id": "599745230",
       "Name": "AkEvent_Test",
@@ -42,6 +84,6 @@
     ]
    }
   ],
-  "FileHash": "{29A2FE5C-A4E6-E310-F8CC-8D9970382855}"
+  "FileHash": "{11540246-16B7-E4F6-5F39-2D2ED0F61C39}"
  }
 }

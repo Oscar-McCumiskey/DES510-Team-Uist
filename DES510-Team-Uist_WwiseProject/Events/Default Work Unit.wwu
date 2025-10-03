@@ -14,6 +14,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AkEvent_PlayerPossession_PLAY" ID="{4415C4ED-9727-4BFC-9D0C-5E0890015B11}">
+					<ChildrenList>
+						<Action Name="" ID="{29F6E10F-BB34-45A9-9AAE-2DA273DB572D}" ShortID="781748775">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_PlayerPossession" ID="{AEDBA77F-F2B6-48D1-B3E0-C0C0FF64037A}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_BackgroundMusicLoop_PLAY" ID="{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}">
+					<ChildrenList>
+						<Action Name="" ID="{7952BBE2-0969-4B5D-A71B-FCBB6BE8E41A}" ShortID="750902135">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MSC_BackgroundMusicTrack_1" ID="{5962433C-235C-4601-B905-E5AD2DE5B60D}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
