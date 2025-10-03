@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{F2B558E3-7CAE-CA83-D594-E87018354ABD}",
+    "Hash": "{1A1A73DF-A5E3-86FA-BBDD-C90ECA365134}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "178769545",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MSC_EnvironmentalAmbience_LOFI_MusicTrack_IT1_V.1.0.wav",
+      "CachePath": "51/{5141A9EE-BFC1-3DE2-0F84-AE2FD8A2293A}.wem"
+     },
      {
       "Id": "331698486",
       "Language": "SFX",
@@ -29,10 +37,22 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_GameplayFeedback_PlayerPossessionFeedback_IT1_V.1.0.wav",
-      "CachePath": "6F/{6FFB4306-F314-26AC-84D7-46E917A9CED0}.wem"
+      "CachePath": "18/{185AE428-7593-0C65-8861-57062D73B95E}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "3030068654",
+      "Name": "AkEvent_BackgroundMusicLoop_PLAY",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_BackgroundMusicLoop_PLAY",
+      "GUID": "{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "178769545"
+       }
+      ]
+     },
      {
       "Id": "1010233608",
       "Name": "AkEvent_PlayerPossession_PLAY",
@@ -64,6 +84,6 @@
     ]
    }
   ],
-  "FileHash": "{97047050-A70F-5301-BC25-26976048BF1E}"
+  "FileHash": "{11540246-16B7-E4F6-5F39-2D2ED0F61C39}"
  }
 }

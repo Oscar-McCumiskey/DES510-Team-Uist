@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AkEvent_BackgroundMusicLoop_PLAY" ID="{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}">
+					<ChildrenList>
+						<Action Name="" ID="{7952BBE2-0969-4B5D-A71B-FCBB6BE8E41A}" ShortID="750902135">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MSC_BackgroundMusicTrack_1" ID="{5962433C-235C-4601-B905-E5AD2DE5B60D}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
