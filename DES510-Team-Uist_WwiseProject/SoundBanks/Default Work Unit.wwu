@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}">
 					<ObjectInclusionList>
 						<ObjectRef Name="AkEvent_Test" ID="{24BB487A-68B9-475B-B129-99BF610B0D28}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_RobotAlert" ID="{61BB1DD1-42CB-47AB-8398-45477C9ED0FA}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_PlayerPossession" ID="{4415C4ED-9727-4BFC-9D0C-5E0890015B11}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_RoombaLoop_END" ID="{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_RoombaLoop_MAIN" ID="{3190B3EC-4489-4E79-8E84-E2DDE7BFC5EF}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
