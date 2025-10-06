@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{86F21238-8A00-2C69-6D01-71665FE50CD4}",
+    "Hash": "{D9936BDE-9A8C-A63F-9058-0C4C9C98A661}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "MSC_EnvironmentalAmbience_LOFI_MusicTrack_IT1_V.1.0.wav",
       "CachePath": "51/{5141A9EE-BFC1-3DE2-0F84-AE2FD8A2293A}.wem"
+     },
+     {
+      "Id": "292192801",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EnemyAI_Alert.wav",
+      "CachePath": "FC/{FC914148-2579-142F-35BF-B5614D4A5035}.wem"
      },
      {
       "Id": "331698486",
@@ -124,6 +132,21 @@
       ]
      },
      {
+      "Id": "1836879748",
+      "Name": "AkEvent_RobotAlert",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RobotAlert",
+      "GUID": "{61BB1DD1-42CB-47AB-8398-45477C9ED0FA}",
+      "Color": "4",
+      "DurationType": "OneShot",
+      "DurationMin": "1.09",
+      "DurationMax": "1.09",
+      "MediaRefs": [
+       {
+        "Id": "292192801"
+       }
+      ]
+     },
+     {
       "Id": "3214586448",
       "Name": "AkEvent_RoombaLoop_END",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_END",
@@ -209,6 +232,6 @@
     ]
    }
   ],
-  "FileHash": "{2F420855-4967-15B7-5BF4-32E9CDE90957}"
+  "FileHash": "{E5976CD7-7236-7E5E-B481-BFD008CF85AA}"
  }
 }

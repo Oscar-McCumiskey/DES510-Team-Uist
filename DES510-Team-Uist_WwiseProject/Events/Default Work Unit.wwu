@@ -92,6 +92,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AkEvent_RobotAlert" ID="{61BB1DD1-42CB-47AB-8398-45477C9ED0FA}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{36F11B16-0B33-4CB9-BAF1-1F6A7C7D0A7C}" ShortID="93621651">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RobotAlert" ID="{AD1D275E-0146-4077-BCC0-EC67471E0357}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
