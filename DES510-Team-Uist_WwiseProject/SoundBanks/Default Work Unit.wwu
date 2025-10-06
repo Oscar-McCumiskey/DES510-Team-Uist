@@ -6,8 +6,12 @@
 				<SoundBank Name="Main" ID="{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}">
 					<ObjectInclusionList>
 						<ObjectRef Name="AkEvent_Test" ID="{24BB487A-68B9-475B-B129-99BF610B0D28}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AkEvent_PlayerPossession_PLAY" ID="{4415C4ED-9727-4BFC-9D0C-5E0890015B11}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AkEvent_BackgroundMusicLoop_PLAY" ID="{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_PlayerPossession" ID="{4415C4ED-9727-4BFC-9D0C-5E0890015B11}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_RoombaLoop_END" ID="{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_RoombaLoop_MAIN" ID="{3190B3EC-4489-4E79-8E84-E2DDE7BFC5EF}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_RoombaTaunt" ID="{108434E4-63AD-4F85-AEFA-66CCCDBF8998}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_RoombaLoop_START" ID="{D227FE56-0313-4FB4-9545-ACA65831A000}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_BackgroundMusicLoop" ID="{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -14,23 +14,79 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="AkEvent_PlayerPossession_PLAY" ID="{4415C4ED-9727-4BFC-9D0C-5E0890015B11}">
+				<Event Name="AkEvent_PlayerPossession" ID="{4415C4ED-9727-4BFC-9D0C-5E0890015B11}">
 					<ChildrenList>
 						<Action Name="" ID="{29F6E10F-BB34-45A9-9AAE-2DA273DB572D}" ShortID="781748775">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SFX_PlayerPossession" ID="{AEDBA77F-F2B6-48D1-B3E0-C0C0FF64037A}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+									<ObjectRef Name="PlayerPossession" ID="{AEDBA77F-F2B6-48D1-B3E0-C0C0FF64037A}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="AkEvent_BackgroundMusicLoop_PLAY" ID="{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}">
+				<Event Name="AkEvent_BackgroundMusicLoop" ID="{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}">
 					<ChildrenList>
 						<Action Name="" ID="{7952BBE2-0969-4B5D-A71B-FCBB6BE8E41A}" ShortID="750902135">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MSC_BackgroundMusicTrack_1" ID="{5962433C-235C-4601-B905-E5AD2DE5B60D}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+									<ObjectRef Name="BackgroundMusicTrack" ID="{5962433C-235C-4601-B905-E5AD2DE5B60D}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="AkEvent_RoombaMovement" ID="{075C1570-EEC7-402B-A749-549B9E0A982C}" ShortID="677824906">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="AkEvent_RoombaLoop_END" ID="{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}">
+							<ChildrenList>
+								<Action Name="" ID="{F11EEA9F-1B4B-4D72-B22F-4A92616A96A8}" ShortID="338965530">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RoombaMovementEND" ID="{9567E371-764E-4760-BCCB-FB3871C7C28B}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_RoombaLoop_MAIN" ID="{3190B3EC-4489-4E79-8E84-E2DDE7BFC5EF}">
+							<ChildrenList>
+								<Action Name="" ID="{90FA9E03-1317-4DDB-8304-AF1FE24457C9}" ShortID="1005898336">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RoombaMovementMAIN" ID="{7BE76AE8-E422-4598-8F90-C3DF2AD50F89}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_RoombaLoop_START" ID="{D227FE56-0313-4FB4-9545-ACA65831A000}">
+							<ChildrenList>
+								<Action Name="" ID="{1AE81029-0D53-499A-BB13-2E8CE95C24C6}" ShortID="979566515">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RoombaMovementSTART" ID="{861DCCD2-F01A-4770-A33D-3B011B0C9F5B}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="AkEvent_RoombaTaunt" ID="{108434E4-63AD-4F85-AEFA-66CCCDBF8998}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{06EF8D9A-3429-47A8-94AF-5164328EE1A4}" ShortID="180379469">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RoombaTauntRandomContainer" ID="{138B8F15-F112-4110-8910-9D18D1637446}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -25,7 +25,7 @@
 						<ActiveSource Name="SFX_TestAudio" ID="{BC5B29B7-745E-49CC-8B6F-9098BF37C2A1}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="SFX_PlayerPossession" ID="{AEDBA77F-F2B6-48D1-B3E0-C0C0FF64037A}" ShortID="798968930">
+				<Sound Name="PlayerPossession" ID="{AEDBA77F-F2B6-48D1-B3E0-C0C0FF64037A}" ShortID="798968930">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -59,7 +59,7 @@
 						<ActiveSource Name="SFX_GameplayFeedback_PlayerPossessionFeedback_IT1_V_1_0" ID="{9681F00E-02E3-4122-9B87-468424322AE9}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="MSC_BackgroundMusicTrack_1" ID="{5962433C-235C-4601-B905-E5AD2DE5B60D}" ShortID="112415610">
+				<Sound Name="BackgroundMusicTrack" ID="{5962433C-235C-4601-B905-E5AD2DE5B60D}" ShortID="112415610">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 					</PropertyList>
@@ -84,6 +84,176 @@
 						<ActiveSource Name="MSC_EnvironmentalAmbience_LOFI_MusicTrack_IT1_V_1_0" ID="{EE842AF5-424C-4C19-8BDE-03A74BD127F5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="RoombaMovementLoopSections" ID="{D8D95768-E7B2-4114-A514-BBF11E9AB56E}" ShortID="963147473">
+					<ChildrenList>
+						<Sound Name="RoombaMovementSTART" ID="{861DCCD2-F01A-4770-A33D-3B011B0C9F5B}" ShortID="640091822">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_GameplayFeedback_RoombaMovement_LoopSTART" ID="{A5E70120-F5CE-4FBC-8FCF-2C095AD3E0B3}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_GameplayFeedback_RoombaMovement_LoopSTART.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="537332149"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_GameplayFeedback_RoombaMovement_LoopSTART" ID="{A5E70120-F5CE-4FBC-8FCF-2C095AD3E0B3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="RoombaMovementMAIN" ID="{7BE76AE8-E422-4598-8F90-C3DF2AD50F89}" ShortID="672392915">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_GameplayFeedback_RoombaMovement_LoopMAIN" ID="{89B47AFC-276B-480F-B4A0-214A777D5D92}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_GameplayFeedback_RoombaMovement_LoopMAIN.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="405784941"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_GameplayFeedback_RoombaMovement_LoopMAIN" ID="{89B47AFC-276B-480F-B4A0-214A777D5D92}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="RoombaMovementEND" ID="{9567E371-764E-4760-BCCB-FB3871C7C28B}" ShortID="611900921">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_GameplayFeedback_RoombaMovement_LoopEND" ID="{2C1C1CC3-58D3-4A3D-9957-56E4ABF77B8F}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_GameplayFeedback_RoombaMovement_LoopEND.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="634097007"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_GameplayFeedback_RoombaMovement_LoopEND" ID="{2C1C1CC3-58D3-4A3D-9957-56E4ABF77B8F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<RandomSequenceContainer Name="RoombaTauntRandomContainer" ID="{138B8F15-F112-4110-8910-9D18D1637446}" ShortID="43872617">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="RoombaTaunt4" ID="{87C1028F-45FE-43FC-B53D-03634F1C9FD9}" ShortID="899373739">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="RoombatTaunt_4" ID="{3D1EE846-D2C8-44F9-BDC5-987026F2C641}">
+									<Language>SFX</Language>
+									<AudioFile>RoombatTaunt_4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="881485574"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="RoombatTaunt_4" ID="{3D1EE846-D2C8-44F9-BDC5-987026F2C641}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="RoombaTaunt3" ID="{A5546EB9-6E5E-4BD6-875C-91E7DC178E72}" ShortID="233353331">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="RoombatTaunt_3" ID="{5D309250-29D3-4198-875B-7A8142E18E55}">
+									<Language>SFX</Language>
+									<AudioFile>RoombatTaunt_3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1025636707"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="RoombatTaunt_3" ID="{5D309250-29D3-4198-875B-7A8142E18E55}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="RoombaTaunt2" ID="{5B4BDEAF-4CD6-48CC-AB9E-FAC63EBC24DB}" ShortID="521685811">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="RoombatTaunt_2" ID="{FCA57890-5F58-4333-AEB8-F9E42B75F188}">
+									<Language>SFX</Language>
+									<AudioFile>RoombatTaunt_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="402318428"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="RoombatTaunt_2" ID="{FCA57890-5F58-4333-AEB8-F9E42B75F188}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="RoombaTaunt1" ID="{C5BC6C94-03B4-4408-B8C4-7EF759DA51FD}" ShortID="724703146">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="RoombatTaunt_1" ID="{EB24228B-CC1E-4741-A339-3B3DB009832A}">
+									<Language>SFX</Language>
+									<AudioFile>RoombatTaunt_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="854371143"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="RoombatTaunt_1" ID="{EB24228B-CC1E-4741-A339-3B3DB009832A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
