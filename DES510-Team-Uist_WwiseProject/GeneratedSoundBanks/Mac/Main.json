@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{1A1A73DF-A5E3-86FA-BBDD-C90ECA365134}",
+    "Hash": "{86F21238-8A00-2C69-6D01-71665FE50CD4}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -32,19 +32,75 @@
       "CachePath": "9A/{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem"
      },
      {
+      "Id": "402318428",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombatTaunt_2.wav",
+      "CachePath": "9F/{9F3ED44C-D608-2DDA-1F9A-09104BDFDFA9}.wem"
+     },
+     {
+      "Id": "405784941",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_GameplayFeedback_RoombaMovement_LoopMAIN.wav",
+      "CachePath": "4C/{4CB38636-A141-0B25-4C56-AA4B69F83BC0}.wem"
+     },
+     {
+      "Id": "537332149",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_GameplayFeedback_RoombaMovement_LoopSTART.wav",
+      "CachePath": "0D/{0D16F7BE-EC9D-EB16-0784-F3CF64A478D1}.wem"
+     },
+     {
+      "Id": "634097007",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_GameplayFeedback_RoombaMovement_LoopEND.wav",
+      "CachePath": "B3/{B3614EFF-1E61-BE54-5C93-DC5F4F7A8940}.wem"
+     },
+     {
       "Id": "747685228",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_GameplayFeedback_PlayerPossessionFeedback_IT1_V.1.0.wav",
       "CachePath": "18/{185AE428-7593-0C65-8861-57062D73B95E}.wem"
+     },
+     {
+      "Id": "854371143",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombatTaunt_1.wav",
+      "CachePath": "56/{5602C594-EE49-CDB0-E2D5-5D48F50C423F}.wem"
+     },
+     {
+      "Id": "881485574",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombatTaunt_4.wav",
+      "CachePath": "08/{08FDA550-D90E-C6FF-326A-220062EDAC1D}.wem"
+     },
+     {
+      "Id": "1025636707",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombatTaunt_3.wav",
+      "CachePath": "32/{3251F71F-F66C-FEF9-E553-3F20C627019D}.wem"
      }
     ],
     "Events": [
      {
-      "Id": "3030068654",
-      "Name": "AkEvent_BackgroundMusicLoop_PLAY",
-      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_BackgroundMusicLoop_PLAY",
+      "Id": "1671068477",
+      "Name": "AkEvent_BackgroundMusicLoop",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_BackgroundMusicLoop",
       "GUID": "{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -54,9 +110,9 @@
       ]
      },
      {
-      "Id": "1010233608",
-      "Name": "AkEvent_PlayerPossession_PLAY",
-      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerPossession_PLAY",
+      "Id": "1676114255",
+      "Name": "AkEvent_PlayerPossession",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerPossession",
       "GUID": "{4415C4ED-9727-4BFC-9D0C-5E0890015B11}",
       "DurationType": "OneShot",
       "DurationMin": "0.52055776",
@@ -64,6 +120,75 @@
       "MediaRefs": [
        {
         "Id": "747685228"
+       }
+      ]
+     },
+     {
+      "Id": "3214586448",
+      "Name": "AkEvent_RoombaLoop_END",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_END",
+      "GUID": "{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}",
+      "Color": "2",
+      "DurationType": "OneShot",
+      "DurationMin": "2.2",
+      "DurationMax": "2.2",
+      "MediaRefs": [
+       {
+        "Id": "634097007"
+       }
+      ]
+     },
+     {
+      "Id": "1544018950",
+      "Name": "AkEvent_RoombaLoop_MAIN",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_MAIN",
+      "GUID": "{3190B3EC-4489-4E79-8E84-E2DDE7BFC5EF}",
+      "Color": "2",
+      "DurationType": "OneShot",
+      "DurationMin": "2.308322",
+      "DurationMax": "2.308322",
+      "MediaRefs": [
+       {
+        "Id": "405784941"
+       }
+      ]
+     },
+     {
+      "Id": "2795972075",
+      "Name": "AkEvent_RoombaLoop_START",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_START",
+      "GUID": "{D227FE56-0313-4FB4-9545-ACA65831A000}",
+      "Color": "2",
+      "DurationType": "OneShot",
+      "DurationMin": "1.7",
+      "DurationMax": "1.7",
+      "MediaRefs": [
+       {
+        "Id": "537332149"
+       }
+      ]
+     },
+     {
+      "Id": "2148393740",
+      "Name": "AkEvent_RoombaTaunt",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaTaunt",
+      "GUID": "{108434E4-63AD-4F85-AEFA-66CCCDBF8998}",
+      "Color": "2",
+      "DurationType": "OneShot",
+      "DurationMin": "0.99666667",
+      "DurationMax": "1.71",
+      "MediaRefs": [
+       {
+        "Id": "402318428"
+       },
+       {
+        "Id": "854371143"
+       },
+       {
+        "Id": "881485574"
+       },
+       {
+        "Id": "1025636707"
        }
       ]
      },
@@ -84,6 +209,6 @@
     ]
    }
   ],
-  "FileHash": "{11540246-16B7-E4F6-5F39-2D2ED0F61C39}"
+  "FileHash": "{FE0CCB13-AEFF-811D-171A-37C3529E5275}"
  }
 }
