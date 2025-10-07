@@ -72,13 +72,13 @@ protected:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	void Look(const FInputActionValue& Value);
+	virtual void Look(const FInputActionValue& Value);
 
-	void Ability1(const FInputActionValue& Value);
+	virtual void Ability1(const FInputActionValue& Value);
 
-	void Ability2(const FInputActionValue& Value);
+	virtual void Ability2(const FInputActionValue& Value);
 
-	void Interact(const FInputActionValue& Value);
+	virtual void Interact(const FInputActionValue& Value);
 
 public:
 
