@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{D9936BDE-9A8C-A63F-9058-0C4C9C98A661}",
+    "Hash": "{692F9679-899B-F4B1-B528-3AD134ED44E4}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "84265269",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FeedbackPlayerPossessionFeedback.wav",
+      "CachePath": "58/{58F29C9D-D0BE-EB1C-0025-E4985EEBDB1F}.wem"
+     },
      {
       "Id": "178769545",
       "Language": "SFX",
@@ -22,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "MSC_EnvironmentalAmbience_LOFI_MusicTrack_IT1_V.1.0.wav",
       "CachePath": "51/{5141A9EE-BFC1-3DE2-0F84-AE2FD8A2293A}.wem"
+     },
+     {
+      "Id": "235169657",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SmokeAlarm.wav",
+      "CachePath": "6C/{6C8A7D8D-29EA-F7BF-9B93-12F97C84405C}.wem"
      },
      {
       "Id": "292192801",
@@ -72,14 +88,6 @@
       "CachePath": "B3/{B3614EFF-1E61-BE54-5C93-DC5F4F7A8940}.wem"
      },
      {
-      "Id": "747685228",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SFX_GameplayFeedback_PlayerPossessionFeedback_IT1_V.1.0.wav",
-      "CachePath": "18/{185AE428-7593-0C65-8861-57062D73B95E}.wem"
-     },
-     {
       "Id": "854371143",
       "Language": "SFX",
       "Streaming": "false",
@@ -96,6 +104,14 @@
       "CachePath": "08/{08FDA550-D90E-C6FF-326A-220062EDAC1D}.wem"
      },
      {
+      "Id": "968428471",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BurglarAlarmLoop.wav",
+      "CachePath": "EA/{EA458466-923A-4F73-67EE-BBA8BB5AE487}.wem"
+     },
+     {
       "Id": "1025636707",
       "Language": "SFX",
       "Streaming": "false",
@@ -110,10 +126,25 @@
       "Name": "AkEvent_BackgroundMusicLoop",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_BackgroundMusicLoop",
       "GUID": "{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}",
+      "Color": "12",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "178769545"
+       }
+      ]
+     },
+     {
+      "Id": "1743696252",
+      "Name": "AkEvent_BurglarAlarm",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_BurglarAlarm",
+      "GUID": "{74A21581-5C2B-433E-B1A9-A7380FFF1FDB}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.6655295",
+      "DurationMax": "3.6655295",
+      "MediaRefs": [
+       {
+        "Id": "968428471"
        }
       ]
      },
@@ -123,11 +154,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerPossession",
       "GUID": "{4415C4ED-9727-4BFC-9D0C-5E0890015B11}",
       "DurationType": "OneShot",
-      "DurationMin": "0.52055776",
-      "DurationMax": "0.52055776",
+      "DurationMin": "1.78",
+      "DurationMax": "1.78",
       "MediaRefs": [
        {
-        "Id": "747685228"
+        "Id": "84265269"
        }
       ]
      },
@@ -216,6 +247,20 @@
       ]
      },
      {
+      "Id": "2328157516",
+      "Name": "AkEvent_SmokeFireAlarm",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_SmokeFireAlarm",
+      "GUID": "{9FDBC416-F1D4-481B-9746-514D2F30C055}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.9916553",
+      "DurationMax": "3.9916553",
+      "MediaRefs": [
+       {
+        "Id": "235169657"
+       }
+      ]
+     },
+     {
       "Id": "599745230",
       "Name": "AkEvent_Test",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_Test",
@@ -232,6 +277,6 @@
     ]
    }
   ],
-  "FileHash": "{E5976CD7-7236-7E5E-B481-BFD008CF85AA}"
+  "FileHash": "{AC25FE2E-F09A-311F-4AD1-B061C2F91FC7}"
  }
 }

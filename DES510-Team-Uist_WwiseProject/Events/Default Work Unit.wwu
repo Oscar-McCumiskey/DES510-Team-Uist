@@ -26,6 +26,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="AkEvent_BackgroundMusicLoop" ID="{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{7952BBE2-0969-4B5D-A71B-FCBB6BE8E41A}" ShortID="750902135">
 							<ReferenceList>
@@ -102,6 +106,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="RobotAlert" ID="{AD1D275E-0146-4077-BCC0-EC67471E0357}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_BurglarAlarm" ID="{74A21581-5C2B-433E-B1A9-A7380FFF1FDB}">
+					<ChildrenList>
+						<Action Name="" ID="{62349271-B1F0-40BC-B7EB-CA033403F918}" ShortID="582289943">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BurglarAlarm" ID="{A7559ACE-B177-4C77-A1D3-3DCD7364A2EB}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_SmokeFireAlarm" ID="{9FDBC416-F1D4-481B-9746-514D2F30C055}">
+					<ChildrenList>
+						<Action Name="" ID="{5D6675E0-0A50-479A-B7F5-58AA637C21A8}" ShortID="680529257">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SmokeFireAlarm" ID="{18C89B70-0C55-43B0-8266-FA43EADA4AEC}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
