@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{692F9679-899B-F4B1-B528-3AD134ED44E4}",
+    "Hash": "{AFAE6B17-C713-E36A-CF16-809C038954A8}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -70,6 +70,22 @@
       "Location": "Memory",
       "ShortName": "SFX_GameplayFeedback_RoombaMovement_LoopMAIN.wav",
       "CachePath": "4C/{4CB38636-A141-0B25-4C56-AA4B69F83BC0}.wem"
+     },
+     {
+      "Id": "420991719",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LightOFF.wav",
+      "CachePath": "B6/{B6E07F44-657A-E3C2-C33C-F9A62D8A1CC7}.wem"
+     },
+     {
+      "Id": "477859154",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TelevisionStaticLoop.wav",
+      "CachePath": "75/{7539E9C2-8716-61D6-E556-BE786E45D104}.wem"
      },
      {
       "Id": "537332149",
@@ -145,6 +161,20 @@
       "MediaRefs": [
        {
         "Id": "968428471"
+       }
+      ]
+     },
+     {
+      "Id": "1409461229",
+      "Name": "AkEvent_LightSwitchActivate",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_LightSwitchActivate",
+      "GUID": "{33D542CD-3080-4979-9ACC-1035580D5B86}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.72",
+      "DurationMax": "1.72",
+      "MediaRefs": [
+       {
+        "Id": "420991719"
        }
       ]
      },
@@ -261,6 +291,18 @@
       ]
      },
      {
+      "Id": "4207413152",
+      "Name": "AkEvent_TelevisionStatic",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_TelevisionStatic",
+      "GUID": "{8A6A223B-D8AC-400D-A39B-F1FF64CF3030}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "477859154"
+       }
+      ]
+     },
+     {
       "Id": "599745230",
       "Name": "AkEvent_Test",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_Test",
@@ -277,6 +319,6 @@
     ]
    }
   ],
-  "FileHash": "{AC25FE2E-F09A-311F-4AD1-B061C2F91FC7}"
+  "FileHash": "{1699F913-43D5-68EA-86A4-A6BB775CE7E1}"
  }
 }
