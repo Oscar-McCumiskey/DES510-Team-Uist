@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{9DBFDA00-53F6-AC1B-E4F1-FCDAF6CF19E3}",
+    "Hash": "{69A652FE-FB25-588D-555B-9F4D40DDB9AD}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_GameplayFeedback_RoombaMovement_LoopSTART.wav",
-      "CachePath": "1B/{1B51ABE3-A420-5E92-4032-73113520FFC6}.wem"
+      "CachePath": "C6/{C620738F-2D5B-8CFB-09D1-31EECF9F8C63}.wem"
      },
      {
       "Id": "634097007",
@@ -242,8 +242,8 @@
       "GUID": "{D227FE56-0313-4FB4-9545-ACA65831A000}",
       "Color": "2",
       "DurationType": "OneShot",
-      "DurationMin": "0.6501463",
-      "DurationMax": "0.6501463",
+      "DurationMin": "1.7",
+      "DurationMax": "1.7",
       "MediaRefs": [
        {
         "Id": "537332149"
@@ -332,6 +332,6 @@
     ]
    }
   ],
-  "FileHash": "{3CFD5E50-10B0-2EC0-744D-6833CF59C359}"
+  "FileHash": "{F73BCB5E-6703-831F-7252-2CB3097358E6}"
  }
 }
