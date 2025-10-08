@@ -2,12 +2,14 @@
 
 
 #include "ShockGame/RoombaAppliance.h"
+#include "GameFramework/FloatingPawnMovement.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 
 ARoombaAppliance::ARoombaAppliance()
 {
+	MovementComponent = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("MovementComponent"));
 }
 
 void ARoombaAppliance::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -43,7 +45,11 @@ void ARoombaAppliance::Ability2(const FInputActionValue& Value)
 
 void ARoombaAppliance::Move(const FInputActionValue& Value)
 {
-	DoMove();
+	// input is a Vector2D
+	FVector2D MovementVector = Value.Get<FVector2D>();
+
+	// route the input
+	DoMove(MovementVector.X, MovementVector.Y);
 }
 
 void ARoombaAppliance::DoAbility1()
@@ -54,6 +60,22 @@ void ARoombaAppliance::DoAbility2()
 {
 }
 
-void ARoombaAppliance::DoMove()
+void ARoombaAppliance::DoMove(float Right, float Forward)
 {
+	if (GetController() != nullptr)
+	{
+		// find out which way is forward
+		const FRotator Rotation = GetController()->GetControlRotation();
+		const FRotator YawRotation(0, Rotation.Yaw, 0);
+
+		// get forward vector
+		const FVector ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+
+		// get right vector 
+		const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+
+		// add movement 
+		AddMovementInput(ForwardDirection, Forward);
+		AddMovementInput(RightDirection, Right);
+	}
 }
