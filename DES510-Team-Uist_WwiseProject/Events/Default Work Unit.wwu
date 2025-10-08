@@ -155,6 +155,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AkEvent_RoombaMovement_STOP" ID="{4D51E59A-807E-49BC-9C0D-6122969218F3}">
+					<ChildrenList>
+						<Action Name="" ID="{42915F4A-C775-4BFE-9AC6-94BB7FCACA15}" ShortID="509312373">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RoombaMovementMAIN" ID="{7BE76AE8-E422-4598-8F90-C3DF2AD50F89}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
