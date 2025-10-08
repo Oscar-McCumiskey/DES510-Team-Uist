@@ -17,6 +17,7 @@ class DES510_TEAM_UIST_API APossessableAppliance : public APawn
 {
 	GENERATED_BODY()
 
+protected:
 	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UCapsuleComponent> CapsuleComponent;
 

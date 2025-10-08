@@ -9,11 +9,17 @@
 /**
  * 
  */
+class UFloatingPawnMovement;
+
 UCLASS()
 class DES510_TEAM_UIST_API ARoombaAppliance : public APossessableAppliance
 {
 	GENERATED_BODY()
-	
+
+protected:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Movement", meta = (AllowPrivateAccess = "true"))
+	UFloatingPawnMovement* MovementComponent;
+
 public:
 	ARoombaAppliance();
 
@@ -35,5 +41,5 @@ public:
 
 	virtual void DoAbility2() override;
 
-	void DoMove();
+	void DoMove(float Right, float Forward);
 };
