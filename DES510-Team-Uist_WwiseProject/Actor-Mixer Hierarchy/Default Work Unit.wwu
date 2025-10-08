@@ -98,6 +98,13 @@
 					</PropertyList>
 					<ChildrenList>
 						<Sound Name="RoombaMovementSTART" ID="{861DCCD2-F01A-4770-A33D-3B011B0C9F5B}" ShortID="640091822">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
@@ -108,6 +115,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SFX_GameplayFeedback_RoombaMovement_LoopSTART" ID="{A5E70120-F5CE-4FBC-8FCF-2C095AD3E0B3}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0845853682262142"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.650146312015813"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_GameplayFeedback_RoombaMovement_LoopSTART.wav</AudioFile>
 									<MediaIDList>
@@ -122,6 +134,11 @@
 						<Sound Name="RoombaMovementMAIN" ID="{7BE76AE8-E422-4598-8F90-C3DF2AD50F89}" ShortID="672392915">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

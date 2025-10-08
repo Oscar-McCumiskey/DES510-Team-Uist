@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{A59C0D51-E996-50EF-5E31-86FB417EB6B0}",
+    "Hash": "{9DBFDA00-53F6-AC1B-E4F1-FCDAF6CF19E3}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_GameplayFeedback_RoombaMovement_LoopMAIN.wav",
-      "CachePath": "01/{01353833-B536-722D-E4AB-B1966F00CCE7}.wem"
+      "CachePath": "AA/{AADD4F7F-1571-39F1-7B7B-2A021B69A343}.wem"
      },
      {
       "Id": "420991719",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_GameplayFeedback_RoombaMovement_LoopSTART.wav",
-      "CachePath": "0D/{0D16F7BE-EC9D-EB16-0784-F3CF64A478D1}.wem"
+      "CachePath": "1B/{1B51ABE3-A420-5E92-4032-73113520FFC6}.wem"
      },
      {
       "Id": "634097007",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_GameplayFeedback_RoombaMovement_LoopEND.wav",
-      "CachePath": "2E/{2E15D13A-B635-8F45-61D3-491EB92D93DC}.wem"
+      "CachePath": "72/{721D738C-8C09-7E4B-2DEC-C8368C64E9A6}.wem"
      },
      {
       "Id": "854371143",
@@ -242,11 +242,26 @@
       "GUID": "{D227FE56-0313-4FB4-9545-ACA65831A000}",
       "Color": "2",
       "DurationType": "OneShot",
-      "DurationMin": "1.7",
-      "DurationMax": "1.7",
+      "DurationMin": "0.6501463",
+      "DurationMax": "0.6501463",
       "MediaRefs": [
        {
         "Id": "537332149"
+       }
+      ]
+     },
+     {
+      "Id": "800327138",
+      "Name": "AkEvent_RoombaMovement_STOP",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement_STOP",
+      "GUID": "{4D51E59A-807E-49BC-9C0D-6122969218F3}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "MediaRefs": [
+       {
+        "Id": "405784941"
        }
       ]
      },
@@ -317,6 +332,6 @@
     ]
    }
   ],
-  "FileHash": "{A25F4243-5D25-8031-3314-6610D661DF1F}"
+  "FileHash": "{66ACD9DD-B098-9FE8-2D51-B4C7A6B8653E}"
  }
 }
