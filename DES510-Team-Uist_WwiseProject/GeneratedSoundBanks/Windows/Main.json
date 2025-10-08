@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{AFAE6B17-C713-E36A-CF16-809C038954A8}",
+    "Hash": "{A59C0D51-E996-50EF-5E31-86FB417EB6B0}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_GameplayFeedback_RoombaMovement_LoopMAIN.wav",
-      "CachePath": "4C/{4CB38636-A141-0B25-4C56-AA4B69F83BC0}.wem"
+      "CachePath": "01/{01353833-B536-722D-E4AB-B1966F00CCE7}.wem"
      },
      {
       "Id": "420991719",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_GameplayFeedback_RoombaMovement_LoopEND.wav",
-      "CachePath": "B3/{B3614EFF-1E61-BE54-5C93-DC5F4F7A8940}.wem"
+      "CachePath": "2E/{2E15D13A-B635-8F45-61D3-491EB92D93DC}.wem"
      },
      {
       "Id": "854371143",
@@ -214,8 +214,8 @@
       "GUID": "{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}",
       "Color": "2",
       "DurationType": "OneShot",
-      "DurationMin": "2.2",
-      "DurationMax": "2.2",
+      "DurationMin": "1.0889843",
+      "DurationMax": "1.0889843",
       "MediaRefs": [
        {
         "Id": "634097007"
@@ -228,9 +228,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_MAIN",
       "GUID": "{3190B3EC-4489-4E79-8E84-E2DDE7BFC5EF}",
       "Color": "2",
-      "DurationType": "OneShot",
-      "DurationMin": "2.308322",
-      "DurationMax": "2.308322",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "405784941"
@@ -319,6 +317,6 @@
     ]
    }
   ],
-  "FileHash": "{1699F913-43D5-68EA-86A4-A6BB775CE7E1}"
+  "FileHash": "{A25F4243-5D25-8031-3314-6610D661DF1F}"
  }
 }
