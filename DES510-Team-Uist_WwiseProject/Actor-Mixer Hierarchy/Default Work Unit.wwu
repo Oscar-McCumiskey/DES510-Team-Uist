@@ -357,6 +357,56 @@
 						<ActiveSource Name="SmokeAlarm" ID="{97905F38-438D-4B15-9769-96F75FD2E5B1}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="LightSwitchActivate" ID="{720F0AC9-8E80-40A5-B355-646590CEEB84}" ShortID="449792993">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="LightOFF" ID="{3B50F86A-B951-4C29-9037-444F0AA0BAE6}">
+							<Language>SFX</Language>
+							<AudioFile>LightOFF.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="420991719"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="LightOFF" ID="{3B50F86A-B951-4C29-9037-444F0AA0BAE6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="TelevisionStaticLoop" ID="{090632C3-F6D2-4BD7-8CAC-606CA05DF535}" ShortID="26610003">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TelevisionStaticLoop" ID="{E6473776-4266-4D88-A2ED-AD9F6AF1A31C}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>TelevisionStaticLoop.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="477859154"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TelevisionStaticLoop" ID="{E6473776-4266-4D88-A2ED-AD9F6AF1A31C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
