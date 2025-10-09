@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{69A652FE-FB25-588D-555B-9F4D40DDB9AD}",
+    "Hash": "{790F0F47-0320-1F4B-0D01-ED456EE535E5}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -40,6 +40,14 @@
       "CachePath": "6C/{6C8A7D8D-29EA-F7BF-9B93-12F97C84405C}.wem"
      },
      {
+      "Id": "282995618",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombaMovementLoopMAIN.wav",
+      "CachePath": "39/{3965A348-A99E-FD96-5E5D-C31AB3B13CD6}.wem"
+     },
+     {
       "Id": "292192801",
       "Language": "SFX",
       "Streaming": "false",
@@ -64,14 +72,6 @@
       "CachePath": "9F/{9F3ED44C-D608-2DDA-1F9A-09104BDFDFA9}.wem"
      },
      {
-      "Id": "405784941",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SFX_GameplayFeedback_RoombaMovement_LoopMAIN.wav",
-      "CachePath": "AA/{AADD4F7F-1571-39F1-7B7B-2A021B69A343}.wem"
-     },
-     {
       "Id": "420991719",
       "Language": "SFX",
       "Streaming": "false",
@@ -86,22 +86,6 @@
       "Location": "Memory",
       "ShortName": "TelevisionStaticLoop.wav",
       "CachePath": "75/{7539E9C2-8716-61D6-E556-BE786E45D104}.wem"
-     },
-     {
-      "Id": "537332149",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SFX_GameplayFeedback_RoombaMovement_LoopSTART.wav",
-      "CachePath": "C6/{C620738F-2D5B-8CFB-09D1-31EECF9F8C63}.wem"
-     },
-     {
-      "Id": "634097007",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "SFX_GameplayFeedback_RoombaMovement_LoopEND.wav",
-      "CachePath": "72/{721D738C-8C09-7E4B-2DEC-C8368C64E9A6}.wem"
      },
      {
       "Id": "854371143",
@@ -126,6 +110,22 @@
       "Location": "Memory",
       "ShortName": "BurglarAlarmLoop.wav",
       "CachePath": "EA/{EA458466-923A-4F73-67EE-BBA8BB5AE487}.wem"
+     },
+     {
+      "Id": "971465599",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombaMovementLoopSTART.wav",
+      "CachePath": "D9/{D93448C7-9A48-A622-EF13-96A8DA4BF75E}.wem"
+     },
+     {
+      "Id": "1018625523",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombaMovementLoopEND.wav",
+      "CachePath": "AB/{ABB5B9BF-D59E-69C6-FCBA-6762C1518167}.wem"
      },
      {
       "Id": "1025636707",
@@ -214,11 +214,11 @@
       "GUID": "{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}",
       "Color": "2",
       "DurationType": "OneShot",
-      "DurationMin": "1.0889843",
-      "DurationMax": "1.0889843",
+      "DurationMin": "1.43474",
+      "DurationMax": "1.43474",
       "MediaRefs": [
        {
-        "Id": "634097007"
+        "Id": "1018625523"
        }
       ]
      },
@@ -231,7 +231,7 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "405784941"
+        "Id": "282995618"
        }
       ]
      },
@@ -242,11 +242,11 @@
       "GUID": "{D227FE56-0313-4FB4-9545-ACA65831A000}",
       "Color": "2",
       "DurationType": "OneShot",
-      "DurationMin": "1.7",
-      "DurationMax": "1.7",
+      "DurationMin": "2.5019956",
+      "DurationMax": "2.5019956",
       "MediaRefs": [
        {
-        "Id": "537332149"
+        "Id": "971465599"
        }
       ]
      },
@@ -261,9 +261,19 @@
       "DurationMax": "0",
       "MediaRefs": [
        {
-        "Id": "405784941"
+        "Id": "282995618"
        }
       ]
+     },
+     {
+      "Id": "1030025384",
+      "Name": "AkEvent_RoombaMovementSTART_STOP",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovementSTART_STOP",
+      "GUID": "{861C401F-4CB0-46DC-A43F-1ED7CAD877C0}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "2148393740",
@@ -332,6 +342,6 @@
     ]
    }
   ],
-  "FileHash": "{33E9D90F-7403-A26D-4918-7A6C2175CA21}"
+  "FileHash": "{21BBD88A-8E99-65F6-3E78-8F1EB054AC62}"
  }
 }

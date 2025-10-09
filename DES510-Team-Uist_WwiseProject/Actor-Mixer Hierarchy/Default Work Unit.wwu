@@ -119,20 +119,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="SFX_GameplayFeedback_RoombaMovement_LoopSTART" ID="{A5E70120-F5CE-4FBC-8FCF-2C095AD3E0B3}">
-									<PropertyList>
-										<Property Name="FadeOutShape" Type="int16" Value="7"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
+								<AudioFileSource Name="RoombaMovementLoopSTART" ID="{6112DAD7-8098-46C3-9CEA-CA78E24A13CF}">
 									<Language>SFX</Language>
-									<AudioFile>SFX_GameplayFeedback_RoombaMovement_LoopSTART.wav</AudioFile>
+									<AudioFile>RoombaMovementLoopSTART.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="537332149"/>
+										<MediaID ID="971465599"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="SFX_GameplayFeedback_RoombaMovement_LoopSTART" ID="{A5E70120-F5CE-4FBC-8FCF-2C095AD3E0B3}" Platform="Linked"/>
+								<ActiveSource Name="RoombaMovementLoopSTART" ID="{6112DAD7-8098-46C3-9CEA-CA78E24A13CF}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="RoombaMovementMAIN" ID="{7BE76AE8-E422-4598-8F90-C3DF2AD50F89}" ShortID="672392915">
@@ -153,22 +149,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="SFX_GameplayFeedback_RoombaMovement_LoopMAIN" ID="{89B47AFC-276B-480F-B4A0-214A777D5D92}">
-									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="90.168"/>
-										<Property Name="LoopBegin" Type="Real64" Value="0.047"/>
-										<Property Name="LoopEnd" Type="Real64" Value="2.2450176796097"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
+								<AudioFileSource Name="RoombaMovementLoopMAIN" ID="{6C8D7B5B-5C51-4622-A83F-0043C82AB3A9}">
 									<Language>SFX</Language>
-									<AudioFile>SFX_GameplayFeedback_RoombaMovement_LoopMAIN.wav</AudioFile>
+									<AudioFile>RoombaMovementLoopMAIN.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="405784941"/>
+										<MediaID ID="282995618"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="SFX_GameplayFeedback_RoombaMovement_LoopMAIN" ID="{89B47AFC-276B-480F-B4A0-214A777D5D92}" Platform="Linked"/>
+								<ActiveSource Name="RoombaMovementLoopMAIN" ID="{6C8D7B5B-5C51-4622-A83F-0043C82AB3A9}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="RoombaMovementEND" ID="{9567E371-764E-4760-BCCB-FB3871C7C28B}" ShortID="611900921">
@@ -181,23 +171,22 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="SFX_GameplayFeedback_RoombaMovement_LoopEND" ID="{2C1C1CC3-58D3-4A3D-9957-56E4ABF77B8F}">
+								<AudioFileSource Name="RoombaMovementLoopEND" ID="{0E8FB1EA-256B-41D7-B025-EC293F0CE5D5}">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="1.08898423915257"/>
-										<Property Name="FadeOutShape" Type="int16" Value="6"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.43473994111874"/>
+										<Property Name="FadeOutShape" Type="int16" Value="2"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.239198860692364"/>
-										<Property Name="TrimEnd" Type="Real64" Value="1.32818309984494"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.43473994111874"/>
 									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>SFX_GameplayFeedback_RoombaMovement_LoopEND.wav</AudioFile>
+									<AudioFile>RoombaMovementLoopEND.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="634097007"/>
+										<MediaID ID="1018625523"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="SFX_GameplayFeedback_RoombaMovement_LoopEND" ID="{2C1C1CC3-58D3-4A3D-9957-56E4ABF77B8F}" Platform="Linked"/>
+								<ActiveSource Name="RoombaMovementLoopEND" ID="{0E8FB1EA-256B-41D7-B025-EC293F0CE5D5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
