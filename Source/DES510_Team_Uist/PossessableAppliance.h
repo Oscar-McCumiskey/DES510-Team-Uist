@@ -52,6 +52,10 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* MouseLookAction;
 
+	/** Mouse Zoom Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputAction* MouseZoomAction;
+
 	/** Ability Input Actions */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* Ability1Action;
@@ -62,8 +66,18 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* InteractAction;
 
+protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	APawn* Possessor;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
+	float MinCameraDistance = 50.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
+	float MaxCameraDistance = 300.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
+	float ZoomSpeed = 20.f;
 
 public:	
 	// Called every frame
@@ -81,6 +95,8 @@ protected:
 
 	virtual void Interact(const FInputActionValue& Value);
 
+	virtual void Zoom(const FInputActionValue& Value);
+
 public:
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
@@ -95,6 +111,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoInteract();
+
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	virtual void DoZoom(float ArmLengthChange);
 
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }

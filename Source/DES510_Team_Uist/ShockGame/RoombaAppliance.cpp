@@ -76,6 +76,6 @@ void ARoombaAppliance::DoMove(float Right, float Forward)
 
 		// add movement 
 		AddMovementInput(ForwardDirection, Forward);
-		AddMovementInput(RightDirection, Right);
+		//AddMovementInput(RightDirection, Right);
 	}
 }
