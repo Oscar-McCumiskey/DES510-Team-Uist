@@ -6,6 +6,8 @@
 
 void UShockMeter::NativeConstruct()
 {
+	Super::NativeConstruct();
+
 	ShockMeter->SetPercent(CurrentShock);
 }
 
@@ -14,9 +16,6 @@ void UShockMeter::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 	Super::NativeTick(MyGeometry, InDeltaTime);
 
 	shockDecayTimer -= InDeltaTime;
-
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, TEXT("Tick"));
 
 	// reduce shock every second
 	if (shockDecayTimer <= 0)
@@ -30,6 +29,12 @@ void UShockMeter::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 void UShockMeter::AddShock(float Value)
 {
 	CurrentShock += Value;
+
+	// Prevent shock dropping below minimum
+	if (CurrentShock < MinShock)
+	{
+		CurrentShock = MinShock;
+	}
 
 	UpdateProgressBar();
 }

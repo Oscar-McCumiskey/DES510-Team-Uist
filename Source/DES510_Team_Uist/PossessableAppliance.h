@@ -9,6 +9,7 @@
 class USpringArmComponent;
 class UCameraComponent;
 class UCapsuleComponent;
+class UInputMappingContext;
 class UInputAction;
 struct FInputActionValue;
 
@@ -25,11 +26,11 @@ protected:
 	TObjectPtr<UStaticMeshComponent> StaticMesh;
 
 	/** Camera boom positioning the camera behind the character */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
 	USpringArmComponent* CameraBoom;
 
 	/** Follow camera */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FollowCamera;
 
 public:
