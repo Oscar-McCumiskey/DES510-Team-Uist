@@ -58,6 +58,15 @@ void APossessableAppliance::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (CooldownTimer > 0)
+	{
+		CooldownTimer -= DeltaTime;
+	}
+	else if (CooldownTimer < 0)
+	{
+		CooldownTimer = 0;
+		OnCooldown = false;
+	}
 }
 
 // Called to bind functionality to input
@@ -109,13 +118,23 @@ void APossessableAppliance::Look(const FInputActionValue& Value)
 void APossessableAppliance::Ability1(const FInputActionValue& Value)
 {
 	// Use Ability One
-	DoAbility1();
+	if (!OnCooldown)
+	{
+		CooldownTimer = CooldownTime;
+		OnCooldown = true;
+		DoAbility1();
+	}
 }
 
 void APossessableAppliance::Ability2(const FInputActionValue& Value)
 {
 	// Use Ability Two
-	DoAbility2();
+	if (!OnCooldown)
+	{
+		CooldownTimer = CooldownTime;
+		OnCooldown = true;
+		DoAbility2();
+	}
 }
 
 void APossessableAppliance::Interact(const FInputActionValue& Value)

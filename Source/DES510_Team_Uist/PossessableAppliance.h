@@ -68,8 +68,18 @@ protected:
 	UInputAction* InteractAction;
 
 protected:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
 	APawn* Possessor;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
+	bool OnCooldown = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
+	float CooldownTime = 0.f;
+
+	float CooldownTimer = 0.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
 	float MinCameraDistance = 50.f;
