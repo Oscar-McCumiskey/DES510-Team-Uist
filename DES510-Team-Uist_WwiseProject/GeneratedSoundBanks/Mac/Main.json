@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{790F0F47-0320-1F4B-0D01-ED456EE535E5}",
+    "Hash": "{F58B8118-76F6-A049-7F5A-8D6C8673CA62}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -125,7 +125,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RoombaMovementLoopEND.wav",
-      "CachePath": "AB/{ABB5B9BF-D59E-69C6-FCBA-6762C1518167}.wem"
+      "CachePath": "EC/{ECAD0247-A4E4-0826-0EFA-3D816C74C75F}.wem"
      },
      {
       "Id": "1025636707",
@@ -266,10 +266,10 @@
       ]
      },
      {
-      "Id": "1030025384",
-      "Name": "AkEvent_RoombaMovementSTART_STOP",
-      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovementSTART_STOP",
-      "GUID": "{861C401F-4CB0-46DC-A43F-1ED7CAD877C0}",
+      "Id": "2020427875",
+      "Name": "AkEvent_RoombaSTART_STOP",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaSTART_STOP",
+      "GUID": "{C5CE653D-98CC-4234-B41F-E46EB6ADE973}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
       "DurationMin": "0",
@@ -342,6 +342,6 @@
     ]
    }
   ],
-  "FileHash": "{996EEB75-A54C-40FC-FEC9-5FBB7B21F835}"
+  "FileHash": "{DF568278-63E3-50EB-452D-17E9C1B6F860}"
  }
 }
