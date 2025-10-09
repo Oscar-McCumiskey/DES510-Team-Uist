@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	599745230	AkEvent_Test			\Default Work Unit\AkEvent_Test	
 	800327138	AkEvent_RoombaMovement_STOP			\Default Work Unit\AkEvent_RoombaMovement_STOP	
+	1030025384	AkEvent_RoombaMovementSTART_STOP			\Default Work Unit\AkEvent_RoombaMovementSTART_STOP	
 	1409461229	AkEvent_LightSwitchActivate			\Default Work Unit\AkEvent_LightSwitchActivate	
 	1544018950	AkEvent_RoombaLoop_MAIN			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoop_MAIN	
 	1671068477	AkEvent_BackgroundMusicLoop			\Default Work Unit\AkEvent_BackgroundMusicLoop	
@@ -17,16 +18,16 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	84265269	PlayerPossession	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\58\{58F29C9D-D0BE-EB1C-0025-E4985EEBDB1F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossession		314088
 	178769545	BackgroundMusicTrack	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\51\{5141A9EE-BFC1-3DE2-0F84-AE2FD8A2293A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\BackgroundMusicTrack		3830656
 	235169657	SmokeFireAlarm	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\6C\{6C8A7D8D-29EA-F7BF-9B93-12F97C84405C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SmokeFireAlarm		704224
+	282995618	RoombaMovementMAIN	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\39\{3965A348-A99E-FD96-5E5D-C31AB3B13CD6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaMovementLoopSections\RoombaMovementMAIN		1146696
 	292192801	RobotAlert	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\FC\{FC914148-2579-142F-35BF-B5614D4A5035}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RobotAlert		192372
 	331698486	TestAudio	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\9A\{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestAudio		262440
 	402318428	RoombaTaunt2	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\9F\{9F3ED44C-D608-2DDA-1F9A-09104BDFDFA9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaTauntRandomContainer\RoombaTaunt2		176496
-	405784941	RoombaMovementMAIN	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\AA\{AADD4F7F-1571-39F1-7B7B-2A021B69A343}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaMovementLoopSections\RoombaMovementMAIN		407332
 	420991719	LightSwitchActivate	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\B6\{B6E07F44-657A-E3C2-C33C-F9A62D8A1CC7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\LightSwitchActivate		303504
 	477859154	TelevisionStaticLoop	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\75\{7539E9C2-8716-61D6-E556-BE786E45D104}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TelevisionStaticLoop		705320
-	537332149	RoombaMovementSTART	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\1B\{1B51ABE3-A420-5E92-4032-73113520FFC6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaMovementLoopSections\RoombaMovementSTART		114780
-	634097007	RoombaMovementEND	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\72\{721D738C-8C09-7E4B-2DEC-C8368C64E9A6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaMovementLoopSections\RoombaMovementEND		192192
 	854371143	RoombaTaunt1	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\56\{5602C594-EE49-CDB0-E2D5-5D48F50C423F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaTauntRandomContainer\RoombaTaunt1		301740
 	881485574	RoombaTaunt4	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\08\{08FDA550-D90E-C6FF-326A-220062EDAC1D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaTauntRandomContainer\RoombaTaunt4		175908
 	968428471	BurglarAlarm	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\EA\{EA458466-923A-4F73-67EE-BBA8BB5AE487}.wem		\Actor-Mixer Hierarchy\Default Work Unit\BurglarAlarm		617496
+	971465599	RoombaMovementSTART	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\D9\{D93448C7-9A48-A622-EF13-96A8DA4BF75E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaMovementLoopSections\RoombaMovementSTART		441448
+	1018625523	RoombaMovementEND	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\AB\{ABB5B9BF-D59E-69C6-FCBA-6762C1518167}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaMovementLoopSections\RoombaMovementEND		253184
 	1025636707	RoombaTaunt3	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\32\{3251F71F-F66C-FEF9-E553-3F20C627019D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaTauntRandomContainer\RoombaTaunt3		264696
 
