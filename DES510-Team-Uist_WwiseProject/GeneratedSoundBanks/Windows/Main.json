@@ -10,11 +10,35 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{1A1A73DF-A5E3-86FA-BBDD-C90ECA365134}",
+    "Hash": "{748A9372-5685-D808-D01B-4C2A45121AAF}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "29313271",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerPossessionKeyPressedFeedback4.wav",
+      "CachePath": "16/{165CE9EE-BBC1-ABDA-C58B-D6A82D4F2A09}.wem"
+     },
+     {
+      "Id": "51070462",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DoorLockedFeedback.wav",
+      "CachePath": "D4/{D437BE9E-D238-46DE-04AC-38E0737E3D87}.wem"
+     },
+     {
+      "Id": "123275338",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerPossessionKeyPressedFeedback2.wav",
+      "CachePath": "9B/{9BB038EC-8F4B-1687-8982-DC3FF40121A5}.wem"
+     },
      {
       "Id": "178769545",
       "Language": "SFX",
@@ -22,6 +46,30 @@
       "Location": "Memory",
       "ShortName": "MSC_EnvironmentalAmbience_LOFI_MusicTrack_IT1_V.1.0.wav",
       "CachePath": "51/{5141A9EE-BFC1-3DE2-0F84-AE2FD8A2293A}.wem"
+     },
+     {
+      "Id": "235169657",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SmokeAlarm.wav",
+      "CachePath": "6C/{6C8A7D8D-29EA-F7BF-9B93-12F97C84405C}.wem"
+     },
+     {
+      "Id": "282995618",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombaMovementLoopMAIN.wav",
+      "CachePath": "9F/{9FE17813-3B3B-0544-F3B3-21112C666F23}.wem"
+     },
+     {
+      "Id": "292192801",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EnemyAI_Alert.wav",
+      "CachePath": "FC/{FC914148-2579-142F-35BF-B5614D4A5035}.wem"
      },
      {
       "Id": "331698486",
@@ -32,20 +80,117 @@
       "CachePath": "9A/{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem"
      },
      {
-      "Id": "747685228",
+      "Id": "402318428",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "SFX_GameplayFeedback_PlayerPossessionFeedback_IT1_V.1.0.wav",
-      "CachePath": "18/{185AE428-7593-0C65-8861-57062D73B95E}.wem"
+      "ShortName": "RoombatTaunt_2.wav",
+      "CachePath": "9F/{9F3ED44C-D608-2DDA-1F9A-09104BDFDFA9}.wem"
+     },
+     {
+      "Id": "420991719",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LightOFF.wav",
+      "CachePath": "B6/{B6E07F44-657A-E3C2-C33C-F9A62D8A1CC7}.wem"
+     },
+     {
+      "Id": "477859154",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TelevisionStaticLoop.wav",
+      "CachePath": "75/{7539E9C2-8716-61D6-E556-BE786E45D104}.wem"
+     },
+     {
+      "Id": "506063806",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DoorOpenFeedback.wav",
+      "CachePath": "65/{65F07E27-1097-D3F5-E5AF-9917D5D30EA3}.wem"
+     },
+     {
+      "Id": "598436301",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerPossessionKeyPressedFeedback.wav",
+      "CachePath": "71/{71F9AF7F-957F-9284-3205-8385EEF8BD92}.wem"
+     },
+     {
+      "Id": "854371143",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombatTaunt_1.wav",
+      "CachePath": "56/{5602C594-EE49-CDB0-E2D5-5D48F50C423F}.wem"
+     },
+     {
+      "Id": "865045964",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerPossessionKeyPressedFeedback3.wav",
+      "CachePath": "01/{0194506B-8010-BFCB-7033-4C18B8BB290F}.wem"
+     },
+     {
+      "Id": "881485574",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombatTaunt_4.wav",
+      "CachePath": "08/{08FDA550-D90E-C6FF-326A-220062EDAC1D}.wem"
+     },
+     {
+      "Id": "968428471",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BurglarAlarmLoop.wav",
+      "CachePath": "EA/{EA458466-923A-4F73-67EE-BBA8BB5AE487}.wem"
+     },
+     {
+      "Id": "971465599",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombaMovementLoopSTART.wav",
+      "CachePath": "D9/{D93448C7-9A48-A622-EF13-96A8DA4BF75E}.wem"
+     },
+     {
+      "Id": "991563999",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerPossessionFeedback.wav",
+      "CachePath": "4E/{4E282922-9F29-392A-A994-A3E69F319CAE}.wem"
+     },
+     {
+      "Id": "1018625523",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombaMovementLoopEND.wav",
+      "CachePath": "EC/{ECAD0247-A4E4-0826-0EFA-3D816C74C75F}.wem"
+     },
+     {
+      "Id": "1025636707",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombatTaunt_3.wav",
+      "CachePath": "32/{3251F71F-F66C-FEF9-E553-3F20C627019D}.wem"
      }
     ],
     "Events": [
      {
-      "Id": "3030068654",
-      "Name": "AkEvent_BackgroundMusicLoop_PLAY",
-      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_BackgroundMusicLoop_PLAY",
+      "Id": "1671068477",
+      "Name": "AkEvent_BackgroundMusicLoop",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_BackgroundMusicLoop",
       "GUID": "{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}",
+      "Color": "12",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -54,16 +199,226 @@
       ]
      },
      {
-      "Id": "1010233608",
-      "Name": "AkEvent_PlayerPossession_PLAY",
-      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerPossession_PLAY",
-      "GUID": "{4415C4ED-9727-4BFC-9D0C-5E0890015B11}",
+      "Id": "1743696252",
+      "Name": "AkEvent_BurglarAlarm",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_BurglarAlarm",
+      "GUID": "{74A21581-5C2B-433E-B1A9-A7380FFF1FDB}",
       "DurationType": "OneShot",
-      "DurationMin": "0.52055776",
-      "DurationMax": "0.52055776",
+      "DurationMin": "3.6655295",
+      "DurationMax": "3.6655295",
       "MediaRefs": [
        {
-        "Id": "747685228"
+        "Id": "968428471"
+       }
+      ]
+     },
+     {
+      "Id": "1591493912",
+      "Name": "AkEvent_DoorLocked",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_DoorLocked",
+      "GUID": "{8BA0FCEB-BF97-4DD5-88EC-D49B7257A389}",
+      "DurationType": "OneShot",
+      "DurationMin": "1",
+      "DurationMax": "1",
+      "MediaRefs": [
+       {
+        "Id": "51070462"
+       }
+      ]
+     },
+     {
+      "Id": "1456896994",
+      "Name": "AkEvent_DoorOpen",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_DoorOpen",
+      "GUID": "{7F228015-6B71-44C5-AA50-41D92A8A1AD7}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.71",
+      "DurationMax": "1.71",
+      "MediaRefs": [
+       {
+        "Id": "506063806"
+       }
+      ]
+     },
+     {
+      "Id": "1409461229",
+      "Name": "AkEvent_LightSwitchActivate",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_LightSwitchActivate",
+      "GUID": "{33D542CD-3080-4979-9ACC-1035580D5B86}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.72",
+      "DurationMax": "1.72",
+      "MediaRefs": [
+       {
+        "Id": "420991719"
+       }
+      ]
+     },
+     {
+      "Id": "1676114255",
+      "Name": "AkEvent_PlayerPossession",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerPossession",
+      "GUID": "{4415C4ED-9727-4BFC-9D0C-5E0890015B11}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7773016",
+      "DurationMax": "0.7773016",
+      "MediaRefs": [
+       {
+        "Id": "991563999"
+       }
+      ]
+     },
+     {
+      "Id": "1380965262",
+      "Name": "AkEvent_PlayerPossessionKeyPressed",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerPossessionKeyPressed",
+      "GUID": "{98C4B693-7E03-4D92-B423-7004BA113BBD}",
+      "Color": "10",
+      "DurationType": "OneShot",
+      "DurationMin": "0.50002265",
+      "DurationMax": "0.78",
+      "MediaRefs": [
+       {
+        "Id": "29313271"
+       },
+       {
+        "Id": "123275338"
+       },
+       {
+        "Id": "598436301"
+       },
+       {
+        "Id": "865045964"
+       }
+      ]
+     },
+     {
+      "Id": "1836879748",
+      "Name": "AkEvent_RobotAlert",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RobotAlert",
+      "GUID": "{61BB1DD1-42CB-47AB-8398-45477C9ED0FA}",
+      "Color": "4",
+      "DurationType": "OneShot",
+      "DurationMin": "1.09",
+      "DurationMax": "1.09",
+      "MediaRefs": [
+       {
+        "Id": "292192801"
+       }
+      ]
+     },
+     {
+      "Id": "3214586448",
+      "Name": "AkEvent_RoombaLoop_END",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_END",
+      "GUID": "{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}",
+      "Color": "2",
+      "DurationType": "OneShot",
+      "DurationMin": "1.43474",
+      "DurationMax": "1.43474",
+      "MediaRefs": [
+       {
+        "Id": "1018625523"
+       }
+      ]
+     },
+     {
+      "Id": "1544018950",
+      "Name": "AkEvent_RoombaLoop_MAIN",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_MAIN",
+      "GUID": "{3190B3EC-4489-4E79-8E84-E2DDE7BFC5EF}",
+      "Color": "2",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "282995618"
+       }
+      ]
+     },
+     {
+      "Id": "930556629",
+      "Name": "AkEvent_RoombaLoop_MAIN_STOP",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_MAIN_STOP",
+      "GUID": "{4D51E59A-807E-49BC-9C0D-6122969218F3}",
+      "Color": "2",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2795972075",
+      "Name": "AkEvent_RoombaLoop_START",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_START",
+      "GUID": "{D227FE56-0313-4FB4-9545-ACA65831A000}",
+      "Color": "2",
+      "DurationType": "OneShot",
+      "DurationMin": "2.5019956",
+      "DurationMax": "2.5019956",
+      "MediaRefs": [
+       {
+        "Id": "971465599"
+       }
+      ]
+     },
+     {
+      "Id": "1965170726",
+      "Name": "AkEvent_RoombaLoop_START_STOP",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_START_STOP",
+      "GUID": "{C5CE653D-98CC-4234-B41F-E46EB6ADE973}",
+      "Color": "2",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2148393740",
+      "Name": "AkEvent_RoombaTaunt",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaTaunt",
+      "GUID": "{108434E4-63AD-4F85-AEFA-66CCCDBF8998}",
+      "Color": "1",
+      "DurationType": "OneShot",
+      "DurationMin": "0.99666667",
+      "DurationMax": "1.71",
+      "MediaRefs": [
+       {
+        "Id": "402318428"
+       },
+       {
+        "Id": "854371143"
+       },
+       {
+        "Id": "881485574"
+       },
+       {
+        "Id": "1025636707"
+       }
+      ]
+     },
+     {
+      "Id": "2328157516",
+      "Name": "AkEvent_SmokeFireAlarm",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_SmokeFireAlarm",
+      "GUID": "{9FDBC416-F1D4-481B-9746-514D2F30C055}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.9916553",
+      "DurationMax": "3.9916553",
+      "MediaRefs": [
+       {
+        "Id": "235169657"
+       }
+      ]
+     },
+     {
+      "Id": "4207413152",
+      "Name": "AkEvent_TelevisionStatic",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_TelevisionStatic",
+      "GUID": "{8A6A223B-D8AC-400D-A39B-F1FF64CF3030}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "477859154"
        }
       ]
      },
@@ -84,6 +439,6 @@
     ]
    }
   ],
-  "FileHash": "{951CC127-807D-0797-D2DD-8F213ED59423}"
+  "FileHash": "{AF305C4B-25D0-D03A-790E-9714C30D4B15}"
  }
 }

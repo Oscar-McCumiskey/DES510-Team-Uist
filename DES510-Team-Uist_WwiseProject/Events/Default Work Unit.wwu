@@ -14,23 +14,215 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="AkEvent_PlayerPossession_PLAY" ID="{4415C4ED-9727-4BFC-9D0C-5E0890015B11}">
+				<Event Name="AkEvent_PlayerPossession" ID="{4415C4ED-9727-4BFC-9D0C-5E0890015B11}">
 					<ChildrenList>
 						<Action Name="" ID="{29F6E10F-BB34-45A9-9AAE-2DA273DB572D}" ShortID="781748775">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SFX_PlayerPossession" ID="{AEDBA77F-F2B6-48D1-B3E0-C0C0FF64037A}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+									<ObjectRef Name="PlayerPossession" ID="{AEDBA77F-F2B6-48D1-B3E0-C0C0FF64037A}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="AkEvent_BackgroundMusicLoop_PLAY" ID="{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}">
+				<Event Name="AkEvent_BackgroundMusicLoop" ID="{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{7952BBE2-0969-4B5D-A71B-FCBB6BE8E41A}" ShortID="750902135">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MSC_BackgroundMusicTrack_1" ID="{5962433C-235C-4601-B905-E5AD2DE5B60D}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+									<ObjectRef Name="BackgroundMusicTrack" ID="{5962433C-235C-4601-B905-E5AD2DE5B60D}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="AkEvent_RoombaMovement" ID="{075C1570-EEC7-402B-A749-549B9E0A982C}" ShortID="677824906">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="AkEvent_RoombaLoop_END" ID="{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}">
+							<ChildrenList>
+								<Action Name="" ID="{F11EEA9F-1B4B-4D72-B22F-4A92616A96A8}" ShortID="338965530">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RoombaMovementEND" ID="{9567E371-764E-4760-BCCB-FB3871C7C28B}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_RoombaLoop_MAIN" ID="{3190B3EC-4489-4E79-8E84-E2DDE7BFC5EF}">
+							<ChildrenList>
+								<Action Name="" ID="{90FA9E03-1317-4DDB-8304-AF1FE24457C9}" ShortID="1005898336">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RoombaMovementMAIN" ID="{7BE76AE8-E422-4598-8F90-C3DF2AD50F89}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_RoombaLoop_START" ID="{D227FE56-0313-4FB4-9545-ACA65831A000}">
+							<ChildrenList>
+								<Action Name="" ID="{1AE81029-0D53-499A-BB13-2E8CE95C24C6}" ShortID="979566515">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RoombaMovementSTART" ID="{861DCCD2-F01A-4770-A33D-3B011B0C9F5B}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_RoombaLoop_MAIN_STOP" ID="{4D51E59A-807E-49BC-9C0D-6122969218F3}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{42915F4A-C775-4BFE-9AC6-94BB7FCACA15}" ShortID="509312373">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RoombaMovementMAIN" ID="{7BE76AE8-E422-4598-8F90-C3DF2AD50F89}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_RoombaLoop_START_STOP" ID="{C5CE653D-98CC-4234-B41F-E46EB6ADE973}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{A2C4685E-AE2A-4352-85B9-FE4AB5F4376E}" ShortID="106150129">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RoombaMovementSTART" ID="{861DCCD2-F01A-4770-A33D-3B011B0C9F5B}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="AkEvent_RoombaTaunt" ID="{108434E4-63AD-4F85-AEFA-66CCCDBF8998}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{06EF8D9A-3429-47A8-94AF-5164328EE1A4}" ShortID="180379469">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RoombaTaunt" ID="{138B8F15-F112-4110-8910-9D18D1637446}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_RobotAlert" ID="{61BB1DD1-42CB-47AB-8398-45477C9ED0FA}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{36F11B16-0B33-4CB9-BAF1-1F6A7C7D0A7C}" ShortID="93621651">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RobotAlert" ID="{AD1D275E-0146-4077-BCC0-EC67471E0357}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_BurglarAlarm" ID="{74A21581-5C2B-433E-B1A9-A7380FFF1FDB}">
+					<ChildrenList>
+						<Action Name="" ID="{62349271-B1F0-40BC-B7EB-CA033403F918}" ShortID="582289943">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BurglarAlarm" ID="{A7559ACE-B177-4C77-A1D3-3DCD7364A2EB}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_SmokeFireAlarm" ID="{9FDBC416-F1D4-481B-9746-514D2F30C055}">
+					<ChildrenList>
+						<Action Name="" ID="{5D6675E0-0A50-479A-B7F5-58AA637C21A8}" ShortID="680529257">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SmokeFireAlarm" ID="{18C89B70-0C55-43B0-8266-FA43EADA4AEC}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_LightSwitchActivate" ID="{33D542CD-3080-4979-9ACC-1035580D5B86}">
+					<ChildrenList>
+						<Action Name="" ID="{4F9FD0CB-F19C-4EEF-A680-36E288BA30D9}" ShortID="987327589">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LightSwitchActivate" ID="{720F0AC9-8E80-40A5-B355-646590CEEB84}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_TelevisionStatic" ID="{8A6A223B-D8AC-400D-A39B-F1FF64CF3030}">
+					<ChildrenList>
+						<Action Name="" ID="{4F7919E5-45FE-4915-92FC-6F634FF5C45A}" ShortID="560730888">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TelevisionStaticLoop" ID="{090632C3-F6D2-4BD7-8CAC-606CA05DF535}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_PlayerPossessionKeyPressed" ID="{98C4B693-7E03-4D92-B423-7004BA113BBD}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{D5DA21FF-3F55-47B8-89E8-2C43E4D6256E}" ShortID="224061060">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerPossessionKeyPressedFeedback" ID="{7A8CF0C8-AF5A-4A11-999D-1D064C6D8846}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_DoorOpen" ID="{7F228015-6B71-44C5-AA50-41D92A8A1AD7}">
+					<ChildrenList>
+						<Action Name="" ID="{A9833B8E-B34D-410F-8CD9-71DAA845B00B}" ShortID="629555748">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DoorOpenFeedback" ID="{07E56C2E-3798-4D69-B7C6-2806A3D8C6FE}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_DoorLocked" ID="{8BA0FCEB-BF97-4DD5-88EC-D49B7257A389}">
+					<ChildrenList>
+						<Action Name="" ID="{78950868-9211-47DC-AE3E-65EF110BC7A6}" ShortID="282069911">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DoorClosed(Locked)Feedback" ID="{0C6918AB-9FA3-4516-A619-BA2F2E384887}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -37,6 +37,7 @@ APossessableAppliance::APossessableAppliance()
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->TargetArmLength = 200.0f;
+	CameraBoom->ProbeSize = 6.f;
 	CameraBoom->bUsePawnControlRotation = true;
 
 	// Create a follow camera
@@ -85,6 +86,9 @@ void APossessableAppliance::SetupPlayerInputComponent(UInputComponent* PlayerInp
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Look);
 		EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Look);
+
+		// Zooming
+		EnhancedInputComponent->BindAction(MouseZoomAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Zoom);
 	}
 	else
 	{
@@ -119,6 +123,13 @@ void APossessableAppliance::Interact(const FInputActionValue& Value)
 	DoInteract();
 }
 
+void APossessableAppliance::Zoom(const FInputActionValue& Value)
+{
+	float ZoomValue = Value.Get<float>();
+	ZoomValue *= ZoomSpeed;
+	DoZoom(ZoomValue);
+}
+
 void APossessableAppliance::DoLook(float Yaw, float Pitch)
 {
 	if (GetController() != nullptr)
@@ -143,5 +154,11 @@ void APossessableAppliance::DoInteract()
 {
 	// Interact Logic
 	Controller->Possess(Possessor);
+}
+
+void APossessableAppliance::DoZoom(float ArmLengthChange)
+{
+	float newArmLength = ArmLengthChange + CameraBoom->TargetArmLength;
+	CameraBoom->TargetArmLength = FMath::Clamp(newArmLength, MinCameraDistance, MaxCameraDistance);
 }
 

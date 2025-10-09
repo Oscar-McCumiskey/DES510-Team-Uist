@@ -9,6 +9,7 @@
 class USpringArmComponent;
 class UCameraComponent;
 class UCapsuleComponent;
+class UInputMappingContext;
 class UInputAction;
 struct FInputActionValue;
 
@@ -17,6 +18,7 @@ class DES510_TEAM_UIST_API APossessableAppliance : public APawn
 {
 	GENERATED_BODY()
 
+protected:
 	UPROPERTY(Category = Character, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UCapsuleComponent> CapsuleComponent;
 
@@ -24,11 +26,11 @@ class DES510_TEAM_UIST_API APossessableAppliance : public APawn
 	TObjectPtr<UStaticMeshComponent> StaticMesh;
 
 	/** Camera boom positioning the camera behind the character */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
 	USpringArmComponent* CameraBoom;
 
 	/** Follow camera */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FollowCamera;
 
 public:
@@ -51,6 +53,10 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* MouseLookAction;
 
+	/** Mouse Zoom Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	UInputAction* MouseZoomAction;
+
 	/** Ability Input Actions */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* Ability1Action;
@@ -61,8 +67,18 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* InteractAction;
 
+protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	APawn* Possessor;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
+	float MinCameraDistance = 50.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
+	float MaxCameraDistance = 300.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
+	float ZoomSpeed = 20.f;
 
 public:	
 	// Called every frame
@@ -72,13 +88,15 @@ protected:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	void Look(const FInputActionValue& Value);
+	virtual void Look(const FInputActionValue& Value);
 
-	void Ability1(const FInputActionValue& Value);
+	virtual void Ability1(const FInputActionValue& Value);
 
-	void Ability2(const FInputActionValue& Value);
+	virtual void Ability2(const FInputActionValue& Value);
 
-	void Interact(const FInputActionValue& Value);
+	virtual void Interact(const FInputActionValue& Value);
+
+	virtual void Zoom(const FInputActionValue& Value);
 
 public:
 
@@ -94,6 +112,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoInteract();
+
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	virtual void DoZoom(float ArmLengthChange);
 
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
