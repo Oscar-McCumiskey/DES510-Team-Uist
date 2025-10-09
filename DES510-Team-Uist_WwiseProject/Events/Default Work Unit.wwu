@@ -228,6 +228,44 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="AkEvent_UserInterface" ID="{A1087F62-20EE-4A1E-963B-6AD9078C332C}" ShortID="705208063">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="7"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="AkEvent_UserInterfaceHoverOver" ID="{4A89F7A7-640F-45A4-A67E-030A3C91EC88}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="7"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{60816BFC-C246-403E-9A4B-EDB3E64DBDFB}" ShortID="910386000">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UserInterfaceHoverOver" ID="{98EB0775-8323-4369-878B-C18826BA03ED}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_UserInterfaceSelect" ID="{55F895FD-BAF4-4626-BD75-D90E178E2E8C}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="7"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{B6E7154A-4F34-4998-9FDC-53EB3E0A5313}" ShortID="1032065302">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UserInterfaceSelect" ID="{4D14049F-9B3B-4C82-8154-3EF53A9FF937}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
