@@ -79,18 +79,54 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="AkEvent_RoombaLoop_MAIN_STOP" ID="{4D51E59A-807E-49BC-9C0D-6122969218F3}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{42915F4A-C775-4BFE-9AC6-94BB7FCACA15}" ShortID="509312373">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RoombaMovementMAIN" ID="{7BE76AE8-E422-4598-8F90-C3DF2AD50F89}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_RoombaLoop_START_STOP" ID="{C5CE653D-98CC-4234-B41F-E46EB6ADE973}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{A2C4685E-AE2A-4352-85B9-FE4AB5F4376E}" ShortID="106150129">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RoombaMovementSTART" ID="{861DCCD2-F01A-4770-A33D-3B011B0C9F5B}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="AkEvent_RoombaTaunt" ID="{108434E4-63AD-4F85-AEFA-66CCCDBF8998}">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="1"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{06EF8D9A-3429-47A8-94AF-5164328EE1A4}" ShortID="180379469">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="RoombaTauntRandomContainer" ID="{138B8F15-F112-4110-8910-9D18D1637446}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+									<ObjectRef Name="RoombaTaunt" ID="{138B8F15-F112-4110-8910-9D18D1637446}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -155,29 +191,38 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="AkEvent_RoombaMovement_STOP" ID="{4D51E59A-807E-49BC-9C0D-6122969218F3}">
+				<Event Name="AkEvent_PlayerPossessionKeyPressed" ID="{98C4B693-7E03-4D92-B423-7004BA113BBD}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
-						<Action Name="" ID="{42915F4A-C775-4BFE-9AC6-94BB7FCACA15}" ShortID="509312373">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
+						<Action Name="" ID="{D5DA21FF-3F55-47B8-89E8-2C43E4D6256E}" ShortID="224061060">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="RoombaMovementMAIN" ID="{7BE76AE8-E422-4598-8F90-C3DF2AD50F89}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+									<ObjectRef Name="PlayerPossessionKeyPressedFeedback" ID="{7A8CF0C8-AF5A-4A11-999D-1D064C6D8846}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="AkEvent_RoombaSTART_STOP" ID="{C5CE653D-98CC-4234-B41F-E46EB6ADE973}">
+				<Event Name="AkEvent_DoorOpen" ID="{7F228015-6B71-44C5-AA50-41D92A8A1AD7}">
 					<ChildrenList>
-						<Action Name="" ID="{A2C4685E-AE2A-4352-85B9-FE4AB5F4376E}" ShortID="106150129">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
+						<Action Name="" ID="{A9833B8E-B34D-410F-8CD9-71DAA845B00B}" ShortID="629555748">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="RoombaMovementSTART" ID="{861DCCD2-F01A-4770-A33D-3B011B0C9F5B}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+									<ObjectRef Name="DoorOpenFeedback" ID="{07E56C2E-3798-4D69-B7C6-2806A3D8C6FE}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_DoorLocked" ID="{8BA0FCEB-BF97-4DD5-88EC-D49B7257A389}">
+					<ChildrenList>
+						<Action Name="" ID="{78950868-9211-47DC-AE3E-65EF110BC7A6}" ShortID="282069911">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DoorClosed(Locked)Feedback" ID="{0C6918AB-9FA3-4516-A619-BA2F2E384887}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

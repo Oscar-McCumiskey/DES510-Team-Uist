@@ -26,13 +26,6 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="PlayerPossession" ID="{AEDBA77F-F2B6-48D1-B3E0-C0C0FF64037A}" ShortID="798968930">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>12</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
@@ -61,9 +54,16 @@
 								<MediaID ID="84265269"/>
 							</MediaIDList>
 						</AudioFileSource>
+						<AudioFileSource Name="PlayerPossessionFeedback" ID="{4A472037-BF5F-4AC0-A12D-12D9371E0354}">
+							<Language>SFX</Language>
+							<AudioFile>PlayerPossessionFeedback.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="991563999"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="FeedbackPlayerPossessionFeedback" ID="{60F22BFB-2816-4C10-8B3F-688EF1C8BA43}" Platform="Linked"/>
+						<ActiveSource Name="PlayerPossessionFeedback" ID="{4A472037-BF5F-4AC0-A12D-12D9371E0354}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="BackgroundMusicTrack" ID="{5962433C-235C-4601-B905-E5AD2DE5B60D}" ShortID="112415610">
@@ -103,13 +103,6 @@
 					</PropertyList>
 					<ChildrenList>
 						<Sound Name="RoombaMovementSTART" ID="{861DCCD2-F01A-4770-A33D-3B011B0C9F5B}" ShortID="640091822">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
@@ -120,6 +113,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="RoombaMovementLoopSTART" ID="{6112DAD7-8098-46C3-9CEA-CA78E24A13CF}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>RoombaMovementLoopSTART.wav</AudioFile>
 									<MediaIDList>
@@ -134,11 +130,6 @@
 						<Sound Name="RoombaMovementMAIN" ID="{7BE76AE8-E422-4598-8F90-C3DF2AD50F89}" ShortID="672392915">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -150,6 +141,12 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="RoombaMovementLoopMAIN" ID="{6C8D7B5B-5C51-4622-A83F-0043C82AB3A9}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="50.782"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.033"/>
+										<Property Name="LoopEnd" Type="Real64" Value="5.891"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>RoombaMovementLoopMAIN.wav</AudioFile>
 									<MediaIDList>
@@ -191,7 +188,7 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
-				<RandomSequenceContainer Name="RoombaTauntRandomContainer" ID="{138B8F15-F112-4110-8910-9D18D1637446}" ShortID="43872617">
+				<RandomSequenceContainer Name="RoombaTaunt" ID="{138B8F15-F112-4110-8910-9D18D1637446}" ShortID="43872617">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="1"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -298,7 +295,6 @@
 				<Sound Name="RobotAlert" ID="{AD1D275E-0146-4077-BCC0-EC67471E0357}" ShortID="283007598">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="4"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -324,7 +320,6 @@
 				<Sound Name="BurglarAlarm" ID="{A7559ACE-B177-4C77-A1D3-3DCD7364A2EB}" ShortID="909606920">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="13"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
 								<Value>-80</Value>
@@ -360,7 +355,6 @@
 				<Sound Name="SmokeFireAlarm" ID="{18C89B70-0C55-43B0-8266-FA43EADA4AEC}" ShortID="849947051">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="13"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -431,6 +425,198 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="TelevisionStaticLoop" ID="{E6473776-4266-4D88-A2ED-AD9F6AF1A31C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="PlayerPossessionKeyPressedFeedback" ID="{7A8CF0C8-AF5A-4A11-999D-1D064C6D8846}" ShortID="568169412">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="PlayerPossessionKeyPressedFeedback1" ID="{E055A516-25BF-4799-B9D7-D3041B797033}" ShortID="484954400">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PlayerPossessionKeyPressedFeedback" ID="{3D52AF74-A6ED-4A21-A12F-462B0CFE2050}">
+									<Language>SFX</Language>
+									<AudioFile>PlayerPossessionKeyPressedFeedback.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="598436301"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PlayerPossessionKeyPressedFeedback" ID="{3D52AF74-A6ED-4A21-A12F-462B0CFE2050}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PlayerPossessionKeyPressedFeedback2" ID="{8FE7D180-7772-4DE2-BA2A-9402B75F4B3B}" ShortID="983163703">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PlayerPossessionKeyPressedFeedback2" ID="{1B85A2CE-C79D-4CAD-9E93-AE998DA5DEC6}">
+									<Language>SFX</Language>
+									<AudioFile>PlayerPossessionKeyPressedFeedback2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="123275338"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PlayerPossessionKeyPressedFeedback2" ID="{1B85A2CE-C79D-4CAD-9E93-AE998DA5DEC6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PlayerPossessionKeyPressedFeedback3" ID="{B1AF0DDF-BF9B-4FB5-BF33-CC4A13F58252}" ShortID="315604145">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PlayerPossessionKeyPressedFeedback3" ID="{EC673A36-71DA-4937-8566-C289C449ABE9}">
+									<Language>SFX</Language>
+									<AudioFile>PlayerPossessionKeyPressedFeedback3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="865045964"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PlayerPossessionKeyPressedFeedback3" ID="{EC673A36-71DA-4937-8566-C289C449ABE9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PlayerPossessionKeyPressedFeedback4" ID="{035BAAA5-6090-4DD8-A5A3-9213208C4C6B}" ShortID="854545023">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PlayerPossessionKeyPressedFeedback4" ID="{6E03CC1E-7E80-429F-995A-BBEC7BA6E15E}">
+									<Language>SFX</Language>
+									<AudioFile>PlayerPossessionKeyPressedFeedback4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="29313271"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PlayerPossessionKeyPressedFeedback4" ID="{6E03CC1E-7E80-429F-995A-BBEC7BA6E15E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="DoorOpenFeedback" ID="{07E56C2E-3798-4D69-B7C6-2806A3D8C6FE}" ShortID="406542357">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="DoorOpenFeedback" ID="{6EA27A26-3683-4306-A634-CDED096ABB0F}">
+							<Language>SFX</Language>
+							<AudioFile>DoorOpenFeedback.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="506063806"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="DoorOpenFeedback" ID="{6EA27A26-3683-4306-A634-CDED096ABB0F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="DoorClosed(Locked)Feedback" ID="{0C6918AB-9FA3-4516-A619-BA2F2E384887}" ShortID="715655728">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="DoorLockedFeedback" ID="{69AC0954-B038-4C90-8222-2950B6122802}">
+							<Language>SFX</Language>
+							<AudioFile>DoorLockedFeedback.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="51070462"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="DoorLockedFeedback" ID="{69AC0954-B038-4C90-8222-2950B6122802}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
