@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}">
 					<ObjectInclusionList>
 						<ObjectRef Name="AkEvent_TelevisionStatic" ID="{8A6A223B-D8AC-400D-A39B-F1FF64CF3030}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_RoombaSTART_STOP" ID="{C5CE653D-98CC-4234-B41F-E46EB6ADE973}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_BurglarAlarm" ID="{74A21581-5C2B-433E-B1A9-A7380FFF1FDB}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RoombaMovementMAIN" ID="{7BE76AE8-E422-4598-8F90-C3DF2AD50F89}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_Test" ID="{24BB487A-68B9-475B-B129-99BF610B0D28}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
