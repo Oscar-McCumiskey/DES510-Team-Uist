@@ -25,21 +25,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="AkEvent_BackgroundMusicLoop" ID="{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="12"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{7952BBE2-0969-4B5D-A71B-FCBB6BE8E41A}" ShortID="750902135">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BackgroundMusicTrack" ID="{5962433C-235C-4601-B905-E5AD2DE5B60D}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="AkEvent_RoombaMovement" ID="{075C1570-EEC7-402B-A749-549B9E0A982C}" ShortID="677824906">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="2"/>
@@ -264,8 +249,48 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="AkEvent_UserInterfaceMainMenuMusic" ID="{81C338A6-F3C2-498C-87F1-4D2D37BDE5BF}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="7"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{24FE2897-0F41-4CCC-B976-9DE277AD34D1}" ShortID="334146362">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UserInterfaceMainMenuMusicTrack" ID="{2C3058E5-A359-42F8-BC55-B135B019FE23}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_UserInterfaceMainMenuMusic_STOP" ID="{899E3818-A2D0-4DA7-9E8D-CD8FBED2E580}">
+							<ChildrenList>
+								<Action Name="" ID="{00FFD87D-F451-41A8-A4BA-726F258BEAA3}" ShortID="563579519">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UserInterfaceMainMenuMusicTrack" ID="{2C3058E5-A359-42F8-BC55-B135B019FE23}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="AkEvent_AlexaAssistantVoiceLines" ID="{49A112B4-275E-4001-A0F5-7B6DE12C2C78}">
+					<ChildrenList>
+						<Action Name="" ID="{A7DD38A2-49E3-4809-AFF8-67746FA94B2D}" ShortID="384886980">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AlexaVoiceLine1 (Placeholder)" ID="{656FD3D2-7656-4402-A14F-D6E245A546CE}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

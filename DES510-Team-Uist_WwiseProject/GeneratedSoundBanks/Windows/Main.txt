@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	599745230	AkEvent_Test			\Default Work Unit\AkEvent_Test	
+	881733891	AkEvent_UserInterfaceMainMenuMusic			\Default Work Unit\AkEvent_UserInterface\AkEvent_UserInterfaceMainMenuMusic	
 	930556629	AkEvent_RoombaLoop_MAIN_STOP			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoop_MAIN_STOP	
 	1058799488	AkEvent_UserInterfaceSelect			\Default Work Unit\AkEvent_UserInterface\AkEvent_UserInterfaceSelect	
 	1380965262	AkEvent_PlayerPossessionKeyPressed			\Default Work Unit\AkEvent_PlayerPossessionKeyPressed	
@@ -7,29 +8,31 @@ Event	ID	Name			Wwise Object Path	Notes
 	1456896994	AkEvent_DoorOpen			\Default Work Unit\AkEvent_DoorOpen	
 	1544018950	AkEvent_RoombaLoop_MAIN			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoop_MAIN	
 	1591493912	AkEvent_DoorLocked			\Default Work Unit\AkEvent_DoorLocked	
-	1671068477	AkEvent_BackgroundMusicLoop			\Default Work Unit\AkEvent_BackgroundMusicLoop	
 	1676114255	AkEvent_PlayerPossession			\Default Work Unit\AkEvent_PlayerPossession	
 	1743696252	AkEvent_BurglarAlarm			\Default Work Unit\AkEvent_BurglarAlarm	
 	1836879748	AkEvent_RobotAlert			\Default Work Unit\AkEvent_RobotAlert	
 	1965170726	AkEvent_RoombaLoop_START_STOP			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoop_START_STOP	
 	2148393740	AkEvent_RoombaTaunt			\Default Work Unit\AkEvent_RoombaTaunt	
 	2328157516	AkEvent_SmokeFireAlarm			\Default Work Unit\AkEvent_SmokeFireAlarm	
+	2701523566	AkEvent_UserInterfaceMainMenuMusic_STOP			\Default Work Unit\AkEvent_UserInterface\AkEvent_UserInterfaceMainMenuMusic_STOP	
 	2795972075	AkEvent_RoombaLoop_START			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoop_START	
 	3214586448	AkEvent_RoombaLoop_END			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoop_END	
+	3595515414	AkEvent_AlexaAssistantVoiceLines			\Default Work Unit\AkEvent_AlexaAssistantVoiceLines	
 	3920598328	AkEvent_UserInterfaceHoverOver			\Default Work Unit\AkEvent_UserInterface\AkEvent_UserInterfaceHoverOver	
 	4207413152	AkEvent_TelevisionStatic			\Default Work Unit\AkEvent_TelevisionStatic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	7384289	UserInterfaceMainMenuMusicTrack	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\38\{383C9CBA-8C9A-6915-D8D1-119A57960B46}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UserInterfaceMainMenuMusicTrack		15406920
 	29313271	PlayerPossessionKeyPressedFeedback4	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\16\{165CE9EE-BBC1-ABDA-C58B-D6A82D4F2A09}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback4		88300
 	51070462	DoorClosed(Locked)Feedback	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\D4\{D437BE9E-D238-46DE-04AC-38E0737E3D87}.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorClosed(Locked)Feedback		176496
 	123275338	PlayerPossessionKeyPressedFeedback2	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\9B\{9BB038EC-8F4B-1687-8982-DC3FF40121A5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback2		88300
-	178769545	BackgroundMusicTrack	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\51\{5141A9EE-BFC1-3DE2-0F84-AE2FD8A2293A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\BackgroundMusicTrack		3830656
 	235169657	SmokeFireAlarm	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\6C\{6C8A7D8D-29EA-F7BF-9B93-12F97C84405C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SmokeFireAlarm		704224
 	282995618	RoombaMovementMAIN	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\9F\{9FE17813-3B3B-0544-F3B3-21112C666F23}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaMovementLoopSections\RoombaMovementMAIN		1146744
 	292192801	RobotAlert	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\FC\{FC914148-2579-142F-35BF-B5614D4A5035}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RobotAlert		192372
 	331698486	TestAudio	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\9A\{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestAudio		262440
 	402318428	RoombaTaunt2	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\9F\{9F3ED44C-D608-2DDA-1F9A-09104BDFDFA9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaTaunt\RoombaTaunt2		176496
 	420991719	LightSwitchActivate	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\B6\{B6E07F44-657A-E3C2-C33C-F9A62D8A1CC7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\LightSwitchActivate		303504
+	453045270	AlexaVoiceLine1 (Placeholder)	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\AC\{AC69534A-BEFE-11F6-0250-9500B3DA16BD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AlexaAssistantVoiceLines\AlexaVoiceLine1 (Placeholder)		298212
 	477859154	TelevisionStaticLoop	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\75\{7539E9C2-8716-61D6-E556-BE786E45D104}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TelevisionStaticLoop		705320
 	506063806	DoorOpenFeedback	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\65\{65F07E27-1097-D3F5-E5AF-9917D5D30EA3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpenFeedback		301740
 	598436301	PlayerPossessionKeyPressedFeedback1	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\71\{71F9AF7F-957F-9284-3205-8385EEF8BD92}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback1		137688
