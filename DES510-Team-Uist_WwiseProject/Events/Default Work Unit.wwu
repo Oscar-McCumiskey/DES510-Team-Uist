@@ -266,6 +266,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="AkEvent_AlexaAssistantVoiceLines" ID="{49A112B4-275E-4001-A0F5-7B6DE12C2C78}">
+					<ChildrenList>
+						<Action Name="" ID="{A7DD38A2-49E3-4809-AFF8-67746FA94B2D}" ShortID="384886980">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AlexaVoiceLine1 (Placeholder)" ID="{656FD3D2-7656-4402-A14F-D6E245A546CE}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -16,6 +16,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2328157516	AkEvent_SmokeFireAlarm			\Default Work Unit\AkEvent_SmokeFireAlarm	
 	2795972075	AkEvent_RoombaLoop_START			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoop_START	
 	3214586448	AkEvent_RoombaLoop_END			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoop_END	
+	3595515414	AkEvent_AlexaAssistantVoiceLines			\Default Work Unit\AkEvent_AlexaAssistantVoiceLines	
 	3920598328	AkEvent_UserInterfaceHoverOver			\Default Work Unit\AkEvent_UserInterface\AkEvent_UserInterfaceHoverOver	
 	4207413152	AkEvent_TelevisionStatic			\Default Work Unit\AkEvent_TelevisionStatic	
 
@@ -30,6 +31,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	331698486	TestAudio	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\9A\{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestAudio		262440
 	402318428	RoombaTaunt2	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\9F\{9F3ED44C-D608-2DDA-1F9A-09104BDFDFA9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaTaunt\RoombaTaunt2		176496
 	420991719	LightSwitchActivate	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\B6\{B6E07F44-657A-E3C2-C33C-F9A62D8A1CC7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\LightSwitchActivate		303504
+	453045270	AlexaVoiceLine1 (Placeholder)	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\AC\{AC69534A-BEFE-11F6-0250-9500B3DA16BD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AlexaAssistantVoiceLines\AlexaVoiceLine1 (Placeholder)		298212
 	477859154	TelevisionStaticLoop	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\75\{7539E9C2-8716-61D6-E556-BE786E45D104}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TelevisionStaticLoop		705320
 	506063806	DoorOpenFeedback	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\65\{65F07E27-1097-D3F5-E5AF-9917D5D30EA3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpenFeedback		301740
 	598436301	PlayerPossessionKeyPressedFeedback1	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\71\{71F9AF7F-957F-9284-3205-8385EEF8BD92}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback1		137688

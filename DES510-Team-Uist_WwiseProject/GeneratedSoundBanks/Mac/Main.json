@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{8010F8C3-F609-4E5B-8188-3D6AECA1B600}",
+    "Hash": "{170AF7F8-D11D-5AFA-C33D-E06F375C883B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -94,6 +94,14 @@
       "Location": "Memory",
       "ShortName": "LightOFF.wav",
       "CachePath": "B6/{B6E07F44-657A-E3C2-C33C-F9A62D8A1CC7}.wem"
+     },
+     {
+      "Id": "453045270",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AlexaVoice1.wav",
+      "CachePath": "AC/{AC69534A-BEFE-11F6-0250-9500B3DA16BD}.wem"
      },
      {
       "Id": "477859154",
@@ -201,6 +209,20 @@
      }
     ],
     "Events": [
+     {
+      "Id": "3595515414",
+      "Name": "AkEvent_AlexaAssistantVoiceLines",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_AlexaAssistantVoiceLines",
+      "GUID": "{49A112B4-275E-4001-A0F5-7B6DE12C2C78}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.69",
+      "DurationMax": "1.69",
+      "MediaRefs": [
+       {
+        "Id": "453045270"
+       }
+      ]
+     },
      {
       "Id": "1671068477",
       "Name": "AkEvent_BackgroundMusicLoop",
@@ -485,6 +507,6 @@
     ]
    }
   ],
-  "FileHash": "{0B7B3D32-729E-465F-7C59-52B21594586B}"
+  "FileHash": "{78A07A68-B2CC-E403-DE1C-12135003417F}"
  }
 }
