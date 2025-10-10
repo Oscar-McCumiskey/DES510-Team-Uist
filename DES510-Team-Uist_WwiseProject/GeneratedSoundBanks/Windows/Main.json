@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{170AF7F8-D11D-5AFA-C33D-E06F375C883B}",
+    "Hash": "{F344CEEF-9F92-12CF-9042-86CDFE13C26F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "7384289",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UserInterfaceBackgroundMusicTrack.wav",
+      "CachePath": "38/{383C9CBA-8C9A-6915-D8D1-119A57960B46}.wem"
+     },
      {
       "Id": "29313271",
       "Language": "SFX",
@@ -38,14 +46,6 @@
       "Location": "Memory",
       "ShortName": "PlayerPossessionKeyPressedFeedback2.wav",
       "CachePath": "9B/{9BB038EC-8F4B-1687-8982-DC3FF40121A5}.wem"
-     },
-     {
-      "Id": "178769545",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MSC_EnvironmentalAmbience_LOFI_MusicTrack_IT1_V.1.0.wav",
-      "CachePath": "51/{5141A9EE-BFC1-3DE2-0F84-AE2FD8A2293A}.wem"
      },
      {
       "Id": "235169657",
@@ -220,19 +220,6 @@
       "MediaRefs": [
        {
         "Id": "453045270"
-       }
-      ]
-     },
-     {
-      "Id": "1671068477",
-      "Name": "AkEvent_BackgroundMusicLoop",
-      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_BackgroundMusicLoop",
-      "GUID": "{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}",
-      "Color": "12",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "178769545"
        }
       ]
      },
@@ -490,6 +477,30 @@
       ]
      },
      {
+      "Id": "881733891",
+      "Name": "AkEvent_UserInterfaceMainMenuMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_UserInterface\\AkEvent_UserInterfaceMainMenuMusic",
+      "GUID": "{81C338A6-F3C2-498C-87F1-4D2D37BDE5BF}",
+      "Color": "7",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "7384289"
+       }
+      ]
+     },
+     {
+      "Id": "2701523566",
+      "Name": "AkEvent_UserInterfaceMainMenuMusic_STOP",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_UserInterface\\AkEvent_UserInterfaceMainMenuMusic_STOP",
+      "GUID": "{899E3818-A2D0-4DA7-9E8D-CD8FBED2E580}",
+      "Color": "7",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "1058799488",
       "Name": "AkEvent_UserInterfaceSelect",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_UserInterface\\AkEvent_UserInterfaceSelect",
@@ -507,6 +518,6 @@
     ]
    }
   ],
-  "FileHash": "{BE88FBB0-E0D9-A31C-B461-AD76A474C3A2}"
+  "FileHash": "{CE3CC56C-9797-A942-65DE-B3876F68A4CD}"
  }
 }
