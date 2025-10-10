@@ -619,6 +619,54 @@
 						<ActiveSource Name="DoorLockedFeedback" ID="{69AC0954-B038-4C90-8222-2950B6122802}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="UserInterface" ID="{65474AD5-32CA-4039-84BE-1A43E7DE8E23}" ShortID="856419621">
+					<ChildrenList>
+						<Sound Name="UserInterfaceSelect" ID="{4D14049F-9B3B-4C82-8154-3EF53A9FF937}" ShortID="963526636">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UserInterfaceSelect" ID="{474447CF-E774-4A4B-8D90-9FAE9D29B02A}">
+									<Language>SFX</Language>
+									<AudioFile>UserInterfaceSelect.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="801556143"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UserInterfaceSelect" ID="{474447CF-E774-4A4B-8D90-9FAE9D29B02A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UserInterfaceHoverOver" ID="{98EB0775-8323-4369-878B-C18826BA03ED}" ShortID="753880690">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UserInterfaceHoverOverFeedback" ID="{EEF763DA-AEEB-4143-93E1-F034081D6B59}">
+									<Language>SFX</Language>
+									<AudioFile>UserInterfaceHoverOverFeedback.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="940813527"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UserInterfaceHoverOverFeedback" ID="{EEF763DA-AEEB-4143-93E1-F034081D6B59}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

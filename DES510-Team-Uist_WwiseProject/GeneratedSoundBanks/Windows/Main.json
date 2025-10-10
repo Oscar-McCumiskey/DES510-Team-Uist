@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{748A9372-5685-D808-D01B-4C2A45121AAF}",
+    "Hash": "{8010F8C3-F609-4E5B-8188-3D6AECA1B600}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -120,6 +120,14 @@
       "CachePath": "71/{71F9AF7F-957F-9284-3205-8385EEF8BD92}.wem"
      },
      {
+      "Id": "801556143",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UserInterfaceSelect.wav",
+      "CachePath": "C3/{C334AA75-242F-D193-C3D6-D00B1F966F40}.wem"
+     },
+     {
       "Id": "854371143",
       "Language": "SFX",
       "Streaming": "false",
@@ -142,6 +150,14 @@
       "Location": "Memory",
       "ShortName": "RoombatTaunt_4.wav",
       "CachePath": "08/{08FDA550-D90E-C6FF-326A-220062EDAC1D}.wem"
+     },
+     {
+      "Id": "940813527",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "UserInterfaceHoverOverFeedback.wav",
+      "CachePath": "07/{077F680F-0C97-1887-EFEB-07CA7C093777}.wem"
      },
      {
       "Id": "968428471",
@@ -435,10 +451,40 @@
         "Id": "331698486"
        }
       ]
+     },
+     {
+      "Id": "3920598328",
+      "Name": "AkEvent_UserInterfaceHoverOver",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_UserInterface\\AkEvent_UserInterfaceHoverOver",
+      "GUID": "{4A89F7A7-640F-45A4-A67E-030A3C91EC88}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "1.72",
+      "DurationMax": "1.72",
+      "MediaRefs": [
+       {
+        "Id": "940813527"
+       }
+      ]
+     },
+     {
+      "Id": "1058799488",
+      "Name": "AkEvent_UserInterfaceSelect",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_UserInterface\\AkEvent_UserInterfaceSelect",
+      "GUID": "{55F895FD-BAF4-4626-BD75-D90E178E2E8C}",
+      "Color": "7",
+      "DurationType": "OneShot",
+      "DurationMin": "0.99",
+      "DurationMax": "0.99",
+      "MediaRefs": [
+       {
+        "Id": "801556143"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{AF305C4B-25D0-D03A-790E-9714C30D4B15}"
+  "FileHash": "{599A80B9-5E6E-9956-76FC-707C8F7F98E4}"
  }
 }
