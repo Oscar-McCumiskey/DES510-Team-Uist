@@ -65,6 +65,7 @@ void APossessableAppliance::Tick(float DeltaTime)
 		if (CooldownTimer <= 0)
 		{
 			OnCooldown = false;
+			CooldownTimer = 0;
 		}
 	}
 }
@@ -149,6 +150,12 @@ void APossessableAppliance::Zoom(const FInputActionValue& Value)
 	float ZoomValue = Value.Get<float>();
 	ZoomValue *= ZoomSpeed;
 	DoZoom(ZoomValue);
+}
+
+void APossessableAppliance::GetCooldownTimes(float &TimeRemainingOut, float &CooldownTimeOut)
+{
+	CooldownTimeOut = CooldownTime;
+	TimeRemainingOut = CooldownTimer;
 }
 
 void APossessableAppliance::DoLook(float Yaw, float Pitch)

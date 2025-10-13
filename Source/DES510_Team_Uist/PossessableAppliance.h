@@ -111,6 +111,9 @@ protected:
 public:
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
+	void GetCooldownTimes(float& TimeRemainingOut, float& CooldownTimeOut);
+
+	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoLook(float Yaw, float Pitch);
 
 	// Execute Abilities
