@@ -58,14 +58,14 @@ void APossessableAppliance::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (CooldownTimer > 0)
+	if (OnCooldown)
 	{
 		CooldownTimer -= DeltaTime;
-	}
-	else if (CooldownTimer < 0)
-	{
-		CooldownTimer = 0;
-		OnCooldown = false;
+
+		if (CooldownTimer <= 0)
+		{
+			OnCooldown = false;
+		}
 	}
 }
 
@@ -123,6 +123,7 @@ void APossessableAppliance::Ability1(const FInputActionValue& Value)
 		CooldownTimer = CooldownTime;
 		OnCooldown = true;
 		DoAbility1();
+		DoAbility1Blueprint();
 	}
 }
 
@@ -134,6 +135,7 @@ void APossessableAppliance::Ability2(const FInputActionValue& Value)
 		CooldownTimer = CooldownTime;
 		OnCooldown = true;
 		DoAbility2();
+		DoAbility2Blueprint();
 	}
 }
 

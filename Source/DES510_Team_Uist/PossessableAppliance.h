@@ -100,9 +100,9 @@ protected:
 
 	virtual void Look(const FInputActionValue& Value);
 
-	virtual void Ability1(const FInputActionValue& Value);
+	void Ability1(const FInputActionValue& Value);
 
-	virtual void Ability2(const FInputActionValue& Value);
+	void Ability2(const FInputActionValue& Value);
 
 	virtual void Interact(const FInputActionValue& Value);
 
@@ -117,8 +117,14 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoAbility1();
 
+	UFUNCTION(BlueprintImplementableEvent, Category = "Input")
+	void DoAbility1Blueprint();
+
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoAbility2();
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Input")
+	void DoAbility2Blueprint();
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoInteract();

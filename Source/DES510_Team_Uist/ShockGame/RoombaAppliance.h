@@ -29,10 +29,6 @@ protected:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	virtual void Ability1(const FInputActionValue& Value) override;
-
-	virtual void Ability2(const FInputActionValue& Value) override;
-
 	void Move(const FInputActionValue& Value);
 
 public:

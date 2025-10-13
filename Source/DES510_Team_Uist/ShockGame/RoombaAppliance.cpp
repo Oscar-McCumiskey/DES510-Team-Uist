@@ -29,20 +29,6 @@ void ARoombaAppliance::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	}
 }
 
-void ARoombaAppliance::Ability1(const FInputActionValue& Value)
-{
-	Super::Ability1(Value);
-
-	DoAbility2();
-}
-
-void ARoombaAppliance::Ability2(const FInputActionValue& Value)
-{
-	Super::Ability2(Value);
-
-	DoAbility2();
-}
-
 void ARoombaAppliance::Move(const FInputActionValue& Value)
 {
 	// input is a Vector2D
