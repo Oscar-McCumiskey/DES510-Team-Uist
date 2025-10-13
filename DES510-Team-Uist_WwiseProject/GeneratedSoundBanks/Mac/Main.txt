@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	599745230	AkEvent_Test			\Default Work Unit\AkEvent_Test	
+	623541909	AkEvent_RobotMovement			\Default Work Unit\AkEvent_RobotMovement	
 	881733891	AkEvent_UserInterfaceMainMenuMusic			\Default Work Unit\AkEvent_UserInterface\AkEvent_UserInterfaceMainMenuMusic	
 	930556629	AkEvent_RoombaLoop_MAIN_STOP			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoop_MAIN_STOP	
 	1058799488	AkEvent_UserInterfaceSelect			\Default Work Unit\AkEvent_UserInterface\AkEvent_UserInterfaceSelect	
@@ -22,7 +23,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	4207413152	AkEvent_TelevisionStatic			\Default Work Unit\AkEvent_TelevisionStatic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	7384289	UserInterfaceMainMenuMusicTrack	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\38\{383C9CBA-8C9A-6915-D8D1-119A57960B46}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UserInterfaceMainMenuMusicTrack		15406920
+	7384289	UserInterfaceMainMenuMusicTrack	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\F3\{F3791DD7-6C3E-DBD1-3E52-AC659332342E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UserInterfaceMainMenuMusicTrack		15406920
 	29313271	PlayerPossessionKeyPressedFeedback4	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\16\{165CE9EE-BBC1-ABDA-C58B-D6A82D4F2A09}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback4		88300
 	51070462	DoorClosed(Locked)Feedback	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\D4\{D437BE9E-D238-46DE-04AC-38E0737E3D87}.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorClosed(Locked)Feedback		176496
 	123275338	PlayerPossessionKeyPressedFeedback2	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\9B\{9BB038EC-8F4B-1687-8982-DC3FF40121A5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback2		88300
@@ -35,6 +36,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	453045270	AlexaVoiceLine1 (Placeholder)	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\AC\{AC69534A-BEFE-11F6-0250-9500B3DA16BD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AlexaAssistantVoiceLines\AlexaVoiceLine1 (Placeholder)		298212
 	477859154	TelevisionStaticLoop	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\75\{7539E9C2-8716-61D6-E556-BE786E45D104}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TelevisionStaticLoop		705320
 	506063806	DoorOpenFeedback	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\65\{65F07E27-1097-D3F5-E5AF-9917D5D30EA3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpenFeedback		301740
+	595210968	RobotMovement	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\57\{578C8392-FF5C-48F3-C554-F37D8E7F5470}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RobotMovement		3529220
 	598436301	PlayerPossessionKeyPressedFeedback1	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\71\{71F9AF7F-957F-9284-3205-8385EEF8BD92}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback1		137688
 	801556143	UserInterfaceSelect	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\C3\{C334AA75-242F-D193-C3D6-D00B1F966F40}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UserInterface\UserInterfaceSelect		174732
 	854371143	RoombaTaunt1	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\56\{5602C594-EE49-CDB0-E2D5-5D48F50C423F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaTaunt\RoombaTaunt1		301740
