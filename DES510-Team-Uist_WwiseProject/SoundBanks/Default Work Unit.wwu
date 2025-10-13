@@ -19,6 +19,7 @@
 						<ObjectRef Name="AkEvent_UserInterfaceMainMenuMusic" ID="{81C338A6-F3C2-498C-87F1-4D2D37BDE5BF}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_RoombaLoop_MAIN_STOP" ID="{4D51E59A-807E-49BC-9C0D-6122969218F3}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_RobotMovement" ID="{DDD51A7A-F66E-49C1-B495-C2CF7232136C}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_RobotShutdown" ID="{3A86A0DF-980F-4AD8-856B-43A0629846B3}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_PlayerPossession" ID="{4415C4ED-9727-4BFC-9D0C-5E0890015B11}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_PlayerPossessionKeyPressed" ID="{98C4B693-7E03-4D92-B423-7004BA113BBD}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_UserInterfaceMainMenuMusic_STOP" ID="{899E3818-A2D0-4DA7-9E8D-CD8FBED2E580}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
