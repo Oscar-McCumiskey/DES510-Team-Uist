@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{F344CEEF-9F92-12CF-9042-86CDFE13C26F}",
+    "Hash": "{9CCE7BB7-ADCE-797D-0E91-6EC17D14C6D8}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "UserInterfaceBackgroundMusicTrack.wav",
-      "CachePath": "38/{383C9CBA-8C9A-6915-D8D1-119A57960B46}.wem"
+      "CachePath": "F3/{F3791DD7-6C3E-DBD1-3E52-AC659332342E}.wem"
      },
      {
       "Id": "29313271",
@@ -120,6 +120,14 @@
       "CachePath": "65/{65F07E27-1097-D3F5-E5AF-9917D5D30EA3}.wem"
      },
      {
+      "Id": "595210968",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EnemyRobotMovement.wav",
+      "CachePath": "57/{578C8392-FF5C-48F3-C554-F37D8E7F5470}.wem"
+     },
+     {
       "Id": "598436301",
       "Language": "SFX",
       "Streaming": "false",
@@ -206,6 +214,14 @@
       "Location": "Memory",
       "ShortName": "RoombatTaunt_3.wav",
       "CachePath": "32/{3251F71F-F66C-FEF9-E553-3F20C627019D}.wem"
+     },
+     {
+      "Id": "1026510357",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EnemyRobotShutdown.wav",
+      "CachePath": "92/{9242711A-4870-1059-3CED-B453DF9104F1}.wem"
      }
     ],
     "Events": [
@@ -329,6 +345,42 @@
       "MediaRefs": [
        {
         "Id": "292192801"
+       }
+      ]
+     },
+     {
+      "Id": "623541909",
+      "Name": "AkEvent_RobotMovement",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RobotMovement",
+      "GUID": "{DDD51A7A-F66E-49C1-B495-C2CF7232136C}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "595210968"
+       }
+      ]
+     },
+     {
+      "Id": "367013752",
+      "Name": "AkEvent_RobotMovement_STOP",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RobotMovement_STOP",
+      "GUID": "{F97D5815-0505-4073-AE95-D3BD699C74C3}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2696074752",
+      "Name": "AkEvent_RobotShutdown",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RobotShutdown",
+      "GUID": "{3A86A0DF-980F-4AD8-856B-43A0629846B3}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.47",
+      "DurationMax": "1.47",
+      "MediaRefs": [
+       {
+        "Id": "1026510357"
        }
       ]
      },
@@ -518,6 +570,6 @@
     ]
    }
   ],
-  "FileHash": "{CE3CC56C-9797-A942-65DE-B3876F68A4CD}"
+  "FileHash": "{30BB5EBB-9A85-1C73-BF9F-3111E5E71E0B}"
  }
 }
