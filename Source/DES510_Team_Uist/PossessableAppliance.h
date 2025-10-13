@@ -59,10 +59,10 @@ protected:
 
 	/** Ability Input Actions */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
-	UInputAction* Ability1Action;
+	UInputAction* AbilityOneAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
-	UInputAction* Ability2Action;
+	UInputAction* AbilityTwoAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* InteractAction;
@@ -74,12 +74,20 @@ protected:
 	APawn* Possessor;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
-	bool OnCooldown = false;
+	bool AbilityOneOnCooldown = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
-	float CooldownTime = 0.f;
+	bool AbilityTwoOnCooldown = false;
 
-	float CooldownTimer = 0.f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
+	float AbilityOneCooldownTime = 0.f;
+
+	float AbilityOneCooldownTimer = 0.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
+	float AbilityTwoCooldownTime = 0.f;
+
+	float AbilityTwoCooldownTimer = 0.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
 	float MinCameraDistance = 50.f;
@@ -111,7 +119,7 @@ protected:
 public:
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
-	void GetCooldownTimes(float& TimeRemainingOut, float& CooldownTimeOut);
+	void GetCooldownTimes(float& AbilityOneTimeRemainingOut, float& AbilityOneCooldownTimeOut, float& AbilityTwoTimeRemainingOut, float& AbilityTwoCooldownTimeOut);
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoLook(float Yaw, float Pitch);

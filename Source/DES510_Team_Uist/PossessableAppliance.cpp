@@ -58,14 +58,25 @@ void APossessableAppliance::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (OnCooldown)
+	if (AbilityOneOnCooldown)
 	{
-		CooldownTimer -= DeltaTime;
+		AbilityOneCooldownTimer -= DeltaTime;
 
-		if (CooldownTimer <= 0)
+		if (AbilityOneCooldownTimer <= 0)
 		{
-			OnCooldown = false;
-			CooldownTimer = 0;
+			AbilityOneOnCooldown = false;
+			AbilityOneCooldownTimer = 0;
+		}
+	}
+
+	if (AbilityTwoOnCooldown)
+	{
+		AbilityTwoCooldownTimer -= DeltaTime;
+
+		if (AbilityTwoCooldownTimer <= 0)
+		{
+			AbilityTwoOnCooldown = false;
+			AbilityTwoCooldownTimer = 0;
 		}
 	}
 }
@@ -87,8 +98,8 @@ void APossessableAppliance::SetupPlayerInputComponent(UInputComponent* PlayerInp
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
 	{
 		// Abilities
-		EnhancedInputComponent->BindAction(Ability1Action, ETriggerEvent::Triggered, this, &APossessableAppliance::Ability1);
-		EnhancedInputComponent->BindAction(Ability2Action, ETriggerEvent::Triggered, this, &APossessableAppliance::Ability1);
+		EnhancedInputComponent->BindAction(AbilityOneAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Ability1);
+		EnhancedInputComponent->BindAction(AbilityTwoAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Ability2);
 
 		// Interact
 		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Interact);
@@ -119,10 +130,10 @@ void APossessableAppliance::Look(const FInputActionValue& Value)
 void APossessableAppliance::Ability1(const FInputActionValue& Value)
 {
 	// Use Ability One
-	if (!OnCooldown)
+	if (!AbilityOneOnCooldown)
 	{
-		CooldownTimer = CooldownTime;
-		OnCooldown = true;
+		AbilityOneCooldownTimer = AbilityOneCooldownTime;
+		AbilityOneOnCooldown = true;
 		DoAbility1();
 		DoAbility1Blueprint();
 	}
@@ -131,10 +142,10 @@ void APossessableAppliance::Ability1(const FInputActionValue& Value)
 void APossessableAppliance::Ability2(const FInputActionValue& Value)
 {
 	// Use Ability Two
-	if (!OnCooldown)
+	if (!AbilityTwoOnCooldown)
 	{
-		CooldownTimer = CooldownTime;
-		OnCooldown = true;
+		AbilityTwoCooldownTimer = AbilityTwoCooldownTime;
+		AbilityTwoOnCooldown = true;
 		DoAbility2();
 		DoAbility2Blueprint();
 	}
@@ -152,10 +163,13 @@ void APossessableAppliance::Zoom(const FInputActionValue& Value)
 	DoZoom(ZoomValue);
 }
 
-void APossessableAppliance::GetCooldownTimes(float &TimeRemainingOut, float &CooldownTimeOut)
+void APossessableAppliance::GetCooldownTimes(float &AbilityOneTimeRemainingOut, float & AbilityOneCooldownTimeOut, float& AbilityTwoTimeRemainingOut, float& AbilityTwoCooldownTimeOut)
 {
-	CooldownTimeOut = CooldownTime;
-	TimeRemainingOut = CooldownTimer;
+	AbilityOneCooldownTimeOut = AbilityOneCooldownTime;
+	AbilityOneTimeRemainingOut = AbilityOneCooldownTimer;
+
+	AbilityTwoCooldownTimeOut = AbilityTwoCooldownTime;
+	AbilityTwoTimeRemainingOut = AbilityTwoCooldownTimer;
 }
 
 void APossessableAppliance::DoLook(float Yaw, float Pitch)
