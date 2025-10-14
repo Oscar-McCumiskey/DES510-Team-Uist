@@ -140,13 +140,13 @@ public:
 	virtual void DoAbility1();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Input")
-	void DoAbility1Blueprint();
+	void DoAbilityOneBlueprint();
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoAbility2();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Input")
-	void DoAbility2Blueprint();
+	void DoAbilityTwoBlueprint();
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoInteract();
