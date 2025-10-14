@@ -24,6 +24,7 @@ public:
 	ARoombaAppliance();
 
 protected:
+
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* MoveAction;
 
