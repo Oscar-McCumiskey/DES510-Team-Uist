@@ -32,6 +32,7 @@ APossessableAppliance::APossessableAppliance()
 	StaticMesh->SetupAttachment(RootComponent);
 	StaticMesh->SetMobility(EComponentMobility::Static);
 	StaticMesh->SetEnableGravity(false);
+	StaticMesh->bDisallowNanite = true;
 
 	// Create a camera boom (pulls in towards the player if there is a collision)
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
@@ -44,6 +45,8 @@ APossessableAppliance::APossessableAppliance()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
+
+	AutoPossessAI = EAutoPossessAI::Disabled;
 }
 
 // Called when the game starts or when spawned
@@ -181,7 +184,7 @@ void APossessableAppliance::Ability1(const FInputActionValue& Value)
 		AbilityOneCooldownTimer = AbilityOneCooldownTime;
 		AbilityOneOnCooldown = true;
 		DoAbility1();
-		DoAbility1Blueprint();
+		DoAbilityOneBlueprint();
 	}
 }
 
@@ -193,7 +196,7 @@ void APossessableAppliance::Ability2(const FInputActionValue& Value)
 		AbilityTwoCooldownTimer = AbilityTwoCooldownTime;
 		AbilityTwoOnCooldown = true;
 		DoAbility2();
-		DoAbility2Blueprint();
+		DoAbilityTwoBlueprint();
 	}
 }
 
