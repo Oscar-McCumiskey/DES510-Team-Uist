@@ -51,6 +51,14 @@ void APossessableAppliance::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	for (UActorComponent* Component : GetComponents())
+	{
+		if (Component->GetName() == TEXT("OutlineComponent"))
+		{
+			OutlineComponent = Component;
+		}
+	}
+	
 	if (Possessor)
 	{
 		IsPossessed = true;
@@ -90,6 +98,16 @@ void APossessableAppliance::PossessedBy(AController* NewController)
 	Super::PossessedBy(NewController);
 
 	IsPossessed = true;
+
+	if (OutlineComponent)
+	{
+		FName EventName(TEXT("PossessedOutline"));
+		UFunction* Function = OutlineComponent->FindFunction(EventName);
+		if (Function)
+		{
+			OutlineComponent->ProcessEvent(Function, nullptr);
+		}
+	}
 }
 
 void APossessableAppliance::UnPossessed()
@@ -97,6 +115,16 @@ void APossessableAppliance::UnPossessed()
 	Super::UnPossessed();
 
 	IsPossessed = false;
+
+	if (OutlineComponent)
+	{
+		FName EventName(TEXT("NeutralOutline"));
+		UFunction* Function = OutlineComponent->FindFunction(EventName);
+		if (Function)
+		{
+			OutlineComponent->ProcessEvent(Function, nullptr);
+		}
+	}
 }
 
 // Called to bind functionality to input
@@ -181,7 +209,7 @@ void APossessableAppliance::Zoom(const FInputActionValue& Value)
 	DoZoom(ZoomValue);
 }
 
-void APossessableAppliance::GetCooldownTimes(float &AbilityOneTimeRemainingOut, float & AbilityOneCooldownTimeOut, float& AbilityTwoTimeRemainingOut, float& AbilityTwoCooldownTimeOut)
+void APossessableAppliance::GetCooldownTimes(float& AbilityOneTimeRemainingOut, float& AbilityOneCooldownTimeOut, float& AbilityTwoTimeRemainingOut, float& AbilityTwoCooldownTimeOut) const
 {
 	AbilityOneCooldownTimeOut = AbilityOneCooldownTime;
 	AbilityOneTimeRemainingOut = AbilityOneCooldownTimer;
