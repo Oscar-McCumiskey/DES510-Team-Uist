@@ -51,6 +51,10 @@ void APossessableAppliance::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	if (Possessor)
+	{
+		IsPossessed = true;
+	}
 }
 
 // Called every frame
@@ -79,6 +83,20 @@ void APossessableAppliance::Tick(float DeltaTime)
 			AbilityTwoCooldownTimer = 0;
 		}
 	}
+}
+
+void APossessableAppliance::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	IsPossessed = true;
+}
+
+void APossessableAppliance::UnPossessed()
+{
+	Super::UnPossessed();
+
+	IsPossessed = false;
 }
 
 // Called to bind functionality to input

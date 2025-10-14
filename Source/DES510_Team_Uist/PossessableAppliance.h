@@ -73,6 +73,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
 	APawn* Possessor;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Appliance")
+	bool IsPossessed = false;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
 	bool AbilityOneOnCooldown = false;
 
@@ -101,6 +104,10 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	virtual void PossessedBy(AController* NewController) override;
+
+	virtual void UnPossessed() override;
 
 protected:
 	// Called to bind functionality to input
@@ -143,6 +150,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoZoom(float ArmLengthChange);
 
+public:
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 
