@@ -324,6 +324,67 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AkEvent_HiFiStereoSystemMusic" ID="{FF3B2634-6CBE-4937-9A98-09B944D53A8A}">
+					<ChildrenList>
+						<Action Name="" ID="{CFCC3B55-1094-4683-8AB5-320DA148F7E4}" ShortID="221715868">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HiFiStereoSystemMusic" ID="{C3B23D91-8C3E-4421-9A1F-CDB46F01CF98}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="STOP EVENTS" ID="{83243209-BC43-47BD-AB40-87E7F6CE185A}" ShortID="59698482">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="AkEvent_STOP_TelevisionStatic" ID="{23504223-05CC-4C52-A6BF-ADCFDC8E358B}">
+							<ChildrenList>
+								<Action Name="" ID="{05BB6C36-7BB6-4668-9556-4D51808EDFEF}" ShortID="322417041">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TelevisionStaticLoop" ID="{090632C3-F6D2-4BD7-8CAC-606CA05DF535}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_STOP_SmokeFireAlarm" ID="{9330DD24-4056-45A5-83B5-14371AB205D0}">
+							<ChildrenList>
+								<Action Name="" ID="{8EADD0EB-96F5-4E7A-9FCA-BFB7513201A1}" ShortID="1051584692">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SmokeFireAlarm" ID="{18C89B70-0C55-43B0-8266-FA43EADA4AEC}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_STOP_HiFiStereoSystemMusic" ID="{7C431B30-8C95-4746-9246-99C894DF784E}">
+							<ChildrenList>
+								<Action Name="" ID="{C1252940-C349-4907-BAA9-3B68C6291E0B}" ShortID="547769110">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HiFiStereoSystemMusic" ID="{C3B23D91-8C3E-4421-9A1F-CDB46F01CF98}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

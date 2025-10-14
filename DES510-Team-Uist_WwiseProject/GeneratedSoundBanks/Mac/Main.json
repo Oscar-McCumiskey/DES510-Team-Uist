@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{0C6FD84F-8655-2B96-3F52-F43EBD792466}",
+    "Hash": "{5FFA337D-2585-E357-D0B8-5FB0B06F8A1B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -142,6 +142,14 @@
       "Location": "Memory",
       "ShortName": "PlayerPossessionKeyPressedFeedback.wav",
       "CachePath": "71/{71F9AF7F-957F-9284-3205-8385EEF8BD92}.wem"
+     },
+     {
+      "Id": "602932130",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HIFIStereoSystemDarkSynthMusicTrack.wav",
+      "CachePath": "30/{30310F0C-2867-C88D-C743-122028095093}.wem"
      },
      {
       "Id": "801556143",
@@ -286,6 +294,18 @@
       "MediaRefs": [
        {
         "Id": "506063806"
+       }
+      ]
+     },
+     {
+      "Id": "3581029044",
+      "Name": "AkEvent_HiFiStereoSystemMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_HiFiStereoSystemMusic",
+      "GUID": "{FF3B2634-6CBE-4937-9A98-09B944D53A8A}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "602932130"
        }
       ]
      },
@@ -478,6 +498,17 @@
       ]
      },
      {
+      "Id": "4075388469",
+      "Name": "AkEvent_STOP_HiFiStereoSystemMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\STOP EVENTS\\AkEvent_STOP_HiFiStereoSystemMusic",
+      "GUID": "{7C431B30-8C95-4746-9246-99C894DF784E}",
+      "Color": "10",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "1460809518",
       "Name": "AkEvent_STOP_RoombaLoopMAIN",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_STOP_RoombaLoopMAIN",
@@ -494,6 +525,28 @@
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_STOP_RoombaLoopSTART",
       "GUID": "{C5CE653D-98CC-4234-B41F-E46EB6ADE973}",
       "Color": "2",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "939926779",
+      "Name": "AkEvent_STOP_SmokeFireAlarm",
+      "ObjectPath": "\\Events\\Default Work Unit\\STOP EVENTS\\AkEvent_STOP_SmokeFireAlarm",
+      "GUID": "{9330DD24-4056-45A5-83B5-14371AB205D0}",
+      "Color": "10",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "38563539",
+      "Name": "AkEvent_STOP_TelevisionStatic",
+      "ObjectPath": "\\Events\\Default Work Unit\\STOP EVENTS\\AkEvent_STOP_TelevisionStatic",
+      "GUID": "{23504223-05CC-4C52-A6BF-ADCFDC8E358B}",
+      "Color": "10",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
       "DurationMin": "0",
@@ -582,6 +635,6 @@
     ]
    }
   ],
-  "FileHash": "{ADF191D2-2B5B-7D00-1166-B3615A722B68}"
+  "FileHash": "{E9D67AF1-4166-374F-7B1D-0E231916034F}"
  }
 }
