@@ -720,6 +720,7 @@
 				</Sound>
 				<Sound Name="RobotMovement" ID="{BB0CC2ED-7795-4CDC-AF11-6E9989BE926B}" ShortID="688999178">
 					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
@@ -800,6 +801,7 @@
 				</Sound>
 				<Sound Name="HiFiStereoSystemMusic" ID="{C3B23D91-8C3E-4421-9A1F-CDB46F01CF98}" ShortID="432678341">
 					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
