@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{9CCE7BB7-ADCE-797D-0E91-6EC17D14C6D8}",
+    "Hash": "{0C6FD84F-8655-2B96-3F52-F43EBD792466}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -86,6 +86,14 @@
       "Location": "Memory",
       "ShortName": "RoombatTaunt_2.wav",
       "CachePath": "9F/{9F3ED44C-D608-2DDA-1F9A-09104BDFDFA9}.wem"
+     },
+     {
+      "Id": "410232314",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EnemyRobotPowerOn.wav",
+      "CachePath": "B4/{B4BA7B4F-CB0B-807C-8BDC-B9E14FFDCF0C}.wem"
      },
      {
       "Id": "420991719",
@@ -361,14 +369,18 @@
       ]
      },
      {
-      "Id": "367013752",
-      "Name": "AkEvent_RobotMovement_STOP",
-      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RobotMovement_STOP",
-      "GUID": "{F97D5815-0505-4073-AE95-D3BD699C74C3}",
-      "MaxAttenuation": "0",
+      "Id": "3371539822",
+      "Name": "AkEvent_RobotPowerOn",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RobotPowerOn",
+      "GUID": "{4400A527-919D-475E-98E4-ACA22E3D1BA9}",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "1.3744217",
+      "DurationMax": "1.3744217",
+      "MediaRefs": [
+       {
+        "Id": "410232314"
+       }
+      ]
      },
      {
       "Id": "2696074752",
@@ -385,9 +397,9 @@
       ]
      },
      {
-      "Id": "3214586448",
-      "Name": "AkEvent_RoombaLoop_END",
-      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_END",
+      "Id": "2632910505",
+      "Name": "AkEvent_RoombaLoopEND",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoopEND",
       "GUID": "{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}",
       "Color": "2",
       "DurationType": "OneShot",
@@ -400,9 +412,9 @@
       ]
      },
      {
-      "Id": "1544018950",
-      "Name": "AkEvent_RoombaLoop_MAIN",
-      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_MAIN",
+      "Id": "1099673533",
+      "Name": "AkEvent_RoombaLoopMAIN",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoopMAIN",
       "GUID": "{3190B3EC-4489-4E79-8E84-E2DDE7BFC5EF}",
       "Color": "2",
       "DurationType": "Infinite",
@@ -413,20 +425,9 @@
       ]
      },
      {
-      "Id": "930556629",
-      "Name": "AkEvent_RoombaLoop_MAIN_STOP",
-      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_MAIN_STOP",
-      "GUID": "{4D51E59A-807E-49BC-9C0D-6122969218F3}",
-      "Color": "2",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "2795972075",
-      "Name": "AkEvent_RoombaLoop_START",
-      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_START",
+      "Id": "1300947658",
+      "Name": "AkEvent_RoombaLoopSTART",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoopSTART",
       "GUID": "{D227FE56-0313-4FB4-9545-ACA65831A000}",
       "Color": "2",
       "DurationType": "OneShot",
@@ -437,17 +438,6 @@
         "Id": "971465599"
        }
       ]
-     },
-     {
-      "Id": "1965170726",
-      "Name": "AkEvent_RoombaLoop_START_STOP",
-      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoop_START_STOP",
-      "GUID": "{C5CE653D-98CC-4234-B41F-E46EB6ADE973}",
-      "Color": "2",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
      },
      {
       "Id": "2148393740",
@@ -486,6 +476,39 @@
         "Id": "235169657"
        }
       ]
+     },
+     {
+      "Id": "1460809518",
+      "Name": "AkEvent_STOP_RoombaLoopMAIN",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_STOP_RoombaLoopMAIN",
+      "GUID": "{4D51E59A-807E-49BC-9C0D-6122969218F3}",
+      "Color": "2",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3282148979",
+      "Name": "AkEvent_STOP_RoombaLoopSTART",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_STOP_RoombaLoopSTART",
+      "GUID": "{C5CE653D-98CC-4234-B41F-E46EB6ADE973}",
+      "Color": "2",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1571339392",
+      "Name": "AkEvent_STOP_UserInterfaceMainMenuMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_UserInterface\\AkEvent_STOP_UserInterfaceMainMenuMusic",
+      "GUID": "{899E3818-A2D0-4DA7-9E8D-CD8FBED2E580}",
+      "Color": "7",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "4207413152",
@@ -542,17 +565,6 @@
       ]
      },
      {
-      "Id": "2701523566",
-      "Name": "AkEvent_UserInterfaceMainMenuMusic_STOP",
-      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_UserInterface\\AkEvent_UserInterfaceMainMenuMusic_STOP",
-      "GUID": "{899E3818-A2D0-4DA7-9E8D-CD8FBED2E580}",
-      "Color": "7",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
       "Id": "1058799488",
       "Name": "AkEvent_UserInterfaceSelect",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_UserInterface\\AkEvent_UserInterfaceSelect",
@@ -570,6 +582,6 @@
     ]
    }
   ],
-  "FileHash": "{C7B2EDE0-C586-202A-836B-62CC1A0A5BA9}"
+  "FileHash": "{ADF191D2-2B5B-7D00-1166-B3615A722B68}"
  }
 }

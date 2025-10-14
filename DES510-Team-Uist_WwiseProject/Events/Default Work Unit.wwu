@@ -31,7 +31,7 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Event Name="AkEvent_RoombaLoop_END" ID="{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}">
+						<Event Name="AkEvent_RoombaLoopEND" ID="{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}">
 							<ChildrenList>
 								<Action Name="" ID="{F11EEA9F-1B4B-4D72-B22F-4A92616A96A8}" ShortID="338965530">
 									<ReferenceList>
@@ -42,7 +42,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AkEvent_RoombaLoop_MAIN" ID="{3190B3EC-4489-4E79-8E84-E2DDE7BFC5EF}">
+						<Event Name="AkEvent_RoombaLoopMAIN" ID="{3190B3EC-4489-4E79-8E84-E2DDE7BFC5EF}">
 							<ChildrenList>
 								<Action Name="" ID="{90FA9E03-1317-4DDB-8304-AF1FE24457C9}" ShortID="1005898336">
 									<ReferenceList>
@@ -53,7 +53,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AkEvent_RoombaLoop_START" ID="{D227FE56-0313-4FB4-9545-ACA65831A000}">
+						<Event Name="AkEvent_RoombaLoopSTART" ID="{D227FE56-0313-4FB4-9545-ACA65831A000}">
 							<ChildrenList>
 								<Action Name="" ID="{1AE81029-0D53-499A-BB13-2E8CE95C24C6}" ShortID="979566515">
 									<ReferenceList>
@@ -64,7 +64,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AkEvent_RoombaLoop_MAIN_STOP" ID="{4D51E59A-807E-49BC-9C0D-6122969218F3}">
+						<Event Name="AkEvent_STOP_RoombaLoopMAIN" ID="{4D51E59A-807E-49BC-9C0D-6122969218F3}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="2"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -82,7 +82,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AkEvent_RoombaLoop_START_STOP" ID="{C5CE653D-98CC-4234-B41F-E46EB6ADE973}">
+						<Event Name="AkEvent_STOP_RoombaLoopSTART" ID="{C5CE653D-98CC-4234-B41F-E46EB6ADE973}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="2"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -264,7 +264,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AkEvent_UserInterfaceMainMenuMusic_STOP" ID="{899E3818-A2D0-4DA7-9E8D-CD8FBED2E580}">
+						<Event Name="AkEvent_STOP_UserInterfaceMainMenuMusic" ID="{899E3818-A2D0-4DA7-9E8D-CD8FBED2E580}">
 							<ChildrenList>
 								<Action Name="" ID="{00FFD87D-F451-41A8-A4BA-726F258BEAA3}" ShortID="563579519">
 									<PropertyList>
@@ -308,6 +308,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="RobotShutdown" ID="{797FC7F6-3C39-482C-A528-7600959120DC}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_RobotPowerOn" ID="{4400A527-919D-475E-98E4-ACA22E3D1BA9}">
+					<ChildrenList>
+						<Action Name="" ID="{323A764E-A034-461E-B5C0-24A55C436D1B}" ShortID="203622440">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RobotPowerOn" ID="{FFEC29AE-D5B0-4ADA-B905-E025A6C2AC3D}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
