@@ -1,7 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
+	38563539	AkEvent_STOP_TelevisionStatic			\Default Work Unit\STOP EVENTS\AkEvent_STOP_TelevisionStatic	
 	599745230	AkEvent_Test			\Default Work Unit\AkEvent_Test	
 	623541909	AkEvent_RobotMovement			\Default Work Unit\AkEvent_RobotMovement	
 	881733891	AkEvent_UserInterfaceMainMenuMusic			\Default Work Unit\AkEvent_UserInterface\AkEvent_UserInterfaceMainMenuMusic	
+	939926779	AkEvent_STOP_SmokeFireAlarm			\Default Work Unit\STOP EVENTS\AkEvent_STOP_SmokeFireAlarm	
 	1058799488	AkEvent_UserInterfaceSelect			\Default Work Unit\AkEvent_UserInterface\AkEvent_UserInterfaceSelect	
 	1099673533	AkEvent_RoombaLoopMAIN			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoopMAIN	
 	1300947658	AkEvent_RoombaLoopSTART			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoopSTART	
@@ -20,8 +22,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	2696074752	AkEvent_RobotShutdown			\Default Work Unit\AkEvent_RobotShutdown	
 	3282148979	AkEvent_STOP_RoombaLoopSTART			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_STOP_RoombaLoopSTART	
 	3371539822	AkEvent_RobotPowerOn			\Default Work Unit\AkEvent_RobotPowerOn	
+	3581029044	AkEvent_HiFiStereoSystemMusic			\Default Work Unit\AkEvent_HiFiStereoSystemMusic	
 	3595515414	AkEvent_AlexaAssistantVoiceLines			\Default Work Unit\AkEvent_AlexaAssistantVoiceLines	
 	3920598328	AkEvent_UserInterfaceHoverOver			\Default Work Unit\AkEvent_UserInterface\AkEvent_UserInterfaceHoverOver	
+	4075388469	AkEvent_STOP_HiFiStereoSystemMusic			\Default Work Unit\STOP EVENTS\AkEvent_STOP_HiFiStereoSystemMusic	
 	4207413152	AkEvent_TelevisionStatic			\Default Work Unit\AkEvent_TelevisionStatic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -41,6 +45,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	506063806	DoorOpenFeedback	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\65\{65F07E27-1097-D3F5-E5AF-9917D5D30EA3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpenFeedback		301740
 	595210968	RobotMovement	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\57\{578C8392-FF5C-48F3-C554-F37D8E7F5470}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RobotMovement		3529220
 	598436301	PlayerPossessionKeyPressedFeedback1	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\71\{71F9AF7F-957F-9284-3205-8385EEF8BD92}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback1		137688
+	602932130	HiFiStereoSystemMusic	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\30\{30310F0C-2867-C88D-C743-122028095093}.wem		\Actor-Mixer Hierarchy\Default Work Unit\HiFiStereoSystemMusic		6981264
 	801556143	UserInterfaceSelect	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\C3\{C334AA75-242F-D193-C3D6-D00B1F966F40}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UserInterface\UserInterfaceSelect		174732
 	854371143	RoombaTaunt1	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\56\{5602C594-EE49-CDB0-E2D5-5D48F50C423F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaTaunt\RoombaTaunt1		301740
 	865045964	PlayerPossessionKeyPressedFeedback3	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\01\{0194506B-8010-BFCB-7033-4C18B8BB290F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback3		88300
