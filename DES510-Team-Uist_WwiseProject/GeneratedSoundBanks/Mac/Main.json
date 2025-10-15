@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{3D86573F-6582-E27D-D000-6CEA8F5230C2}",
+    "Hash": "{C5C9154B-E959-B7CB-CDC5-D2C6748B4861}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -40,6 +40,14 @@
       "CachePath": "D4/{D437BE9E-D238-46DE-04AC-38E0737E3D87}.wem"
      },
      {
+      "Id": "122079160",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HIFIStereoSystemDarkSynthMusicTrack_001.wav",
+      "CachePath": "BB/{BBF20FDA-73E6-A626-A9C7-53DBE52C7AAF}.wem"
+     },
+     {
       "Id": "123275338",
       "Language": "SFX",
       "Streaming": "false",
@@ -56,12 +64,28 @@
       "CachePath": "6C/{6C8A7D8D-29EA-F7BF-9B93-12F97C84405C}.wem"
      },
      {
+      "Id": "248276431",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerComunicationVoiceLine_005.wav",
+      "CachePath": "92/{928C0711-84B1-6328-A8DB-A823A9F2C7F1}.wem"
+     },
+     {
       "Id": "282995618",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RoombaMovementLoopMAIN.wav",
       "CachePath": "9F/{9FE17813-3B3B-0544-F3B3-21112C666F23}.wem"
+     },
+     {
+      "Id": "286498659",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerComunicationVoiceLine_003.wav",
+      "CachePath": "2B/{2B72D68E-C50E-DD63-5019-8E813CD288A5}.wem"
      },
      {
       "Id": "292192801",
@@ -72,12 +96,28 @@
       "CachePath": "FC/{FC914148-2579-142F-35BF-B5614D4A5035}.wem"
      },
      {
+      "Id": "302175398",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerComunicationVoiceLine_007.wav",
+      "CachePath": "EF/{EF6D1007-91D4-D6CD-E769-11C8EE50BAE9}.wem"
+     },
+     {
       "Id": "331698486",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_TestAudio.wav",
       "CachePath": "9A/{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem"
+     },
+     {
+      "Id": "374352061",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerComunicationVoiceLine_004.wav",
+      "CachePath": "13/{131B103A-3468-6173-CE59-A8A6458E6E68}.wem"
      },
      {
       "Id": "402318428",
@@ -144,12 +184,28 @@
       "CachePath": "71/{71F9AF7F-957F-9284-3205-8385EEF8BD92}.wem"
      },
      {
-      "Id": "602932130",
+      "Id": "608465028",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "HIFIStereoSystemDarkSynthMusicTrack.wav",
-      "CachePath": "30/{30310F0C-2867-C88D-C743-122028095093}.wem"
+      "ShortName": "HiFiStereoSystemActivate.wav",
+      "CachePath": "55/{554BB2CA-3807-7DD5-A19B-59211095AA53}.wem"
+     },
+     {
+      "Id": "709276077",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerComunicationVoiceLine_001.wav",
+      "CachePath": "01/{018695B2-4C29-4DA1-E874-92C73147B3DA}.wem"
+     },
+     {
+      "Id": "772527182",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HiFiStereoSystemVinylRecordScratch.wav",
+      "CachePath": "9E/{9EB69234-2472-B9D4-A96A-D136788090A2}.wem"
      },
      {
       "Id": "801556143",
@@ -158,6 +214,14 @@
       "Location": "Memory",
       "ShortName": "UserInterfaceSelect.wav",
       "CachePath": "C3/{C334AA75-242F-D193-C3D6-D00B1F966F40}.wem"
+     },
+     {
+      "Id": "807506263",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerComunicationVoiceLine_006.wav",
+      "CachePath": "B6/{B612F9FE-4C33-FDB6-84F9-9BC6B5FF9450}.wem"
      },
      {
       "Id": "854371143",
@@ -182,6 +246,14 @@
       "Location": "Memory",
       "ShortName": "RoombatTaunt_4.wav",
       "CachePath": "08/{08FDA550-D90E-C6FF-326A-220062EDAC1D}.wem"
+     },
+     {
+      "Id": "926768668",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerComunicationVoiceLine_002.wav",
+      "CachePath": "C6/{C66BACB0-B90C-FE57-BD33-A0B27CBAC752}.wem"
      },
      {
       "Id": "940813527",
@@ -238,6 +310,14 @@
       "Location": "Memory",
       "ShortName": "EnemyRobotShutdown.wav",
       "CachePath": "92/{9242711A-4870-1059-3CED-B453DF9104F1}.wem"
+     },
+     {
+      "Id": "1073275756",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerComunicationVoiceLine_008.wav",
+      "CachePath": "33/{33318AB9-1821-6FD6-5970-41632CE38374}.wem"
      }
     ],
     "Events": [
@@ -298,6 +378,20 @@
       ]
      },
      {
+      "Id": "1715496136",
+      "Name": "AkEvent_HiFiStereoSystemActivate",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_HiFiStereoSystemActivate",
+      "GUID": "{8E310C57-BACD-4E3A-A4F5-FBBA703AB746}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7764579",
+      "DurationMax": "0.7764579",
+      "MediaRefs": [
+       {
+        "Id": "608465028"
+       }
+      ]
+     },
+     {
       "Id": "3581029044",
       "Name": "AkEvent_HiFiStereoSystemMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_HiFiStereoSystemMusic",
@@ -305,7 +399,21 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "602932130"
+        "Id": "122079160"
+       }
+      ]
+     },
+     {
+      "Id": "2500557793",
+      "Name": "AkEvent_HiFiStereoSystemVinylScratch",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_HiFiStereoSystemVinylScratch",
+      "GUID": "{C68C6DAE-E7B8-4BC4-BCA8-9E80545ABEA3}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.6441782",
+      "DurationMax": "2.6441782",
+      "MediaRefs": [
+       {
+        "Id": "772527182"
        }
       ]
      },
@@ -320,6 +428,29 @@
       "MediaRefs": [
        {
         "Id": "420991719"
+       }
+      ]
+     },
+     {
+      "Id": "829898679",
+      "Name": "AkEvent_PlayerOneVoice",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerOneVoice",
+      "GUID": "{5B18E3C9-27C0-4580-BCE1-69DD728433D8}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0013379",
+      "DurationMax": "1.0013379",
+      "MediaRefs": [
+       {
+        "Id": "248276431"
+       },
+       {
+        "Id": "302175398"
+       },
+       {
+        "Id": "807506263"
+       },
+       {
+        "Id": "1073275756"
        }
       ]
      },
@@ -358,6 +489,29 @@
        },
        {
         "Id": "865045964"
+       }
+      ]
+     },
+     {
+      "Id": "2713856965",
+      "Name": "AkEvent_PlayerTwoVoice",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerTwoVoice",
+      "GUID": "{6936692B-109F-465F-A21B-2A0AC1EE8EB4}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0013379",
+      "DurationMax": "1.0013379",
+      "MediaRefs": [
+       {
+        "Id": "286498659"
+       },
+       {
+        "Id": "374352061"
+       },
+       {
+        "Id": "709276077"
+       },
+       {
+        "Id": "926768668"
        }
       ]
      },
@@ -635,6 +789,6 @@
     ]
    }
   ],
-  "FileHash": "{F38FB57A-3FE9-0D4F-755F-ED090DE912C6}"
+  "FileHash": "{53C5FD32-AF6F-6346-8EE2-D4C0A53EE14D}"
  }
 }
