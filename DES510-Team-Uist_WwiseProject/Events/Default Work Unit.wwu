@@ -429,6 +429,76 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AkEvent_ScoreGained" ID="{1DA57E6C-B8F3-4785-BA0F-8FF15C812948}">
+					<ChildrenList>
+						<Action Name="" ID="{21D7EC83-F273-4745-A376-AE775233D1C1}" ShortID="381785809">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerFeedbackScoreGained" ID="{AFF0A5E8-687D-4F4E-8D14-A6773754491B}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_ScoreLost" ID="{6857A72F-EAAF-44FD-893E-C73D3E416609}">
+					<ChildrenList>
+						<Action Name="" ID="{B6174F5A-126E-433C-8EB5-4C260FE908D1}" ShortID="389400099">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerFeedbackScoreLost" ID="{7F589DFA-9643-484E-894D-E3B38BBD8C88}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="GameTimerStates" ID="{9D932C66-FD2F-439F-92ED-85FABACA02B8}" ShortID="742537447">
+					<ChildrenList>
+						<Event Name="GameTimerLowStage1" ID="{D9A33542-9FAA-429D-B295-EADAF3E46E9E}">
+							<ChildrenList>
+								<Action Name="" ID="{FAF6850B-E949-4A8F-BF27-E526175032C2}" ShortID="367957290">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameTimerLowStage1" ID="{534D84F2-2C2D-4EB5-B946-8AFBEA0584E4}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="GameTimerLowStage2" ID="{2095A19B-213D-418E-8989-52A0208EA980}">
+							<ChildrenList>
+								<Action Name="" ID="{E7EE0B0F-DC2B-4765-BED2-94F9EE5371B8}" ShortID="714633619">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameTimerLowStage2" ID="{2F3ACABF-F050-45EF-A509-EE4BC96D7B66}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="GameTimerLowStage3" ID="{F311CB8C-EEFE-4A77-9C88-014B6E7CD08D}">
+							<ChildrenList>
+								<Action Name="" ID="{4BA4BEA8-A17D-47CF-B389-17DDEC9379A1}" ShortID="7483760">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameTimerLowStage3" ID="{C723337E-B10F-415B-918F-51790A7ED52F}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="GameOverTimesUp" ID="{C56E2F95-D512-4694-A5FC-8486F33084F6}">
+							<ChildrenList>
+								<Action Name="" ID="{279B13C9-DED7-45BF-BF2B-AC4767EC27F8}" ShortID="377088059">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameOverTimesUp" ID="{2851F2F8-CC98-4250-B882-4E2CACC8C352}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

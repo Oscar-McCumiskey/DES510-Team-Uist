@@ -874,9 +874,25 @@
 				</Sound>
 				<Sound Name="HiFiStereoSystemActivate" ID="{7EE953CC-272A-4EC4-B7FC-EE8542C34BE2}" ShortID="427981029">
 					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>36</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>110</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>3</Value>
+								<Value>1</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -889,22 +905,23 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="HiFiStereoSystemActivate" ID="{726E2A8C-8C47-4FAA-945A-95EA552FEC4E}">
+						<AudioFileSource Name="VinylRecordNeedleDrop" ID="{1C3F0B21-5EE7-44B4-BB82-EF1C5B099E98}">
 							<PropertyList>
-								<Property Name="FadeOutDuration" Type="Real64" Value="0.776457912401297"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="2.5055029684808"/>
+								<Property Name="FadeOutShape" Type="int16" Value="2"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.0389074772724266"/>
-								<Property Name="TrimEnd" Type="Real64" Value="0.815365389673723"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.366188870013599"/>
+								<Property Name="TrimEnd" Type="Real64" Value="2.87169183849439"/>
 							</PropertyList>
 							<Language>SFX</Language>
-							<AudioFile>HiFiStereoSystemActivate.wav</AudioFile>
+							<AudioFile>VinylRecordNeedleDrop.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="608465028"/>
+								<MediaID ID="330954251"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="HiFiStereoSystemActivate" ID="{726E2A8C-8C47-4FAA-945A-95EA552FEC4E}" Platform="Linked"/>
+						<ActiveSource Name="VinylRecordNeedleDrop" ID="{1C3F0B21-5EE7-44B4-BB82-EF1C5B099E98}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="PlayerOneCommunicationVoiceLines" ID="{6961F16F-9F7A-4C2B-B95C-DC9116EF17D3}" ShortID="975687183">
@@ -1107,6 +1124,183 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="PlayerFeedbackScoreGained" ID="{AFF0A5E8-687D-4F4E-8D14-A6773754491B}" ShortID="305788238">
+					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ScoreGainedPlaceholder" ID="{37DEB7CF-5F72-4DA8-860B-51533532ACBA}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.774535523709448"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.844065856258384"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>ScoreGainedPlaceholder.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="786360163"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ScoreGainedPlaceholder" ID="{37DEB7CF-5F72-4DA8-860B-51533532ACBA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PlayerFeedbackScoreLost" ID="{7F589DFA-9643-484E-894D-E3B38BBD8C88}" ShortID="271900464">
+					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ScoreLostPlaceholder" ID="{111FC6AB-7449-4D6C-9702-5837010459C4}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.797729365335349"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.797729365335349"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>ScoreLostPlaceholder.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="925937689"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ScoreLostPlaceholder" ID="{111FC6AB-7449-4D6C-9702-5837010459C4}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Folder Name="GameTimerStates" ID="{99BEF626-2B6A-4F46-81EE-1D8340289F10}" ShortID="536200944">
+					<ChildrenList>
+						<Sound Name="GameTimerLowStage1" ID="{534D84F2-2C2D-4EB5-B946-8AFBEA0584E4}" ShortID="747585678">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GameTimerLow" ID="{A203367C-5159-4BC7-88B8-F47FCE329FCB}">
+									<Language>SFX</Language>
+									<AudioFile>GameTimerLow.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="888034445"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GameTimerLow" ID="{A203367C-5159-4BC7-88B8-F47FCE329FCB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GameTimerLowStage2" ID="{2F3ACABF-F050-45EF-A509-EE4BC96D7B66}" ShortID="489909482">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GameTimerVeryLow" ID="{068D699E-6E26-45D5-A09E-625BB68B5113}">
+									<Language>SFX</Language>
+									<AudioFile>GameTimerVeryLow.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="942405617"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GameTimerVeryLow" ID="{068D699E-6E26-45D5-A09E-625BB68B5113}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GameTimerLowStage3" ID="{C723337E-B10F-415B-918F-51790A7ED52F}" ShortID="74832622">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GameTimerSuperLow" ID="{F2F31DF6-EA78-4149-B91C-5F8832FD1EC0}">
+									<Language>SFX</Language>
+									<AudioFile>GameTimerSuperLow.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="812791399"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GameTimerSuperLow" ID="{F2F31DF6-EA78-4149-B91C-5F8832FD1EC0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GameOverTimesUp" ID="{2851F2F8-CC98-4250-B882-4E2CACC8C352}" ShortID="996223510">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GameOverTimesUp" ID="{743F2C02-A704-4F30-832C-D576B52028E9}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.34596371882086"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>GameOverTimesUp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="541008921"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GameOverTimesUp" ID="{743F2C02-A704-4F30-832C-D576B52028E9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
