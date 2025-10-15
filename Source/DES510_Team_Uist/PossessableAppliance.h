@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "ShockGame/Possessable.h"
 #include "PossessableAppliance.generated.h"
 
 class USpringArmComponent;
@@ -14,7 +15,7 @@ class UInputAction;
 struct FInputActionValue;
 
 UCLASS()
-class DES510_TEAM_UIST_API APossessableAppliance : public APawn
+class DES510_TEAM_UIST_API APossessableAppliance : public APawn, public IPossessable
 {
 	GENERATED_BODY()
 
@@ -113,6 +114,8 @@ public:
 
 	virtual void UnPossessed() override;
 
+	virtual void Interacted_Implementation() override;
+
 protected:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -126,6 +129,10 @@ protected:
 	virtual void Interact(const FInputActionValue& Value);
 
 	virtual void Zoom(const FInputActionValue& Value);
+
+private:
+
+	void CallEventByName(FName Name);
 
 public:
 
@@ -160,5 +167,4 @@ public:
 
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
-
 };
