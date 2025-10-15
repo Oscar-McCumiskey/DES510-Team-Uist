@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{B36677D2-F958-4937-C046-73A4CE490021}",
+    "Hash": "{1C37EFA9-46ED-1CAF-1635-29CE22AF28DF}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -38,6 +38,14 @@
       "Location": "Memory",
       "ShortName": "DoorLockedFeedback.wav",
       "CachePath": "D4/{D437BE9E-D238-46DE-04AC-38E0737E3D87}.wem"
+     },
+     {
+      "Id": "122079160",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HIFIStereoSystemDarkSynthMusicTrack_001.wav",
+      "CachePath": "1C/{1C9B8445-6902-0E6F-F026-9A101958F9EC}.wem"
      },
      {
       "Id": "123275338",
@@ -144,12 +152,12 @@
       "CachePath": "71/{71F9AF7F-957F-9284-3205-8385EEF8BD92}.wem"
      },
      {
-      "Id": "602932130",
+      "Id": "608465028",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "HIFIStereoSystemDarkSynthMusicTrack.wav",
-      "CachePath": "30/{30310F0C-2867-C88D-C743-122028095093}.wem"
+      "ShortName": "HiFiStereoSystemActivate.wav",
+      "CachePath": "C6/{C6EC7D49-3BCD-1E9C-F9BA-78EBD6087D20}.wem"
      },
      {
       "Id": "772527182",
@@ -306,6 +314,20 @@
       ]
      },
      {
+      "Id": "1715496136",
+      "Name": "AkEvent_HiFiStereoSystemActivate",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_HiFiStereoSystemActivate",
+      "GUID": "{8E310C57-BACD-4E3A-A4F5-FBBA703AB746}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7764579",
+      "DurationMax": "0.7764579",
+      "MediaRefs": [
+       {
+        "Id": "608465028"
+       }
+      ]
+     },
+     {
       "Id": "3581029044",
       "Name": "AkEvent_HiFiStereoSystemMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_HiFiStereoSystemMusic",
@@ -313,7 +335,7 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "602932130"
+        "Id": "122079160"
        }
       ]
      },
@@ -657,6 +679,6 @@
     ]
    }
   ],
-  "FileHash": "{8B55881D-84F7-FF75-773F-596C7470A94F}"
+  "FileHash": "{109A4EF0-B233-D188-291F-F967E6DE13DA}"
  }
 }
