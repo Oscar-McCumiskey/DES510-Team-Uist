@@ -102,15 +102,7 @@ void APossessableAppliance::PossessedBy(AController* NewController)
 
 	IsPossessed = true;
 
-	if (OutlineComponent)
-	{
-		FName EventName(TEXT("PossessedOutline"));
-		UFunction* Function = OutlineComponent->FindFunction(EventName);
-		if (Function)
-		{
-			OutlineComponent->ProcessEvent(Function, nullptr);
-		}
-	}
+	CallEventByName(TEXT("PossessedOutline"));
 }
 
 void APossessableAppliance::UnPossessed()
@@ -119,15 +111,12 @@ void APossessableAppliance::UnPossessed()
 
 	IsPossessed = false;
 
-	if (OutlineComponent)
-	{
-		FName EventName(TEXT("NeutralOutline"));
-		UFunction* Function = OutlineComponent->FindFunction(EventName);
-		if (Function)
-		{
-			OutlineComponent->ProcessEvent(Function, nullptr);
-		}
-	}
+	CallEventByName(TEXT("NeutralOutline"));
+}
+
+void APossessableAppliance::Interacted_Implementation()
+{
+	CallEventByName(TEXT("SelectedOutline"));
 }
 
 // Called to bind functionality to input
@@ -210,6 +199,18 @@ void APossessableAppliance::Zoom(const FInputActionValue& Value)
 	float ZoomValue = Value.Get<float>();
 	ZoomValue *= ZoomSpeed;
 	DoZoom(ZoomValue);
+}
+
+void APossessableAppliance::CallEventByName(FName Name)
+{
+	if (OutlineComponent)
+	{
+		UFunction* Function = OutlineComponent->FindFunction(Name);
+		if (Function)
+		{
+			OutlineComponent->ProcessEvent(Function, nullptr);
+		}
+	}
 }
 
 void APossessableAppliance::GetCooldownTimes(float& AbilityOneTimeRemainingOut, float& AbilityOneCooldownTimeOut, float& AbilityTwoTimeRemainingOut, float& AbilityTwoCooldownTimeOut) const
