@@ -874,9 +874,25 @@
 				</Sound>
 				<Sound Name="HiFiStereoSystemActivate" ID="{7EE953CC-272A-4EC4-B7FC-EE8542C34BE2}" ShortID="427981029">
 					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>36</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>110</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>3</Value>
+								<Value>1</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -889,22 +905,23 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="HiFiStereoSystemActivate" ID="{726E2A8C-8C47-4FAA-945A-95EA552FEC4E}">
+						<AudioFileSource Name="VinylRecordNeedleDrop" ID="{1C3F0B21-5EE7-44B4-BB82-EF1C5B099E98}">
 							<PropertyList>
-								<Property Name="FadeOutDuration" Type="Real64" Value="0.776457912401297"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="2.5055029684808"/>
+								<Property Name="FadeOutShape" Type="int16" Value="2"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.0389074772724266"/>
-								<Property Name="TrimEnd" Type="Real64" Value="0.815365389673723"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.366188870013599"/>
+								<Property Name="TrimEnd" Type="Real64" Value="2.87169183849439"/>
 							</PropertyList>
 							<Language>SFX</Language>
-							<AudioFile>HiFiStereoSystemActivate.wav</AudioFile>
+							<AudioFile>VinylRecordNeedleDrop.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="608465028"/>
+								<MediaID ID="330954251"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="HiFiStereoSystemActivate" ID="{726E2A8C-8C47-4FAA-945A-95EA552FEC4E}" Platform="Linked"/>
+						<ActiveSource Name="VinylRecordNeedleDrop" ID="{1C3F0B21-5EE7-44B4-BB82-EF1C5B099E98}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="PlayerOneCommunicationVoiceLines" ID="{6961F16F-9F7A-4C2B-B95C-DC9116EF17D3}" ShortID="975687183">

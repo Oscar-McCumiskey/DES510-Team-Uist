@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{C5C9154B-E959-B7CB-CDC5-D2C6748B4861}",
+    "Hash": "{556A8C88-E320-9570-C6B3-A9C5F93251B8}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -104,6 +104,14 @@
       "CachePath": "EF/{EF6D1007-91D4-D6CD-E769-11C8EE50BAE9}.wem"
      },
      {
+      "Id": "330954251",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "VinylRecordNeedleDrop.wav",
+      "CachePath": "94/{94E8DE41-392B-F988-A4C3-AD559DCBF94C}.wem"
+     },
+     {
       "Id": "331698486",
       "Language": "SFX",
       "Streaming": "false",
@@ -182,14 +190,6 @@
       "Location": "Memory",
       "ShortName": "PlayerPossessionKeyPressedFeedback.wav",
       "CachePath": "71/{71F9AF7F-957F-9284-3205-8385EEF8BD92}.wem"
-     },
-     {
-      "Id": "608465028",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "HiFiStereoSystemActivate.wav",
-      "CachePath": "55/{554BB2CA-3807-7DD5-A19B-59211095AA53}.wem"
      },
      {
       "Id": "709276077",
@@ -383,11 +383,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_HiFiStereoSystemActivate",
       "GUID": "{8E310C57-BACD-4E3A-A4F5-FBBA703AB746}",
       "DurationType": "OneShot",
-      "DurationMin": "0.7764579",
-      "DurationMax": "0.7764579",
+      "DurationMin": "2.3512592",
+      "DurationMax": "2.3512592",
       "MediaRefs": [
        {
-        "Id": "608465028"
+        "Id": "330954251"
        }
       ]
      },
@@ -789,6 +789,6 @@
     ]
    }
   ],
-  "FileHash": "{C76F8480-C967-D462-A691-5D8A26BAAA21}"
+  "FileHash": "{616874A9-598F-1FA4-72AC-BE0A8862125C}"
  }
 }
