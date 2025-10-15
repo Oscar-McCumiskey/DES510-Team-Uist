@@ -407,6 +407,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AkEvent_PlayerOneVoice" ID="{5B18E3C9-27C0-4580-BCE1-69DD728433D8}">
+					<ChildrenList>
+						<Action Name="" ID="{26E94725-BDB1-43A9-BCB6-C748C521EF86}" ShortID="19766619">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerOneCommunicationVoiceLines" ID="{6961F16F-9F7A-4C2B-B95C-DC9116EF17D3}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_PlayerTwoVoice" ID="{6936692B-109F-465F-A21B-2A0AC1EE8EB4}">
+					<ChildrenList>
+						<Action Name="" ID="{8DC0DBC2-6630-44DB-8647-C396B5927BDE}" ShortID="766799563">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerTwoCommunicationVoiceLines" ID="{5E7A6EBA-FDA4-4227-B136-9B5E0FEA37C0}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
