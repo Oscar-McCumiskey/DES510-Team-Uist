@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{556A8C88-E320-9570-C6B3-A9C5F93251B8}",
+    "Hash": "{9E32AFA1-1EDC-0301-7A1D-F2DF68DC7394}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -109,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "VinylRecordNeedleDrop.wav",
-      "CachePath": "94/{94E8DE41-392B-F988-A4C3-AD559DCBF94C}.wem"
+      "CachePath": "3E/{3E204767-9E1D-4EF4-2A6F-19473EC8CEF2}.wem"
      },
      {
       "Id": "331698486",
@@ -208,6 +208,14 @@
       "CachePath": "9E/{9EB69234-2472-B9D4-A96A-D136788090A2}.wem"
      },
      {
+      "Id": "786360163",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ScoreGainedPlaceholder.wav",
+      "CachePath": "9D/{9D1226FB-69EF-2CE4-0D6B-ED10147E982D}.wem"
+     },
+     {
       "Id": "801556143",
       "Language": "SFX",
       "Streaming": "false",
@@ -246,6 +254,14 @@
       "Location": "Memory",
       "ShortName": "RoombatTaunt_4.wav",
       "CachePath": "08/{08FDA550-D90E-C6FF-326A-220062EDAC1D}.wem"
+     },
+     {
+      "Id": "925937689",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ScoreLostPlaceholder.wav",
+      "CachePath": "55/{55FE9987-5B43-0168-1697-DDB996F59E2B}.wem"
      },
      {
       "Id": "926768668",
@@ -638,6 +654,34 @@
       ]
      },
      {
+      "Id": "3546740230",
+      "Name": "AkEvent_ScoreGained",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_ScoreGained",
+      "GUID": "{1DA57E6C-B8F3-4785-BA0F-8FF15C812948}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.84406585",
+      "DurationMax": "0.84406585",
+      "MediaRefs": [
+       {
+        "Id": "786360163"
+       }
+      ]
+     },
+     {
+      "Id": "2141508898",
+      "Name": "AkEvent_ScoreLost",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_ScoreLost",
+      "GUID": "{6857A72F-EAAF-44FD-893E-C73D3E416609}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7977294",
+      "DurationMax": "0.7977294",
+      "MediaRefs": [
+       {
+        "Id": "925937689"
+       }
+      ]
+     },
+     {
       "Id": "2328157516",
       "Name": "AkEvent_SmokeFireAlarm",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_SmokeFireAlarm",
@@ -789,6 +833,6 @@
     ]
    }
   ],
-  "FileHash": "{616874A9-598F-1FA4-72AC-BE0A8862125C}"
+  "FileHash": "{61EE635B-9AA2-9A4B-5050-603C217CD5AF}"
  }
 }
