@@ -7,7 +7,9 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="AkEvent_AlexaAssistantVoiceLines" ID="{49A112B4-275E-4001-A0F5-7B6DE12C2C78}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_TelevisionStatic" ID="{8A6A223B-D8AC-400D-A39B-F1FF64CF3030}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GameTimerLowStage2" ID="{2095A19B-213D-418E-8989-52A0208EA980}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_STOP_RoombaLoopSTART" ID="{C5CE653D-98CC-4234-B41F-E46EB6ADE973}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GameTimerLowStage1" ID="{D9A33542-9FAA-429D-B295-EADAF3E46E9E}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_BurglarAlarm" ID="{74A21581-5C2B-433E-B1A9-A7380FFF1FDB}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_DoorOpen" ID="{7F228015-6B71-44C5-AA50-41D92A8A1AD7}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_ScoreLost" ID="{6857A72F-EAAF-44FD-893E-C73D3E416609}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
@@ -16,6 +18,7 @@
 						<ObjectRef Name="AkEvent_STOP_SmokeFireAlarm" ID="{9330DD24-4056-45A5-83B5-14371AB205D0}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_UserInterfaceSelect" ID="{55F895FD-BAF4-4626-BD75-D90E178E2E8C}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_PlayerTwoVoice" ID="{6936692B-109F-465F-A21B-2A0AC1EE8EB4}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GameOverTimesUp" ID="{C56E2F95-D512-4694-A5FC-8486F33084F6}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_STOP_HiFiStereoSystemMusic" ID="{7C431B30-8C95-4746-9246-99C894DF784E}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_Test" ID="{24BB487A-68B9-475B-B129-99BF610B0D28}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_RobotPowerOn" ID="{4400A527-919D-475E-98E4-ACA22E3D1BA9}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
@@ -27,6 +30,7 @@
 						<ObjectRef Name="AkEvent_UserInterfaceMainMenuMusic" ID="{81C338A6-F3C2-498C-87F1-4D2D37BDE5BF}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_STOP_RoombaLoopMAIN" ID="{4D51E59A-807E-49BC-9C0D-6122969218F3}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_RobotMovement" ID="{DDD51A7A-F66E-49C1-B495-C2CF7232136C}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GameTimerLowStage3" ID="{F311CB8C-EEFE-4A77-9C88-014B6E7CD08D}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_RobotShutdown" ID="{3A86A0DF-980F-4AD8-856B-43A0629846B3}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_HiFiStereoSystemVinylScratch" ID="{C68C6DAE-E7B8-4BC4-BCA8-9E80545ABEA3}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_PlayerPossession" ID="{4415C4ED-9727-4BFC-9D0C-5E0890015B11}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
