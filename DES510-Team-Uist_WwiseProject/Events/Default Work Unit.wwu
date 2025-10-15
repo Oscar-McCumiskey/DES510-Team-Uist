@@ -385,6 +385,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="AkEvent_HiFiStereoSystemVinylScratch" ID="{C68C6DAE-E7B8-4BC4-BCA8-9E80545ABEA3}">
+					<ChildrenList>
+						<Action Name="" ID="{A46A0C68-9481-48A8-BE97-807566071678}" ShortID="388446058">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HiFiStereoSystemVinylScratch" ID="{10B24F84-B7E2-4808-B860-79F256CB3ED8}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

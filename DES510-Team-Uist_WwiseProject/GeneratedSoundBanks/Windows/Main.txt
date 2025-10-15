@@ -18,6 +18,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1836879748	AkEvent_RobotAlert			\Default Work Unit\AkEvent_RobotAlert	
 	2148393740	AkEvent_RoombaTaunt			\Default Work Unit\AkEvent_RoombaTaunt	
 	2328157516	AkEvent_SmokeFireAlarm			\Default Work Unit\AkEvent_SmokeFireAlarm	
+	2500557793	AkEvent_HiFiStereoSystemVinylScratch			\Default Work Unit\AkEvent_HiFiStereoSystemVinylScratch	
 	2632910505	AkEvent_RoombaLoopEND			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoopEND	
 	2696074752	AkEvent_RobotShutdown			\Default Work Unit\AkEvent_RobotShutdown	
 	3282148979	AkEvent_STOP_RoombaLoopSTART			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_STOP_RoombaLoopSTART	
@@ -46,6 +47,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	595210968	RobotMovement	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\57\{578C8392-FF5C-48F3-C554-F37D8E7F5470}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RobotMovement		3529220
 	598436301	PlayerPossessionKeyPressedFeedback1	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\71\{71F9AF7F-957F-9284-3205-8385EEF8BD92}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback1		137688
 	602932130	HiFiStereoSystemMusic	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\30\{30310F0C-2867-C88D-C743-122028095093}.wem		\Actor-Mixer Hierarchy\Default Work Unit\HiFiStereoSystemMusic		6981264
+	772527182	HiFiStereoSystemVinylScratch	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\8C\{8C4E2C2E-C174-92AF-7C67-3F4EEAD25D98}.wem		\Actor-Mixer Hierarchy\Default Work Unit\HiFiStereoSystemVinylScratch		466528
 	801556143	UserInterfaceSelect	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\C3\{C334AA75-242F-D193-C3D6-D00B1F966F40}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UserInterface\UserInterfaceSelect		174732
 	854371143	RoombaTaunt1	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\56\{5602C594-EE49-CDB0-E2D5-5D48F50C423F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaTaunt\RoombaTaunt1		301740
 	865045964	PlayerPossessionKeyPressedFeedback3	D:\LocalWorkDir\2004696\DES510-Team-Uist\DES510-Team-Uist_WwiseProject\.cache\01\{0194506B-8010-BFCB-7033-4C18B8BB290F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback3		88300

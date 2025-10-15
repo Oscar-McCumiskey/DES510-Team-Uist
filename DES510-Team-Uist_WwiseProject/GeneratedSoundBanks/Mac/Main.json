@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{3D86573F-6582-E27D-D000-6CEA8F5230C2}",
+    "Hash": "{B36677D2-F958-4937-C046-73A4CE490021}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -150,6 +150,14 @@
       "Location": "Memory",
       "ShortName": "HIFIStereoSystemDarkSynthMusicTrack.wav",
       "CachePath": "30/{30310F0C-2867-C88D-C743-122028095093}.wem"
+     },
+     {
+      "Id": "772527182",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HiFiStereoSystemVinylRecordScratch.wav",
+      "CachePath": "8C/{8C4E2C2E-C174-92AF-7C67-3F4EEAD25D98}.wem"
      },
      {
       "Id": "801556143",
@@ -306,6 +314,20 @@
       "MediaRefs": [
        {
         "Id": "602932130"
+       }
+      ]
+     },
+     {
+      "Id": "2500557793",
+      "Name": "AkEvent_HiFiStereoSystemVinylScratch",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_HiFiStereoSystemVinylScratch",
+      "GUID": "{C68C6DAE-E7B8-4BC4-BCA8-9E80545ABEA3}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.6441782",
+      "DurationMax": "2.6441782",
+      "MediaRefs": [
+       {
+        "Id": "772527182"
        }
       ]
      },
@@ -635,6 +657,6 @@
     ]
    }
   ],
-  "FileHash": "{F38FB57A-3FE9-0D4F-755F-ED090DE912C6}"
+  "FileHash": "{9E089CA1-515A-AC03-5228-A33A77ADB607}"
  }
 }
