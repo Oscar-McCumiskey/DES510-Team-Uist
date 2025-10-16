@@ -25,28 +25,13 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="AkEvent_BackgroundMusicLoop" ID="{CE470A89-BFBD-4FE5-BE78-A9DCE1B04E83}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="12"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{7952BBE2-0969-4B5D-A71B-FCBB6BE8E41A}" ShortID="750902135">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BackgroundMusicTrack" ID="{5962433C-235C-4601-B905-E5AD2DE5B60D}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="AkEvent_RoombaMovement" ID="{075C1570-EEC7-402B-A749-549B9E0A982C}" ShortID="677824906">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Event Name="AkEvent_RoombaLoop_END" ID="{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}">
+						<Event Name="AkEvent_RoombaLoopEND" ID="{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}">
 							<ChildrenList>
 								<Action Name="" ID="{F11EEA9F-1B4B-4D72-B22F-4A92616A96A8}" ShortID="338965530">
 									<ReferenceList>
@@ -57,7 +42,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AkEvent_RoombaLoop_MAIN" ID="{3190B3EC-4489-4E79-8E84-E2DDE7BFC5EF}">
+						<Event Name="AkEvent_RoombaLoopMAIN" ID="{3190B3EC-4489-4E79-8E84-E2DDE7BFC5EF}">
 							<ChildrenList>
 								<Action Name="" ID="{90FA9E03-1317-4DDB-8304-AF1FE24457C9}" ShortID="1005898336">
 									<ReferenceList>
@@ -68,7 +53,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AkEvent_RoombaLoop_START" ID="{D227FE56-0313-4FB4-9545-ACA65831A000}">
+						<Event Name="AkEvent_RoombaLoopSTART" ID="{D227FE56-0313-4FB4-9545-ACA65831A000}">
 							<ChildrenList>
 								<Action Name="" ID="{1AE81029-0D53-499A-BB13-2E8CE95C24C6}" ShortID="979566515">
 									<ReferenceList>
@@ -79,7 +64,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AkEvent_RoombaLoop_MAIN_STOP" ID="{4D51E59A-807E-49BC-9C0D-6122969218F3}">
+						<Event Name="AkEvent_STOP_RoombaLoopMAIN" ID="{4D51E59A-807E-49BC-9C0D-6122969218F3}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="2"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -97,7 +82,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AkEvent_RoombaLoop_START_STOP" ID="{C5CE653D-98CC-4234-B41F-E46EB6ADE973}">
+						<Event Name="AkEvent_STOP_RoombaLoopSTART" ID="{C5CE653D-98CC-4234-B41F-E46EB6ADE973}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="2"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -228,6 +213,292 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="AkEvent_UserInterface" ID="{A1087F62-20EE-4A1E-963B-6AD9078C332C}" ShortID="705208063">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="7"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="AkEvent_UserInterfaceHoverOver" ID="{4A89F7A7-640F-45A4-A67E-030A3C91EC88}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="7"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{60816BFC-C246-403E-9A4B-EDB3E64DBDFB}" ShortID="910386000">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UserInterfaceHoverOver" ID="{98EB0775-8323-4369-878B-C18826BA03ED}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_UserInterfaceSelect" ID="{55F895FD-BAF4-4626-BD75-D90E178E2E8C}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="7"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{B6E7154A-4F34-4998-9FDC-53EB3E0A5313}" ShortID="1032065302">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UserInterfaceSelect" ID="{4D14049F-9B3B-4C82-8154-3EF53A9FF937}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_UserInterfaceMainMenuMusic" ID="{81C338A6-F3C2-498C-87F1-4D2D37BDE5BF}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="7"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{24FE2897-0F41-4CCC-B976-9DE277AD34D1}" ShortID="334146362">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UserInterfaceMainMenuMusicTrack" ID="{2C3058E5-A359-42F8-BC55-B135B019FE23}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_STOP_UserInterfaceMainMenuMusic" ID="{899E3818-A2D0-4DA7-9E8D-CD8FBED2E580}">
+							<ChildrenList>
+								<Action Name="" ID="{00FFD87D-F451-41A8-A4BA-726F258BEAA3}" ShortID="563579519">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UserInterfaceMainMenuMusicTrack" ID="{2C3058E5-A359-42F8-BC55-B135B019FE23}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="AkEvent_AlexaAssistantVoiceLines" ID="{49A112B4-275E-4001-A0F5-7B6DE12C2C78}">
+					<ChildrenList>
+						<Action Name="" ID="{A7DD38A2-49E3-4809-AFF8-67746FA94B2D}" ShortID="384886980">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AlexaVoiceLine1 (Placeholder)" ID="{656FD3D2-7656-4402-A14F-D6E245A546CE}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_RobotMovement" ID="{DDD51A7A-F66E-49C1-B495-C2CF7232136C}">
+					<ChildrenList>
+						<Action Name="" ID="{2A24A520-DBFC-4490-9477-78E2164395F8}" ShortID="801620167">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RobotMovement" ID="{BB0CC2ED-7795-4CDC-AF11-6E9989BE926B}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_RobotShutdown" ID="{3A86A0DF-980F-4AD8-856B-43A0629846B3}">
+					<ChildrenList>
+						<Action Name="" ID="{A86D21BD-976B-46CD-BACC-DA01E126E7A4}" ShortID="296006489">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RobotShutdown" ID="{797FC7F6-3C39-482C-A528-7600959120DC}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_RobotPowerOn" ID="{4400A527-919D-475E-98E4-ACA22E3D1BA9}">
+					<ChildrenList>
+						<Action Name="" ID="{323A764E-A034-461E-B5C0-24A55C436D1B}" ShortID="203622440">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RobotPowerOn" ID="{FFEC29AE-D5B0-4ADA-B905-E025A6C2AC3D}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_HiFiStereoSystemMusic" ID="{FF3B2634-6CBE-4937-9A98-09B944D53A8A}">
+					<ChildrenList>
+						<Action Name="" ID="{CFCC3B55-1094-4683-8AB5-320DA148F7E4}" ShortID="221715868">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HiFiStereoSystemMusic" ID="{C3B23D91-8C3E-4421-9A1F-CDB46F01CF98}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="STOP EVENTS" ID="{83243209-BC43-47BD-AB40-87E7F6CE185A}" ShortID="59698482">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="AkEvent_STOP_TelevisionStatic" ID="{23504223-05CC-4C52-A6BF-ADCFDC8E358B}">
+							<ChildrenList>
+								<Action Name="" ID="{05BB6C36-7BB6-4668-9556-4D51808EDFEF}" ShortID="322417041">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TelevisionStaticLoop" ID="{090632C3-F6D2-4BD7-8CAC-606CA05DF535}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_STOP_SmokeFireAlarm" ID="{9330DD24-4056-45A5-83B5-14371AB205D0}">
+							<ChildrenList>
+								<Action Name="" ID="{8EADD0EB-96F5-4E7A-9FCA-BFB7513201A1}" ShortID="1051584692">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SmokeFireAlarm" ID="{18C89B70-0C55-43B0-8266-FA43EADA4AEC}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_STOP_HiFiStereoSystemMusic" ID="{7C431B30-8C95-4746-9246-99C894DF784E}">
+							<ChildrenList>
+								<Action Name="" ID="{C1252940-C349-4907-BAA9-3B68C6291E0B}" ShortID="547769110">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HiFiStereoSystemMusic" ID="{C3B23D91-8C3E-4421-9A1F-CDB46F01CF98}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="AkEvent_HiFiStereoSystemVinylScratch" ID="{C68C6DAE-E7B8-4BC4-BCA8-9E80545ABEA3}">
+					<ChildrenList>
+						<Action Name="" ID="{A46A0C68-9481-48A8-BE97-807566071678}" ShortID="388446058">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HiFiStereoSystemVinylScratch" ID="{10B24F84-B7E2-4808-B860-79F256CB3ED8}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_HiFiStereoSystemActivate" ID="{8E310C57-BACD-4E3A-A4F5-FBBA703AB746}">
+					<ChildrenList>
+						<Action Name="" ID="{58A632F1-4351-410C-A579-FEB806208012}" ShortID="53040415">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HiFiStereoSystemActivate" ID="{7EE953CC-272A-4EC4-B7FC-EE8542C34BE2}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_PlayerOneVoice" ID="{5B18E3C9-27C0-4580-BCE1-69DD728433D8}">
+					<ChildrenList>
+						<Action Name="" ID="{26E94725-BDB1-43A9-BCB6-C748C521EF86}" ShortID="19766619">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerOneCommunicationVoiceLines" ID="{6961F16F-9F7A-4C2B-B95C-DC9116EF17D3}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_PlayerTwoVoice" ID="{6936692B-109F-465F-A21B-2A0AC1EE8EB4}">
+					<ChildrenList>
+						<Action Name="" ID="{8DC0DBC2-6630-44DB-8647-C396B5927BDE}" ShortID="766799563">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerTwoCommunicationVoiceLines" ID="{5E7A6EBA-FDA4-4227-B136-9B5E0FEA37C0}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_ScoreGained" ID="{1DA57E6C-B8F3-4785-BA0F-8FF15C812948}">
+					<ChildrenList>
+						<Action Name="" ID="{21D7EC83-F273-4745-A376-AE775233D1C1}" ShortID="381785809">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerFeedbackScoreGained" ID="{AFF0A5E8-687D-4F4E-8D14-A6773754491B}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_ScoreLost" ID="{6857A72F-EAAF-44FD-893E-C73D3E416609}">
+					<ChildrenList>
+						<Action Name="" ID="{B6174F5A-126E-433C-8EB5-4C260FE908D1}" ShortID="389400099">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerFeedbackScoreLost" ID="{7F589DFA-9643-484E-894D-E3B38BBD8C88}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="GameTimerStates" ID="{9D932C66-FD2F-439F-92ED-85FABACA02B8}" ShortID="742537447">
+					<ChildrenList>
+						<Event Name="GameTimerLowStage1" ID="{D9A33542-9FAA-429D-B295-EADAF3E46E9E}">
+							<ChildrenList>
+								<Action Name="" ID="{FAF6850B-E949-4A8F-BF27-E526175032C2}" ShortID="367957290">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameTimerLowStage1" ID="{534D84F2-2C2D-4EB5-B946-8AFBEA0584E4}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="GameTimerLowStage2" ID="{2095A19B-213D-418E-8989-52A0208EA980}">
+							<ChildrenList>
+								<Action Name="" ID="{E7EE0B0F-DC2B-4765-BED2-94F9EE5371B8}" ShortID="714633619">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameTimerLowStage2" ID="{2F3ACABF-F050-45EF-A509-EE4BC96D7B66}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="GameTimerLowStage3" ID="{F311CB8C-EEFE-4A77-9C88-014B6E7CD08D}">
+							<ChildrenList>
+								<Action Name="" ID="{4BA4BEA8-A17D-47CF-B389-17DDEC9379A1}" ShortID="7483760">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameTimerLowStage3" ID="{C723337E-B10F-415B-918F-51790A7ED52F}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="GameOverTimesUp" ID="{C56E2F95-D512-4694-A5FC-8486F33084F6}">
+							<ChildrenList>
+								<Action Name="" ID="{279B13C9-DED7-45BF-BF2B-AC4767EC27F8}" ShortID="377088059">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameOverTimesUp" ID="{2851F2F8-CC98-4250-B882-4E2CACC8C352}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

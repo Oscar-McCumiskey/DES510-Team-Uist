@@ -32,6 +32,7 @@ APossessableAppliance::APossessableAppliance()
 	StaticMesh->SetupAttachment(RootComponent);
 	StaticMesh->SetMobility(EComponentMobility::Static);
 	StaticMesh->SetEnableGravity(false);
+	StaticMesh->bDisallowNanite = true;
 
 	// Create a camera boom (pulls in towards the player if there is a collision)
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
@@ -44,6 +45,8 @@ APossessableAppliance::APossessableAppliance()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
+
+	AutoPossessAI = EAutoPossessAI::Disabled;
 }
 
 // Called when the game starts or when spawned
@@ -51,6 +54,18 @@ void APossessableAppliance::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	for (UActorComponent* Component : GetComponents())
+	{
+		if (Component->GetName() == TEXT("OutlineComponent"))
+		{
+			OutlineComponent = Component;
+		}
+	}
+	
+	if (Possessor)
+	{
+		IsPossessed = true;
+	}
 }
 
 // Called every frame
@@ -58,6 +73,50 @@ void APossessableAppliance::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (AbilityOneOnCooldown)
+	{
+		AbilityOneCooldownTimer -= DeltaTime;
+
+		if (AbilityOneCooldownTimer <= 0)
+		{
+			AbilityOneOnCooldown = false;
+			AbilityOneCooldownTimer = 0;
+		}
+	}
+
+	if (AbilityTwoOnCooldown)
+	{
+		AbilityTwoCooldownTimer -= DeltaTime;
+
+		if (AbilityTwoCooldownTimer <= 0)
+		{
+			AbilityTwoOnCooldown = false;
+			AbilityTwoCooldownTimer = 0;
+		}
+	}
+}
+
+void APossessableAppliance::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	IsPossessed = true;
+
+	CallEventByName(TEXT("PossessedOutline"));
+}
+
+void APossessableAppliance::UnPossessed()
+{
+	Super::UnPossessed();
+
+	IsPossessed = false;
+
+	CallEventByName(TEXT("NeutralOutline"));
+}
+
+void APossessableAppliance::Interacted_Implementation()
+{
+	CallEventByName(TEXT("SelectedOutline"));
 }
 
 // Called to bind functionality to input
@@ -77,8 +136,8 @@ void APossessableAppliance::SetupPlayerInputComponent(UInputComponent* PlayerInp
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
 	{
 		// Abilities
-		EnhancedInputComponent->BindAction(Ability1Action, ETriggerEvent::Triggered, this, &APossessableAppliance::Ability1);
-		EnhancedInputComponent->BindAction(Ability2Action, ETriggerEvent::Triggered, this, &APossessableAppliance::Ability1);
+		EnhancedInputComponent->BindAction(AbilityOneAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Ability1);
+		EnhancedInputComponent->BindAction(AbilityTwoAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Ability2);
 
 		// Interact
 		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Triggered, this, &APossessableAppliance::Interact);
@@ -109,13 +168,25 @@ void APossessableAppliance::Look(const FInputActionValue& Value)
 void APossessableAppliance::Ability1(const FInputActionValue& Value)
 {
 	// Use Ability One
-	DoAbility1();
+	if (!AbilityOneOnCooldown)
+	{
+		AbilityOneCooldownTimer = AbilityOneCooldownTime;
+		AbilityOneOnCooldown = true;
+		DoAbility1();
+		DoAbilityOneBlueprint();
+	}
 }
 
 void APossessableAppliance::Ability2(const FInputActionValue& Value)
 {
 	// Use Ability Two
-	DoAbility2();
+	if (!AbilityTwoOnCooldown)
+	{
+		AbilityTwoCooldownTimer = AbilityTwoCooldownTime;
+		AbilityTwoOnCooldown = true;
+		DoAbility2();
+		DoAbilityTwoBlueprint();
+	}
 }
 
 void APossessableAppliance::Interact(const FInputActionValue& Value)
@@ -128,6 +199,27 @@ void APossessableAppliance::Zoom(const FInputActionValue& Value)
 	float ZoomValue = Value.Get<float>();
 	ZoomValue *= ZoomSpeed;
 	DoZoom(ZoomValue);
+}
+
+void APossessableAppliance::CallEventByName(FName Name)
+{
+	if (OutlineComponent)
+	{
+		UFunction* Function = OutlineComponent->FindFunction(Name);
+		if (Function)
+		{
+			OutlineComponent->ProcessEvent(Function, nullptr);
+		}
+	}
+}
+
+void APossessableAppliance::GetCooldownTimes(float& AbilityOneTimeRemainingOut, float& AbilityOneCooldownTimeOut, float& AbilityTwoTimeRemainingOut, float& AbilityTwoCooldownTimeOut) const
+{
+	AbilityOneCooldownTimeOut = AbilityOneCooldownTime;
+	AbilityOneTimeRemainingOut = AbilityOneCooldownTimer;
+
+	AbilityTwoCooldownTimeOut = AbilityTwoCooldownTime;
+	AbilityTwoTimeRemainingOut = AbilityTwoCooldownTimer;
 }
 
 void APossessableAppliance::DoLook(float Yaw, float Pitch)

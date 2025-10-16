@@ -37,6 +37,7 @@ void UShockMeter::AddShock(float Value)
 	}
 
 	UpdateProgressBar();
+	OnShockChanged();
 }
 
 void UShockMeter::UpdateProgressBar()

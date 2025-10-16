@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "ShockGame/Possessable.h"
 #include "PossessableAppliance.generated.h"
 
 class USpringArmComponent;
@@ -14,7 +15,7 @@ class UInputAction;
 struct FInputActionValue;
 
 UCLASS()
-class DES510_TEAM_UIST_API APossessableAppliance : public APawn
+class DES510_TEAM_UIST_API APossessableAppliance : public APawn, public IPossessable
 {
 	GENERATED_BODY()
 
@@ -59,17 +60,38 @@ protected:
 
 	/** Ability Input Actions */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
-	UInputAction* Ability1Action;
+	UInputAction* AbilityOneAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
-	UInputAction* Ability2Action;
+	UInputAction* AbilityTwoAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	UInputAction* InteractAction;
 
 protected:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
 	APawn* Possessor;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Appliance")
+	bool IsPossessed = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
+	bool AbilityOneOnCooldown = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
+	bool AbilityTwoOnCooldown = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
+	float AbilityOneCooldownTime = 0.f;
+
+	float AbilityOneCooldownTimer = 0.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
+	float AbilityTwoCooldownTime = 0.f;
+
+	float AbilityTwoCooldownTimer = 0.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
 	float MinCameraDistance = 50.f;
@@ -80,9 +102,19 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
 	float ZoomSpeed = 20.f;
 
+protected:
+
+	UActorComponent* OutlineComponent;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	virtual void PossessedBy(AController* NewController) override;
+
+	virtual void UnPossessed() override;
+
+	virtual void Interacted_Implementation() override;
 
 protected:
 	// Called to bind functionality to input
@@ -90,15 +122,22 @@ protected:
 
 	virtual void Look(const FInputActionValue& Value);
 
-	virtual void Ability1(const FInputActionValue& Value);
+	void Ability1(const FInputActionValue& Value);
 
-	virtual void Ability2(const FInputActionValue& Value);
+	void Ability2(const FInputActionValue& Value);
 
 	virtual void Interact(const FInputActionValue& Value);
 
 	virtual void Zoom(const FInputActionValue& Value);
 
+private:
+
+	void CallEventByName(FName Name);
+
 public:
+
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	void GetCooldownTimes(float& AbilityOneTimeRemainingOut, float& AbilityOneCooldownTimeOut, float& AbilityTwoTimeRemainingOut, float& AbilityTwoCooldownTimeOut) const;
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoLook(float Yaw, float Pitch);
@@ -107,8 +146,14 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoAbility1();
 
+	UFUNCTION(BlueprintImplementableEvent, Category = "Input")
+	void DoAbilityOneBlueprint();
+
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoAbility2();
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Input")
+	void DoAbilityTwoBlueprint();
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoInteract();
@@ -116,10 +161,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoZoom(float ArmLengthChange);
 
+public:
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
-
 };
