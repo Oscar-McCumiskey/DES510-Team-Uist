@@ -33,7 +33,7 @@ public:
 	float CalculatePercentage(float Value, float Min, float Max);
 
 	UFUNCTION(BlueprintImplementableEvent)
-	void OnShockChanged();
+	void OnShockChanged(float ChangeAmount);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, category = "Shock")
 	float CurrentShock = 0;
