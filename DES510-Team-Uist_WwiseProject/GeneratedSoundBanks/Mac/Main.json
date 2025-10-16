@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{608491EB-B0E1-57BE-E8D3-A71A05D5EF3E}",
+    "Hash": "{97D58F1F-05D5-F8CF-B30E-C93C095821D4}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -72,6 +72,14 @@
       "CachePath": "92/{928C0711-84B1-6328-A8DB-A823A9F2C7F1}.wem"
      },
      {
+      "Id": "277609695",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RobotMovementHover(RevisedVersion).wav",
+      "CachePath": "AD/{AD8FC0C2-4CC8-3D9D-8C21-124A4C8B246B}.wem"
+     },
+     {
       "Id": "282995618",
       "Language": "SFX",
       "Streaming": "false",
@@ -109,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "VinylRecordNeedleDrop.wav",
-      "CachePath": "3E/{3E204767-9E1D-4EF4-2A6F-19473EC8CEF2}.wem"
+      "CachePath": "DF/{DFB345AF-D457-57B3-5507-B5A66C138706}.wem"
      },
      {
       "Id": "331698486",
@@ -181,15 +189,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GameOverTimesUp.wav",
-      "CachePath": "E8/{E8115886-4508-98B3-6515-246CF4FE5C63}.wem"
-     },
-     {
-      "Id": "595210968",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EnemyRobotMovement.wav",
-      "CachePath": "57/{578C8392-FF5C-48F3-C554-F37D8E7F5470}.wem"
+      "CachePath": "C8/{C8681E48-B9B1-BB4B-1882-56B76B9A51D2}.wem"
      },
      {
       "Id": "598436301",
@@ -374,6 +374,7 @@
       "Name": "AkEvent_AlexaAssistantVoiceLines",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_AlexaAssistantVoiceLines",
       "GUID": "{49A112B4-275E-4001-A0F5-7B6DE12C2C78}",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "1.69",
       "DurationMax": "1.69",
@@ -388,6 +389,7 @@
       "Name": "AkEvent_BurglarAlarm",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_BurglarAlarm",
       "GUID": "{74A21581-5C2B-433E-B1A9-A7380FFF1FDB}",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "3.6655295",
       "DurationMax": "3.6655295",
@@ -402,6 +404,7 @@
       "Name": "AkEvent_DoorLocked",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_DoorLocked",
       "GUID": "{8BA0FCEB-BF97-4DD5-88EC-D49B7257A389}",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "1",
       "DurationMax": "1",
@@ -416,6 +419,7 @@
       "Name": "AkEvent_DoorOpen",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_DoorOpen",
       "GUID": "{7F228015-6B71-44C5-AA50-41D92A8A1AD7}",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "1.71",
       "DurationMax": "1.71",
@@ -430,9 +434,10 @@
       "Name": "AkEvent_HiFiStereoSystemActivate",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_HiFiStereoSystemActivate",
       "GUID": "{8E310C57-BACD-4E3A-A4F5-FBBA703AB746}",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
-      "DurationMin": "2.3512592",
-      "DurationMax": "2.3512592",
+      "DurationMin": "1.994991",
+      "DurationMax": "1.994991",
       "MediaRefs": [
        {
         "Id": "330954251"
@@ -444,6 +449,7 @@
       "Name": "AkEvent_HiFiStereoSystemMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_HiFiStereoSystemMusic",
       "GUID": "{FF3B2634-6CBE-4937-9A98-09B944D53A8A}",
+      "MaxAttenuation": "100",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -456,6 +462,7 @@
       "Name": "AkEvent_HiFiStereoSystemVinylScratch",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_HiFiStereoSystemVinylScratch",
       "GUID": "{C68C6DAE-E7B8-4BC4-BCA8-9E80545ABEA3}",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "2.6441782",
       "DurationMax": "2.6441782",
@@ -470,6 +477,7 @@
       "Name": "AkEvent_LightSwitchActivate",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_LightSwitchActivate",
       "GUID": "{33D542CD-3080-4979-9ACC-1035580D5B86}",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "1.72",
       "DurationMax": "1.72",
@@ -484,6 +492,7 @@
       "Name": "AkEvent_PlayerOneVoice",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerOneVoice",
       "GUID": "{5B18E3C9-27C0-4580-BCE1-69DD728433D8}",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "1.0013379",
       "DurationMax": "1.0013379",
@@ -507,6 +516,7 @@
       "Name": "AkEvent_PlayerPossession",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerPossession",
       "GUID": "{4415C4ED-9727-4BFC-9D0C-5E0890015B11}",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "0.7773016",
       "DurationMax": "0.7773016",
@@ -522,6 +532,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerPossessionKeyPressed",
       "GUID": "{98C4B693-7E03-4D92-B423-7004BA113BBD}",
       "Color": "10",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "0.50002265",
       "DurationMax": "0.78",
@@ -545,6 +556,7 @@
       "Name": "AkEvent_PlayerTwoVoice",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerTwoVoice",
       "GUID": "{6936692B-109F-465F-A21B-2A0AC1EE8EB4}",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "1.0013379",
       "DurationMax": "1.0013379",
@@ -569,6 +581,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RobotAlert",
       "GUID": "{61BB1DD1-42CB-47AB-8398-45477C9ED0FA}",
       "Color": "4",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "1.09",
       "DurationMax": "1.09",
@@ -583,10 +596,11 @@
       "Name": "AkEvent_RobotMovement",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RobotMovement",
       "GUID": "{DDD51A7A-F66E-49C1-B495-C2CF7232136C}",
+      "MaxAttenuation": "100",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "595210968"
+        "Id": "277609695"
        }
       ]
      },
@@ -595,6 +609,7 @@
       "Name": "AkEvent_RobotPowerOn",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RobotPowerOn",
       "GUID": "{4400A527-919D-475E-98E4-ACA22E3D1BA9}",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "1.3744217",
       "DurationMax": "1.3744217",
@@ -609,6 +624,7 @@
       "Name": "AkEvent_RobotShutdown",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RobotShutdown",
       "GUID": "{3A86A0DF-980F-4AD8-856B-43A0629846B3}",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "1.47",
       "DurationMax": "1.47",
@@ -624,6 +640,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoopEND",
       "GUID": "{9178C0A4-5678-4E70-B02D-8D6ECA2B004F}",
       "Color": "2",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "1.43474",
       "DurationMax": "1.43474",
@@ -639,6 +656,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoopMAIN",
       "GUID": "{3190B3EC-4489-4E79-8E84-E2DDE7BFC5EF}",
       "Color": "2",
+      "MaxAttenuation": "100",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -652,6 +670,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoopSTART",
       "GUID": "{D227FE56-0313-4FB4-9545-ACA65831A000}",
       "Color": "2",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "2.5019956",
       "DurationMax": "2.5019956",
@@ -667,6 +686,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaTaunt",
       "GUID": "{108434E4-63AD-4F85-AEFA-66CCCDBF8998}",
       "Color": "1",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "0.99666667",
       "DurationMax": "1.71",
@@ -718,6 +738,7 @@
       "Name": "AkEvent_SmokeFireAlarm",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_SmokeFireAlarm",
       "GUID": "{9FDBC416-F1D4-481B-9746-514D2F30C055}",
+      "MaxAttenuation": "100",
       "DurationType": "OneShot",
       "DurationMin": "3.9916553",
       "DurationMax": "3.9916553",
@@ -798,6 +819,7 @@
       "Name": "AkEvent_TelevisionStatic",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_TelevisionStatic",
       "GUID": "{8A6A223B-D8AC-400D-A39B-F1FF64CF3030}",
+      "MaxAttenuation": "100",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -915,6 +937,6 @@
     ]
    }
   ],
-  "FileHash": "{0C5D460F-787A-2A5E-6F70-D317150E098A}"
+  "FileHash": "{0AE70DE7-664A-BAF8-2582-637058DF0733}"
  }
 }
