@@ -28,6 +28,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2632910505	AkEvent_RoombaLoopEND			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoopEND	
 	2696074752	AkEvent_RobotShutdown			\Default Work Unit\AkEvent_RobotShutdown	
 	2713856965	AkEvent_PlayerTwoVoice			\Default Work Unit\AkEvent_PlayerTwoVoice	
+	3023665302	Stop_All_GameTimerEvents			\Default Work Unit\GameTimerStates\Stop_All_GameTimerEvents	
 	3282148979	AkEvent_STOP_RoombaLoopSTART			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_STOP_RoombaLoopSTART	
 	3371539822	AkEvent_RobotPowerOn			\Default Work Unit\AkEvent_RobotPowerOn	
 	3510673030	GameOverTimesUp			\Default Work Unit\GameTimerStates\GameOverTimesUp	

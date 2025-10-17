@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{24EE8877-8F05-F0D2-5511-BFDDA82FD9E9}",
+    "Hash": "{87C340BF-3F13-7FD3-7559-E28983B97E83}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -933,10 +933,20 @@
         "Id": "812791399"
        }
       ]
+     },
+     {
+      "Id": "3023665302",
+      "Name": "Stop_All_GameTimerEvents",
+      "ObjectPath": "\\Events\\Default Work Unit\\GameTimerStates\\Stop_All_GameTimerEvents",
+      "GUID": "{6FE885D5-53A5-491E-8752-F57BBD131DBA}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ]
    }
   ],
-  "FileHash": "{A851CC7B-C0F7-E83C-8C9E-B58A41DCF4A7}"
+  "FileHash": "{641EA043-2E33-8A8E-40FB-6661AB15087D}"
  }
 }
