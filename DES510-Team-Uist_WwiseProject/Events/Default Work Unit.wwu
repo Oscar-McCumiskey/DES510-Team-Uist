@@ -497,6 +497,50 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_All_GameTimerEvents" ID="{6FE885D5-53A5-491E-8752-F57BBD131DBA}">
+							<ChildrenList>
+								<Action Name="" ID="{E051CB0F-20A8-4101-B6F8-35078C53E437}" ShortID="975886556">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameTimerLowStage1" ID="{534D84F2-2C2D-4EB5-B946-8AFBEA0584E4}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F5C1AEF6-E6D9-4925-974B-0F3C738267C6}" ShortID="386866132">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameTimerLowStage2" ID="{2F3ACABF-F050-45EF-A509-EE4BC96D7B66}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8A68858A-19AF-4006-9595-DDE8B3C98550}" ShortID="459490742">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameTimerLowStage3" ID="{C723337E-B10F-415B-918F-51790A7ED52F}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{914CAD72-B092-43C3-8B48-192538F3CBC7}" ShortID="357734914">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameOverTimesUp" ID="{2851F2F8-CC98-4250-B882-4E2CACC8C352}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
