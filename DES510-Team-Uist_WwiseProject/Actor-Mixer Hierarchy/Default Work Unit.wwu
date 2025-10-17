@@ -417,6 +417,11 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -440,9 +445,16 @@
 								<MediaID ID="477859154"/>
 							</MediaIDList>
 						</AudioFileSource>
+						<AudioFileSource Name="TVStaticLoop(WhiteNoiseREAPER)" ID="{AB47B104-5197-4825-A9FD-F76DBFEC4C3D}">
+							<Language>SFX</Language>
+							<AudioFile>TVStaticLoop(WhiteNoiseREAPER).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="591468326"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="TelevisionStaticLoop" ID="{E6473776-4266-4D88-A2ED-AD9F6AF1A31C}" Platform="Linked"/>
+						<ActiveSource Name="TVStaticLoop(WhiteNoiseREAPER)" ID="{AB47B104-5197-4825-A9FD-F76DBFEC4C3D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="PlayerPossessionKeyPressedFeedback" ID="{7A8CF0C8-AF5A-4A11-999D-1D064C6D8846}" ShortID="568169412">
@@ -483,6 +495,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="PlayerPossessionKeyPressedFeedback" ID="{3D52AF74-A6ED-4A21-A12F-462B0CFE2050}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.502145932938408"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.502145932938408"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>PlayerPossessionKeyPressedFeedback.wav</AudioFile>
 									<MediaIDList>
@@ -514,6 +531,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="PlayerPossessionKeyPressedFeedback2" ID="{1B85A2CE-C79D-4CAD-9E93-AE998DA5DEC6}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.323333699353616"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.323333699353616"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>PlayerPossessionKeyPressedFeedback2.wav</AudioFile>
 									<MediaIDList>
@@ -545,6 +567,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="PlayerPossessionKeyPressedFeedback3" ID="{EC673A36-71DA-4937-8566-C289C449ABE9}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.326910399280404"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.326910399280404"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>PlayerPossessionKeyPressedFeedback3.wav</AudioFile>
 									<MediaIDList>
@@ -576,6 +603,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="PlayerPossessionKeyPressedFeedback4" ID="{6E03CC1E-7E80-429F-995A-BBEC7BA6E15E}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.396298377860099"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.396298377860099"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>PlayerPossessionKeyPressedFeedback4.wav</AudioFile>
 									<MediaIDList>
