@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{5A246903-6D14-968B-9524-DF55417CE228}",
+    "Hash": "{C6C8F6C8-98DB-8AB5-DF27-3CD97595569F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -205,7 +205,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "TVShutDown.wav",
-      "CachePath": "F6/{F65DE9A9-C3A2-0B53-11A3-616A49277D75}.wem"
+      "CachePath": "49/{49928E63-A6D6-B221-48DC-297BB82B1638}.wem"
      },
      {
       "Id": "709276077",
@@ -970,6 +970,6 @@
     ]
    }
   ],
-  "FileHash": "{035D4F90-F923-BBD2-9174-92A6B6A6FDEC}"
+  "FileHash": "{880495C7-FBCE-7C3B-3D19-B6DDD7ABE262}"
  }
 }
