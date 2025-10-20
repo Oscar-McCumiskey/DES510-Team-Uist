@@ -26,7 +26,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="PlayerPossession" ID="{AEDBA77F-F2B6-48D1-B3E0-C0C0FF64037A}" ShortID="798968930">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -73,7 +79,13 @@
 					</PropertyList>
 					<ChildrenList>
 						<Sound Name="RoombaMovementSTART" ID="{861DCCD2-F01A-4770-A33D-3B011B0C9F5B}" ShortID="640091822">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 								</Reference>
@@ -99,9 +111,13 @@
 						</Sound>
 						<Sound Name="RoombaMovementMAIN" ID="{7BE76AE8-E422-4598-8F90-C3DF2AD50F89}" ShortID="672392915">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 								</Reference>
@@ -129,7 +145,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="RoombaMovementEND" ID="{9567E371-764E-4760-BCCB-FB3871C7C28B}" ShortID="611900921">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 								</Reference>
@@ -160,10 +182,14 @@
 				</Folder>
 				<RandomSequenceContainer Name="RoombaTaunt" ID="{138B8F15-F112-4110-8910-9D18D1637446}" ShortID="43872617">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="1"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -264,9 +290,13 @@
 				</RandomSequenceContainer>
 				<Sound Name="RobotAlert" ID="{AD1D275E-0146-4077-BCC0-EC67471E0357}" ShortID="283007598">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="4"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -289,6 +319,7 @@
 				</Sound>
 				<Sound Name="BurglarAlarm" ID="{A7559ACE-B177-4C77-A1D3-3DCD7364A2EB}" ShortID="909606920">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="13"/>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
@@ -302,6 +333,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -324,9 +358,13 @@
 				</Sound>
 				<Sound Name="SmokeFireAlarm" ID="{18C89B70-0C55-43B0-8266-FA43EADA4AEC}" ShortID="849947051">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="13"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -348,7 +386,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="LightSwitchActivate" ID="{720F0AC9-8E80-40A5-B355-646590CEEB84}" ShortID="449792993">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -371,9 +415,18 @@
 				</Sound>
 				<Sound Name="TelevisionStaticLoop" ID="{090632C3-F6D2-4BD7-8CAC-606CA05DF535}" ShortID="26610003">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -392,17 +445,28 @@
 								<MediaID ID="477859154"/>
 							</MediaIDList>
 						</AudioFileSource>
+						<AudioFileSource Name="TVStaticLoop(WhiteNoiseREAPER)" ID="{AB47B104-5197-4825-A9FD-F76DBFEC4C3D}">
+							<Language>SFX</Language>
+							<AudioFile>TVStaticLoop(WhiteNoiseREAPER).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="591468326"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="TelevisionStaticLoop" ID="{E6473776-4266-4D88-A2ED-AD9F6AF1A31C}" Platform="Linked"/>
+						<ActiveSource Name="TVStaticLoop(WhiteNoiseREAPER)" ID="{AB47B104-5197-4825-A9FD-F76DBFEC4C3D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="PlayerPossessionKeyPressedFeedback" ID="{7A8CF0C8-AF5A-4A11-999D-1D064C6D8846}" ShortID="568169412">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="10"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -431,6 +495,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="PlayerPossessionKeyPressedFeedback" ID="{3D52AF74-A6ED-4A21-A12F-462B0CFE2050}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.502145932938408"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.502145932938408"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>PlayerPossessionKeyPressedFeedback.wav</AudioFile>
 									<MediaIDList>
@@ -462,6 +531,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="PlayerPossessionKeyPressedFeedback2" ID="{1B85A2CE-C79D-4CAD-9E93-AE998DA5DEC6}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.323333699353616"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.323333699353616"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>PlayerPossessionKeyPressedFeedback2.wav</AudioFile>
 									<MediaIDList>
@@ -493,6 +567,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="PlayerPossessionKeyPressedFeedback3" ID="{EC673A36-71DA-4937-8566-C289C449ABE9}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.326910399280404"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.326910399280404"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>PlayerPossessionKeyPressedFeedback3.wav</AudioFile>
 									<MediaIDList>
@@ -524,6 +603,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="PlayerPossessionKeyPressedFeedback4" ID="{6E03CC1E-7E80-429F-995A-BBEC7BA6E15E}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.396298377860099"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.396298377860099"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>PlayerPossessionKeyPressedFeedback4.wav</AudioFile>
 									<MediaIDList>
@@ -539,10 +623,14 @@
 				</RandomSequenceContainer>
 				<Sound Name="DoorOpenFeedback" ID="{07E56C2E-3798-4D69-B7C6-2806A3D8C6FE}" ShortID="406542357">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="4"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -565,10 +653,14 @@
 				</Sound>
 				<Sound Name="DoorClosed(Locked)Feedback" ID="{0C6918AB-9FA3-4516-A619-BA2F2E384887}" ShortID="715655728">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="4"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -592,6 +684,10 @@
 				<Folder Name="UserInterface" ID="{65474AD5-32CA-4039-84BE-1A43E7DE8E23}" ShortID="856419621">
 					<ChildrenList>
 						<Sound Name="UserInterfaceSelect" ID="{4D14049F-9B3B-4C82-8154-3EF53A9FF937}" ShortID="963526636">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
@@ -614,6 +710,11 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="UserInterfaceHoverOver" ID="{98EB0775-8323-4369-878B-C18826BA03ED}" ShortID="753880690">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
@@ -639,10 +740,14 @@
 				</Folder>
 				<RandomSequenceContainer Name="AlexaAssistantVoiceLines" ID="{31308D80-F41D-4B91-A669-5E752F1FA617}" ShortID="351135273">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="14"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -684,6 +789,7 @@
 				</RandomSequenceContainer>
 				<Sound Name="UserInterfaceMainMenuMusicTrack" ID="{2C3058E5-A359-42F8-BC55-B135B019FE23}" ShortID="30185383">
 					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -692,6 +798,114 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{34F22872-0B03-4B46-A65E-7F065A54708C}" ShortID="712870006">
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{E32D4ED6-3DEB-49EB-9151-B5D7393938AD}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>8.13124</XPos>
+															<YPos>-2.39118</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>18.83025</XPos>
+															<YPos>-4.92431</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>33.23823</XPos>
+															<YPos>-9.66234</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>48.21683</XPos>
+															<YPos>-16.68298</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>67.33238</XPos>
+															<YPos>-27.6575</YPos>
+															<Flags>0</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -720,15 +934,33 @@
 				</Sound>
 				<Sound Name="RobotMovement" ID="{BB0CC2ED-7795-4CDC-AF11-6E9989BE926B}" ShortID="688999178">
 					<PropertyList>
-						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>30</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MakeUpGain" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
-								<Value>150</Value>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -737,26 +969,32 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="EnemyRobotMovement" ID="{42AFA1A9-D784-48E7-8A2A-E555B759DEB7}">
+						<AudioFileSource Name="RobotMovementHover(RevisedVersion)" ID="{1A05B7B9-8551-4C39-8F19-3DDE720E18DE}">
 							<PropertyList>
-								<Property Name="CrossfadeDuration" Type="Real64" Value="312.595"/>
-								<Property Name="LoopBegin" Type="Real64" Value="0.207"/>
-								<Property Name="LoopEnd" Type="Real64" Value="19.693"/>
+								<Property Name="CrossfadeDuration" Type="Real64" Value="406.573"/>
+								<Property Name="LoopBegin" Type="Real64" Value="0.601766924403768"/>
+								<Property Name="LoopEnd" Type="Real64" Value="8.59029404775115"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 							</PropertyList>
 							<Language>SFX</Language>
-							<AudioFile>EnemyRobotMovement.wav</AudioFile>
+							<AudioFile>RobotMovementHover(RevisedVersion).wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="595210968"/>
+								<MediaID ID="277609695"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="EnemyRobotMovement" ID="{42AFA1A9-D784-48E7-8A2A-E555B759DEB7}" Platform="Linked"/>
+						<ActiveSource Name="RobotMovementHover(RevisedVersion)" ID="{1A05B7B9-8551-4C39-8F19-3DDE720E18DE}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="RobotShutdown" ID="{797FC7F6-3C39-482C-A528-7600959120DC}" ShortID="413029441">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -778,7 +1016,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="RobotPowerOn" ID="{FFEC29AE-D5B0-4ADA-B905-E025A6C2AC3D}" ShortID="527772973">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -801,7 +1045,7 @@
 				</Sound>
 				<Sound Name="HiFiStereoSystemMusic" ID="{C3B23D91-8C3E-4421-9A1F-CDB46F01CF98}" ShortID="432678341">
 					<PropertyList>
-						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -810,6 +1054,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -838,7 +1085,7 @@
 				</Sound>
 				<Sound Name="HiFiStereoSystemVinylScratch" ID="{10B24F84-B7E2-4808-B860-79F256CB3ED8}" ShortID="558485249">
 					<PropertyList>
-						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-7</Value>
@@ -846,6 +1093,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -874,7 +1124,7 @@
 				</Sound>
 				<Sound Name="HiFiStereoSystemActivate" ID="{7EE953CC-272A-4EC4-B7FC-EE8542C34BE2}" ShortID="427981029">
 					<PropertyList>
-						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
 								<Value>36</Value>
@@ -897,6 +1147,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -907,11 +1160,11 @@
 					<ChildrenList>
 						<AudioFileSource Name="VinylRecordNeedleDrop" ID="{1C3F0B21-5EE7-44B4-BB82-EF1C5B099E98}">
 							<PropertyList>
-								<Property Name="FadeOutDuration" Type="Real64" Value="2.5055029684808"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="2.12586332940835"/>
 								<Property Name="FadeOutShape" Type="int16" Value="2"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 								<Property Name="TrimBegin" Type="Real64" Value="0.366188870013599"/>
-								<Property Name="TrimEnd" Type="Real64" Value="2.87169183849439"/>
+								<Property Name="TrimEnd" Type="Real64" Value="2.49205219942195"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>VinylRecordNeedleDrop.wav</AudioFile>
@@ -925,7 +1178,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="PlayerOneCommunicationVoiceLines" ID="{6961F16F-9F7A-4C2B-B95C-DC9116EF17D3}" ShortID="975687183">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -1025,7 +1284,13 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="PlayerTwoCommunicationVoiceLines" ID="{5E7A6EBA-FDA4-4227-B136-9B5E0FEA37C0}" ShortID="354737498">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -1127,6 +1392,7 @@
 				<Sound Name="PlayerFeedbackScoreGained" ID="{AFF0A5E8-687D-4F4E-8D14-A6773754491B}" ShortID="305788238">
 					<PropertyList>
 						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1157,8 +1423,13 @@
 				<Sound Name="PlayerFeedbackScoreLost" ID="{7F589DFA-9643-484E-894D-E3B38BBD8C88}" ShortID="271900464">
 					<PropertyList>
 						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
+						<Reference Name="Attenuation" Platform="Mac"/>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
 						</Reference>
@@ -1189,6 +1460,11 @@
 						<Sound Name="GameTimerLowStage1" ID="{534D84F2-2C2D-4EB5-B946-8AFBEA0584E4}" ShortID="747585678">
 							<PropertyList>
 								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -1301,6 +1577,50 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="TVShutDown" ID="{3FF9F9BF-79D7-4595-983C-0FE92C21B4A7}" ShortID="777788017">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>20</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-300</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TVShutDown" ID="{CCD968E5-2982-4904-9712-843072C28C20}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="1.0215055389756"/>
+								<Property Name="FadeOutShape" Type="int16" Value="1"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.0215055389756"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>TVShutDown.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="707386854"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TVShutDown" ID="{CCD968E5-2982-4904-9712-843072C28C20}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

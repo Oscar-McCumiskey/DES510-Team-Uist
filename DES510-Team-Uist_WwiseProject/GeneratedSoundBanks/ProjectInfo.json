@@ -3,7 +3,7 @@
   "Project": {
    "Name": "DES510-Team-Uist_WwiseProject",
    "GUID": "{0CCBE7EB-881C-4B72-9603-32CA2D49F75F}",
-   "Generator": "2024.1.6.8842"
+   "Generator": "2024.1.8.8898"
   },
   "CacheRoot": "../.cache",
   "Platforms": [
@@ -31,6 +31,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{CD8A9E3D-23EC-D1F1-2135-4FF1680FA1CD}"
+  "FileHash": "{87813254-2FEE-257F-555D-1EB11165B8AA}"
  }
 }

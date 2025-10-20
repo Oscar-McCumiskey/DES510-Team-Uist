@@ -25,6 +25,8 @@
 						<ObjectRef Name="AkEvent_ScoreGained" ID="{1DA57E6C-B8F3-4785-BA0F-8FF15C812948}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_RobotAlert" ID="{61BB1DD1-42CB-47AB-8398-45477C9ED0FA}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_SmokeFireAlarm" ID="{9FDBC416-F1D4-481B-9746-514D2F30C055}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_TVShutDown" ID="{061B6828-66A5-4860-A7D8-1F5DE19FA01F}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_All_GameTimerEvents" ID="{6FE885D5-53A5-491E-8752-F57BBD131DBA}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_HiFiStereoSystemMusic" ID="{FF3B2634-6CBE-4937-9A98-09B944D53A8A}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_LightSwitchActivate" ID="{33D542CD-3080-4979-9ACC-1035580D5B86}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_UserInterfaceMainMenuMusic" ID="{81C338A6-F3C2-498C-87F1-4D2D37BDE5BF}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
