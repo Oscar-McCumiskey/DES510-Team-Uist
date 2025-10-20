@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{C6C8F6C8-98DB-8AB5-DF27-3CD97595569F}",
+    "Hash": "{2CAFDF38-82E2-1E48-3D66-C3938E94C145}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -54,6 +54,14 @@
       "Location": "Memory",
       "ShortName": "PlayerPossessionKeyPressedFeedback2.wav",
       "CachePath": "F3/{F34F17D0-AA22-EB06-E52B-01A6BA7EE345}.wem"
+     },
+     {
+      "Id": "145330667",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PossessedAlexaModel-003.wav",
+      "CachePath": "9D/{9DE7BB35-BE65-F906-1DF1-8E9FD7769514}.wem"
      },
      {
       "Id": "235169657",
@@ -304,6 +312,14 @@
       "CachePath": "C6/{C66BACB0-B90C-FE57-BD33-A0B27CBAC752}.wem"
      },
      {
+      "Id": "940020334",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PossessedAlexaModel-002.wav",
+      "CachePath": "DE/{DE9CD310-57B4-C5A4-E7A0-F4DA8E8E98AA}.wem"
+     },
+     {
       "Id": "940813527",
       "Language": "SFX",
       "Streaming": "false",
@@ -384,11 +400,17 @@
       "GUID": "{49A112B4-275E-4001-A0F5-7B6DE12C2C78}",
       "MaxAttenuation": "1000",
       "DurationType": "OneShot",
-      "DurationMin": "1.69",
-      "DurationMax": "1.69",
+      "DurationMin": "1.5676417",
+      "DurationMax": "4.77",
       "MediaRefs": [
        {
+        "Id": "145330667"
+       },
+       {
         "Id": "453045270"
+       },
+       {
+        "Id": "940020334"
        }
       ]
      },
@@ -970,6 +992,6 @@
     ]
    }
   ],
-  "FileHash": "{880495C7-FBCE-7C3B-3D19-B6DDD7ABE262}"
+  "FileHash": "{CDF253C8-5E7B-57CC-3898-65876EF0AAD2}"
  }
 }
