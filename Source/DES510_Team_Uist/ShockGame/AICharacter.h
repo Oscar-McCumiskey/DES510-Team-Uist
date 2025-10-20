@@ -25,19 +25,4 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-public:
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Spook")
-	int SpookCount = 0;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Spook")
-	int MaxSpookCount = 2;
-
-protected:
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Spook")
-	float SpookDecayTime = 10;
-
-	float SpookTimer = 0;
 };
