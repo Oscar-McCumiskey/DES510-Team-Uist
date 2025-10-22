@@ -20,9 +20,19 @@ void UShockMeter::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 	// reduce shock every second
 	if (shockDecayTimer <= 0)
 	{
-		shockDecayTimer += 1;
+		float shockDecay = 0;
+		if (ShockUpdateFrequencyPerSecond < InDeltaTime)
+		{
+			shockDecayTimer += InDeltaTime;
+			shockDecay = ShockDecayPerSecond * InDeltaTime;
+		}
+		else
+		{
+			shockDecayTimer += ShockUpdateFrequencyPerSecond;
+			shockDecay = ShockDecayPerSecond * ShockUpdateFrequencyPerSecond;
+		}
 
-		AddShock(-ShockDecayPerSecond);
+		AddShock(-shockDecay);
 	}
 }
 
