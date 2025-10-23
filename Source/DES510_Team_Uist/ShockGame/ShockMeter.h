@@ -47,6 +47,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shock")
 	float ShockDecayPerSecond = 0.5f;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shock")
+	float ShockUpdateFrequencyPerSecond = 1.f;
+
 	// Bind Widget to C++
 	UPROPERTY(EditAnywhere, meta = (BindWidget))
 	class UProgressBar* ShockMeter;

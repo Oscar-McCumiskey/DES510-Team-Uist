@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{5A246903-6D14-968B-9524-DF55417CE228}",
+    "Hash": "{D72BC611-3B07-54CC-0127-2001B3559B56}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "UserInterfaceBackgroundMusicTrack.wav",
       "CachePath": "F3/{F3791DD7-6C3E-DBD1-3E52-AC659332342E}.wem"
+     },
+     {
+      "Id": "27949432",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PossessedAlexaModel-002.wav",
+      "CachePath": "E6/{E6D1113F-3E6D-5A5F-3ED4-D930FB83B062}.wem"
      },
      {
       "Id": "29313271",
@@ -40,6 +48,22 @@
       "CachePath": "D4/{D437BE9E-D238-46DE-04AC-38E0737E3D87}.wem"
      },
      {
+      "Id": "53931825",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerCommunication-VoiceLine-001.wav",
+      "CachePath": "43/{438E222E-B25A-A044-716E-92549BCA25B1}.wem"
+     },
+     {
+      "Id": "106847297",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerCommunication-VoiceLine-004.wav",
+      "CachePath": "40/{40B2D687-FE5C-F63F-08A4-25B8AD74B2C1}.wem"
+     },
+     {
       "Id": "122079160",
       "Language": "SFX",
       "Streaming": "false",
@@ -56,20 +80,28 @@
       "CachePath": "F3/{F34F17D0-AA22-EB06-E52B-01A6BA7EE345}.wem"
      },
      {
+      "Id": "145330667",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PossessedAlexaModel-003.wav",
+      "CachePath": "4B/{4B4399CF-0157-156C-DABF-5B1C4B076957}.wem"
+     },
+     {
+      "Id": "234143930",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerCommunication-VoiceLine-002.wav",
+      "CachePath": "A4/{A4BB7D69-BB66-1C9D-CCF4-C1E9B0C7BDE0}.wem"
+     },
+     {
       "Id": "235169657",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SmokeAlarm.wav",
       "CachePath": "6C/{6C8A7D8D-29EA-F7BF-9B93-12F97C84405C}.wem"
-     },
-     {
-      "Id": "248276431",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "PlayerComunicationVoiceLine_005.wav",
-      "CachePath": "92/{928C0711-84B1-6328-A8DB-A823A9F2C7F1}.wem"
      },
      {
       "Id": "277609695",
@@ -88,28 +120,12 @@
       "CachePath": "9F/{9FE17813-3B3B-0544-F3B3-21112C666F23}.wem"
      },
      {
-      "Id": "286498659",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "PlayerComunicationVoiceLine_003.wav",
-      "CachePath": "2B/{2B72D68E-C50E-DD63-5019-8E813CD288A5}.wem"
-     },
-     {
       "Id": "292192801",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EnemyAI_Alert.wav",
       "CachePath": "FC/{FC914148-2579-142F-35BF-B5614D4A5035}.wem"
-     },
-     {
-      "Id": "302175398",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "PlayerComunicationVoiceLine_007.wav",
-      "CachePath": "EF/{EF6D1007-91D4-D6CD-E769-11C8EE50BAE9}.wem"
      },
      {
       "Id": "330954251",
@@ -128,14 +144,6 @@
       "CachePath": "9A/{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem"
      },
      {
-      "Id": "374352061",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "PlayerComunicationVoiceLine_004.wav",
-      "CachePath": "13/{131B103A-3468-6173-CE59-A8A6458E6E68}.wem"
-     },
-     {
       "Id": "402318428",
       "Language": "SFX",
       "Streaming": "false",
@@ -152,20 +160,20 @@
       "CachePath": "B4/{B4BA7B4F-CB0B-807C-8BDC-B9E14FFDCF0C}.wem"
      },
      {
+      "Id": "414875261",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PossessedAlexaModel-005.wav",
+      "CachePath": "2E/{2EC1AC86-1E0A-99CF-C603-C93790E28AC3}.wem"
+     },
+     {
       "Id": "420991719",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "LightOFF.wav",
       "CachePath": "B6/{B6E07F44-657A-E3C2-C33C-F9A62D8A1CC7}.wem"
-     },
-     {
-      "Id": "453045270",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AlexaVoice1.wav",
-      "CachePath": "AC/{AC69534A-BEFE-11F6-0250-9500B3DA16BD}.wem"
      },
      {
       "Id": "506063806",
@@ -176,12 +184,28 @@
       "CachePath": "65/{65F07E27-1097-D3F5-E5AF-9917D5D30EA3}.wem"
      },
      {
+      "Id": "528259336",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PossessedAlexaModel-004_002.wav",
+      "CachePath": "D2/{D2E315FE-30C3-A9FD-0FBC-F0541FBB66E4}.wem"
+     },
+     {
       "Id": "541008921",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GameOverTimesUp.wav",
       "CachePath": "C8/{C8681E48-B9B1-BB4B-1882-56B76B9A51D2}.wem"
+     },
+     {
+      "Id": "546371997",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerCommunication-VoiceLine-003.wav",
+      "CachePath": "E7/{E77E0350-AC1D-CAEE-BEE8-384746FE8544}.wem"
      },
      {
       "Id": "591468326",
@@ -200,20 +224,28 @@
       "CachePath": "3E/{3E69B9B9-DAEF-C467-D89D-79A1A71D43FE}.wem"
      },
      {
+      "Id": "661259942",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerCommunication-VoiceLine-005.wav",
+      "CachePath": "78/{789257F4-719E-3046-4098-44F2C98A5A7E}.wem"
+     },
+     {
+      "Id": "683932139",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerCommunication-VoiceLine-006.wav",
+      "CachePath": "F0/{F04A48FF-761A-D105-5C1D-1DCB58509F68}.wem"
+     },
+     {
       "Id": "707386854",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "TVShutDown.wav",
-      "CachePath": "F6/{F65DE9A9-C3A2-0B53-11A3-616A49277D75}.wem"
-     },
-     {
-      "Id": "709276077",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "PlayerComunicationVoiceLine_001.wav",
-      "CachePath": "01/{018695B2-4C29-4DA1-E874-92C73147B3DA}.wem"
+      "CachePath": "49/{49928E63-A6D6-B221-48DC-297BB82B1638}.wem"
      },
      {
       "Id": "772527182",
@@ -238,14 +270,6 @@
       "Location": "Memory",
       "ShortName": "UserInterfaceSelect.wav",
       "CachePath": "C3/{C334AA75-242F-D193-C3D6-D00B1F966F40}.wem"
-     },
-     {
-      "Id": "807506263",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "PlayerComunicationVoiceLine_006.wav",
-      "CachePath": "B6/{B612F9FE-4C33-FDB6-84F9-9BC6B5FF9450}.wem"
      },
      {
       "Id": "812791399",
@@ -296,12 +320,12 @@
       "CachePath": "13/{13091A8F-9D8C-EEF5-DC00-362E1AAF0BF3}.wem"
      },
      {
-      "Id": "926768668",
+      "Id": "938862900",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "PlayerComunicationVoiceLine_002.wav",
-      "CachePath": "C6/{C66BACB0-B90C-FE57-BD33-A0B27CBAC752}.wem"
+      "ShortName": "PlayerCommunication-VoiceLine-007.wav",
+      "CachePath": "F5/{F5F7D10D-6226-411B-63C8-96B48AC8BE70}.wem"
      },
      {
       "Id": "940813527",
@@ -366,14 +390,6 @@
       "Location": "Memory",
       "ShortName": "EnemyRobotShutdown.wav",
       "CachePath": "92/{9242711A-4870-1059-3CED-B453DF9104F1}.wem"
-     },
-     {
-      "Id": "1073275756",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "PlayerComunicationVoiceLine_008.wav",
-      "CachePath": "33/{33318AB9-1821-6FD6-5970-41632CE38374}.wem"
      }
     ],
     "Events": [
@@ -384,11 +400,20 @@
       "GUID": "{49A112B4-275E-4001-A0F5-7B6DE12C2C78}",
       "MaxAttenuation": "1000",
       "DurationType": "OneShot",
-      "DurationMin": "1.69",
-      "DurationMax": "1.69",
+      "DurationMin": "0.895805",
+      "DurationMax": "4.0739484",
       "MediaRefs": [
        {
-        "Id": "453045270"
+        "Id": "27949432"
+       },
+       {
+        "Id": "145330667"
+       },
+       {
+        "Id": "414875261"
+       },
+       {
+        "Id": "528259336"
        }
       ]
      },
@@ -502,20 +527,29 @@
       "GUID": "{5B18E3C9-27C0-4580-BCE1-69DD728433D8}",
       "MaxAttenuation": "1000",
       "DurationType": "OneShot",
-      "DurationMin": "1.0013379",
-      "DurationMax": "1.0013379",
+      "DurationMin": "0.51",
+      "DurationMax": "1.1346712",
       "MediaRefs": [
        {
-        "Id": "248276431"
+        "Id": "53931825"
        },
        {
-        "Id": "302175398"
+        "Id": "106847297"
        },
        {
-        "Id": "807506263"
+        "Id": "234143930"
        },
        {
-        "Id": "1073275756"
+        "Id": "546371997"
+       },
+       {
+        "Id": "661259942"
+       },
+       {
+        "Id": "683932139"
+       },
+       {
+        "Id": "938862900"
        }
       ]
      },
@@ -566,22 +600,8 @@
       "GUID": "{6936692B-109F-465F-A21B-2A0AC1EE8EB4}",
       "MaxAttenuation": "1000",
       "DurationType": "OneShot",
-      "DurationMin": "1.0013379",
-      "DurationMax": "1.0013379",
-      "MediaRefs": [
-       {
-        "Id": "286498659"
-       },
-       {
-        "Id": "374352061"
-       },
-       {
-        "Id": "709276077"
-       },
-       {
-        "Id": "926768668"
-       }
-      ]
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "1836879748",
@@ -970,6 +990,6 @@
     ]
    }
   ],
-  "FileHash": "{4A6460BC-CDB3-76DC-7A8B-A705B1F7AA1A}"
+  "FileHash": "{278A7D48-4B8A-1CCA-952B-1CD184F3E6FE}"
  }
 }
