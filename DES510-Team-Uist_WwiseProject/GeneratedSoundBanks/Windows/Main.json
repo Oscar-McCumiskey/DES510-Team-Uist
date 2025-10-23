@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{42400458-602F-D700-5F80-188E8343E649}",
+    "Hash": "{D72BC611-3B07-54CC-0127-2001B3559B56}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -53,7 +53,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlayerCommunication-VoiceLine-001.wav",
-      "CachePath": "73/{736B47BA-A09A-3AE9-F2A5-86B760DB2A5B}.wem"
+      "CachePath": "43/{438E222E-B25A-A044-716E-92549BCA25B1}.wem"
+     },
+     {
+      "Id": "106847297",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerCommunication-VoiceLine-004.wav",
+      "CachePath": "40/{40B2D687-FE5C-F63F-08A4-25B8AD74B2C1}.wem"
      },
      {
       "Id": "122079160",
@@ -85,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlayerCommunication-VoiceLine-002.wav",
-      "CachePath": "59/{5983060C-5CFE-5777-FE5D-98321BBDA086}.wem"
+      "CachePath": "A4/{A4BB7D69-BB66-1C9D-CCF4-C1E9B0C7BDE0}.wem"
      },
      {
       "Id": "235169657",
@@ -197,7 +205,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlayerCommunication-VoiceLine-003.wav",
-      "CachePath": "54/{5411B57B-2172-9005-0049-B37E86DA6018}.wem"
+      "CachePath": "E7/{E77E0350-AC1D-CAEE-BEE8-384746FE8544}.wem"
      },
      {
       "Id": "591468326",
@@ -214,6 +222,22 @@
       "Location": "Memory",
       "ShortName": "PlayerPossessionKeyPressedFeedback.wav",
       "CachePath": "3E/{3E69B9B9-DAEF-C467-D89D-79A1A71D43FE}.wem"
+     },
+     {
+      "Id": "661259942",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerCommunication-VoiceLine-005.wav",
+      "CachePath": "78/{789257F4-719E-3046-4098-44F2C98A5A7E}.wem"
+     },
+     {
+      "Id": "683932139",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerCommunication-VoiceLine-006.wav",
+      "CachePath": "F0/{F04A48FF-761A-D105-5C1D-1DCB58509F68}.wem"
      },
      {
       "Id": "707386854",
@@ -294,6 +318,14 @@
       "Location": "Memory",
       "ShortName": "ScoreLostPlaceholder.wav",
       "CachePath": "13/{13091A8F-9D8C-EEF5-DC00-362E1AAF0BF3}.wem"
+     },
+     {
+      "Id": "938862900",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerCommunication-VoiceLine-007.wav",
+      "CachePath": "F5/{F5F7D10D-6226-411B-63C8-96B48AC8BE70}.wem"
      },
      {
       "Id": "940813527",
@@ -496,16 +528,28 @@
       "MaxAttenuation": "1000",
       "DurationType": "OneShot",
       "DurationMin": "0.51",
-      "DurationMax": "0.78",
+      "DurationMax": "1.1346712",
       "MediaRefs": [
        {
         "Id": "53931825"
+       },
+       {
+        "Id": "106847297"
        },
        {
         "Id": "234143930"
        },
        {
         "Id": "546371997"
+       },
+       {
+        "Id": "661259942"
+       },
+       {
+        "Id": "683932139"
+       },
+       {
+        "Id": "938862900"
        }
       ]
      },
@@ -946,6 +990,6 @@
     ]
    }
   ],
-  "FileHash": "{428232E8-D5CA-1D2C-8CAE-F3EB7A0D47BA}"
+  "FileHash": "{278A7D48-4B8A-1CCA-952B-1CD184F3E6FE}"
  }
 }
