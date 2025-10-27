@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{BD455AB7-7A3A-90D9-DFE9-96DCC7F5FCB5}",
+    "Hash": "{1D68D729-8EBE-3CDD-713D-144F25A560CB}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MicrowaveBeep_002.wav",
-      "CachePath": "F5/{F547593E-D0AA-A35B-0BF8-2F1567F7010F}.wem"
+      "CachePath": "08/{08979245-6E4C-9B98-4B92-B2CC505869CE}.wem"
      },
      {
       "Id": "27949432",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MicrowaveBeep_001.wav",
-      "CachePath": "B8/{B83F73FC-ACBD-26B3-BE83-8A32F8C43288}.wem"
+      "CachePath": "DA/{DAFB6649-4E1C-E89A-E6EC-295755109806}.wem"
      },
      {
       "Id": "106847297",
@@ -301,7 +301,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "TextMessageRecievedNonPing.wav",
-      "CachePath": "03/{038F0D2E-761A-BD53-D6B7-32A2330D9A31}.wem"
+      "CachePath": "4B/{4B511830-D10A-86D2-3ECD-A0F6F75017C6}.wem"
      },
      {
       "Id": "812791399",
@@ -1100,6 +1100,6 @@
     ]
    }
   ],
-  "FileHash": "{F342F171-C0AC-588E-63B5-BEF43042DECB}"
+  "FileHash": "{1E4EE259-2379-6079-F1F3-397B23D60001}"
  }
 }
