@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{F8AD16B1-2FBB-51E9-95FD-42CD202604E5}",
+    "Hash": "{1D68D729-8EBE-3CDD-713D-144F25A560CB}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "UserInterfaceBackgroundMusicTrack.wav",
       "CachePath": "F3/{F3791DD7-6C3E-DBD1-3E52-AC659332342E}.wem"
+     },
+     {
+      "Id": "26587215",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MicrowaveBeep_002.wav",
+      "CachePath": "08/{08979245-6E4C-9B98-4B92-B2CC505869CE}.wem"
      },
      {
       "Id": "27949432",
@@ -54,6 +62,14 @@
       "Location": "Memory",
       "ShortName": "PlayerCommunication-VoiceLine-001.wav",
       "CachePath": "43/{438E222E-B25A-A044-716E-92549BCA25B1}.wem"
+     },
+     {
+      "Id": "80070451",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MicrowaveBeep_001.wav",
+      "CachePath": "DA/{DAFB6649-4E1C-E89A-E6EC-295755109806}.wem"
      },
      {
       "Id": "106847297",
@@ -102,6 +118,14 @@
       "Location": "Memory",
       "ShortName": "SmokeAlarm.wav",
       "CachePath": "6C/{6C8A7D8D-29EA-F7BF-9B93-12F97C84405C}.wem"
+     },
+     {
+      "Id": "246848576",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TextMessageAlert.wav",
+      "CachePath": "91/{91F85AAE-37BD-C4F2-D60F-D75FB198D291}.wem"
      },
      {
       "Id": "277609695",
@@ -272,6 +296,14 @@
       "CachePath": "C3/{C334AA75-242F-D193-C3D6-D00B1F966F40}.wem"
      },
      {
+      "Id": "809704022",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TextMessageRecievedNonPing.wav",
+      "CachePath": "4B/{4B511830-D10A-86D2-3ECD-A0F6F75017C6}.wem"
+     },
+     {
       "Id": "812791399",
       "Language": "SFX",
       "Streaming": "false",
@@ -326,6 +358,14 @@
       "Location": "Memory",
       "ShortName": "ScoreLostPlaceholder.wav",
       "CachePath": "13/{13091A8F-9D8C-EEF5-DC00-362E1AAF0BF3}.wem"
+     },
+     {
+      "Id": "927010807",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MicrowaveBeep_003.wav",
+      "CachePath": "D3/{D3E715C8-95C3-63B1-5D75-E8FE056D89C9}.wem"
      },
      {
       "Id": "938862900",
@@ -539,6 +579,26 @@
       "MediaRefs": [
        {
         "Id": "420991719"
+       }
+      ]
+     },
+     {
+      "Id": "1188996368",
+      "Name": "AkEvent_MicrowaveBeeps",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_MicrowaveBeeps",
+      "GUID": "{6C278836-9177-4DD2-8E2B-E3D91EB99FB5}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.23390558",
+      "DurationMax": "0.26108727",
+      "MediaRefs": [
+       {
+        "Id": "26587215"
+       },
+       {
+        "Id": "80070451"
+       },
+       {
+        "Id": "927010807"
        }
       ]
      },
@@ -892,6 +952,34 @@
       ]
      },
      {
+      "Id": "3941835537",
+      "Name": "AkEvent_TextMessageReceived",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_TextMessageReceived",
+      "GUID": "{F2C2F2F7-504A-4B79-AECB-9656F3D282C0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.62661946",
+      "DurationMax": "0.62661946",
+      "MediaRefs": [
+       {
+        "Id": "246848576"
+       }
+      ]
+     },
+     {
+      "Id": "1539334374",
+      "Name": "AkEvent_TextMessageVibration",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_TextMessageVibration",
+      "GUID": "{F58B6DF3-D9BB-4DB4-BB2C-8542E4E22C4E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.41746137",
+      "DurationMax": "0.41746137",
+      "MediaRefs": [
+       {
+        "Id": "809704022"
+       }
+      ]
+     },
+     {
       "Id": "3603267642",
       "Name": "AkEvent_TVShutDown",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_TVShutDown",
@@ -1012,6 +1100,6 @@
     ]
    }
   ],
-  "FileHash": "{CC6F1F14-1CFB-31FE-1DC7-F13073F824BA}"
+  "FileHash": "{5CB0F448-E168-38ED-4166-E78D9C39AA59}"
  }
 }
