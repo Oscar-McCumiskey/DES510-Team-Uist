@@ -554,6 +554,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AkEvent_BackgroundMusic" ID="{D3644CD5-110F-45E1-99A2-42CCE7AC4BAD}">
+					<ChildrenList>
+						<Action Name="" ID="{2C06A92B-78B0-44FC-96F6-C69803BD5E99}" ShortID="326824464">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BackgoundGameplayMusicTrack" ID="{E5F40A62-0501-46A5-8219-E92794A5021A}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

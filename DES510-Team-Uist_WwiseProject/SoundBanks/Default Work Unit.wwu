@@ -16,6 +16,7 @@
 						<ObjectRef Name="AkEvent_PlayerOneVoice" ID="{5B18E3C9-27C0-4580-BCE1-69DD728433D8}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_UserInterfaceHoverOver" ID="{4A89F7A7-640F-45A4-A67E-030A3C91EC88}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_STOP_SmokeFireAlarm" ID="{9330DD24-4056-45A5-83B5-14371AB205D0}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_BackgroundMusic" ID="{D3644CD5-110F-45E1-99A2-42CCE7AC4BAD}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_UserInterfaceSelect" ID="{55F895FD-BAF4-4626-BD75-D90E178E2E8C}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_PlayerTwoVoice" ID="{6936692B-109F-465F-A21B-2A0AC1EE8EB4}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GameOverTimesUp" ID="{C56E2F95-D512-4694-A5FC-8486F33084F6}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
