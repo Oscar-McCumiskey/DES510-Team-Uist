@@ -1766,6 +1766,189 @@
 						<ActiveSource Name="BackgroundMusicTrack" ID="{65210F9A-4733-4FFC-AC14-8EF71560725D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="TextMessageAlert" ID="{686EEF9B-DAAF-47F2-8179-D97961EAF59C}" ShortID="981976243">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>20</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>40</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-13</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TextMessageAlert" ID="{289EA6BB-6A7D-4C18-9248-317A7F755EFC}">
+							<Language>SFX</Language>
+							<AudioFile>TextMessageAlert.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="246848576"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TextMessageAlert" ID="{289EA6BB-6A7D-4C18-9248-317A7F755EFC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="MicrowaveBeeps" ID="{844C516B-6FA8-43A4-BB02-E3DF548F81C7}" ShortID="620616640">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="MicrowaveBeep-001" ID="{D4D2FA8B-B47C-4414-864A-60D838F0E262}" ShortID="828516752">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MicrowaveBeep_001" ID="{06D40279-159B-47B4-BB61-242D100440DF}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.261087267525036"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.261087267525036"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MicrowaveBeep_001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="80070451"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MicrowaveBeep_001" ID="{06D40279-159B-47B4-BB61-242D100440DF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MicrowaveBeep-002" ID="{E066EC6D-0D81-407E-8AE8-BF3300021509}" ShortID="228406899">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MicrowaveBeep_002" ID="{798103E2-F061-48E4-BAAC-EE9BF5F43EFB}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.233905579399142"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.233905579399142"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MicrowaveBeep_002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="26587215"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MicrowaveBeep_002" ID="{798103E2-F061-48E4-BAAC-EE9BF5F43EFB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MicrowaveBeep-003" ID="{76E41524-D91A-4724-BC0F-C5985A355651}" ShortID="807748061">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MicrowaveBeep_003" ID="{0436CA07-D281-48E2-930C-63EFF8638752}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.257510729613734"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.257510729613734"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MicrowaveBeep_003.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="927010807"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MicrowaveBeep_003" ID="{0436CA07-D281-48E2-930C-63EFF8638752}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="TextMessageVibration" ID="{2228C24A-7720-493F-A3AE-82226E50A56D}" ShortID="462321955">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>40</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TextMessageRecievedNonPing" ID="{05C8C01C-7C6E-4063-9368-949086028A97}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.417461352994812"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.417461352994812"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>TextMessageRecievedNonPing.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="809704022"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TextMessageRecievedNonPing" ID="{05C8C01C-7C6E-4063-9368-949086028A97}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
