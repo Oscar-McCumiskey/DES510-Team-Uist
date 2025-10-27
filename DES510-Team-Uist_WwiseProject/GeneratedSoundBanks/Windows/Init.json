@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E8C73C05-9AC5-A17E-EA11-491BBCB2A45E}",
+    "Hash": "{93F04120-86B7-653D-4314-82736B776903}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -36,6 +36,20 @@
     },
     "Busses": [
      {
+      "Id": "163641187",
+      "Name": "HiFiSteroSystemMusicTrack",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\HiFiSteroSystemMusicTrack",
+      "GUID": "{2E18440E-E425-4F1D-9836-D63A1D9E9CA9}",
+      "Color": "2"
+     },
+     {
+      "Id": "3144753007",
+      "Name": "BackgroundMusicTrack",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\BackgroundMusicTrack",
+      "GUID": "{B96F3A44-E720-40A3-82BF-7E02A85E3EC4}",
+      "Color": "10"
+     },
+     {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
@@ -44,6 +58,6 @@
     ]
    }
   ],
-  "FileHash": "{1944006B-4D79-D546-E77F-92768EA848BD}"
+  "FileHash": "{6B51918E-78E7-F5EC-085E-AB814B36A296}"
  }
 }

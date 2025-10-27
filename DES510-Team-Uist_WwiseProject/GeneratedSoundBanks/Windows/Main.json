@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{D72BC611-3B07-54CC-0127-2001B3559B56}",
+    "Hash": "{F8AD16B1-2FBB-51E9-95FD-42CD202604E5}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PossessedAlexaModel-002.wav",
-      "CachePath": "E6/{E6D1113F-3E6D-5A5F-3ED4-D930FB83B062}.wem"
+      "CachePath": "5A/{5AF50C7E-600B-7B76-879E-541FD1D12665}.wem"
      },
      {
       "Id": "29313271",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlayerCommunication-VoiceLine-004.wav",
-      "CachePath": "40/{40B2D687-FE5C-F63F-08A4-25B8AD74B2C1}.wem"
+      "CachePath": "48/{4899C03A-948C-36EF-2761-9FDDED3CD1FD}.wem"
      },
      {
       "Id": "122079160",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PossessedAlexaModel-003.wav",
-      "CachePath": "4B/{4B4399CF-0157-156C-DABF-5B1C4B076957}.wem"
+      "CachePath": "EB/{EB2A584B-B310-5FA6-01E9-6097DCF4A3B3}.wem"
      },
      {
       "Id": "234143930",
@@ -165,7 +165,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PossessedAlexaModel-005.wav",
-      "CachePath": "2E/{2EC1AC86-1E0A-99CF-C603-C93790E28AC3}.wem"
+      "CachePath": "74/{746C1C5D-A36A-40C4-EE24-55B77CB05EC2}.wem"
      },
      {
       "Id": "420991719",
@@ -189,7 +189,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PossessedAlexaModel-004_002.wav",
-      "CachePath": "D2/{D2E315FE-30C3-A9FD-0FBC-F0541FBB66E4}.wem"
+      "CachePath": "1B/{1BB63C58-62E8-0A46-E3AF-E620B08AAFC1}.wem"
      },
      {
       "Id": "541008921",
@@ -229,7 +229,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlayerCommunication-VoiceLine-005.wav",
-      "CachePath": "78/{789257F4-719E-3046-4098-44F2C98A5A7E}.wem"
+      "CachePath": "42/{42BD3336-50FD-647B-48BC-30C5C09E95A1}.wem"
      },
      {
       "Id": "683932139",
@@ -237,7 +237,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlayerCommunication-VoiceLine-006.wav",
-      "CachePath": "F0/{F04A48FF-761A-D105-5C1D-1DCB58509F68}.wem"
+      "CachePath": "54/{5443F2BF-52D5-4D43-46C6-B855041B0DC1}.wem"
      },
      {
       "Id": "707386854",
@@ -278,6 +278,14 @@
       "Location": "Memory",
       "ShortName": "GameTimerSuperLow.wav",
       "CachePath": "F5/{F5FAE5CC-ABA2-121F-A206-EC61C2A7A856}.wem"
+     },
+     {
+      "Id": "828452664",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "BackgroundMusicTrack.wav",
+      "CachePath": "29/{298CCF65-DAB2-06ED-8BDE-4BEB6A39D72C}.wem"
      },
      {
       "Id": "854371143",
@@ -325,7 +333,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlayerCommunication-VoiceLine-007.wav",
-      "CachePath": "F5/{F5F7D10D-6226-411B-63C8-96B48AC8BE70}.wem"
+      "CachePath": "12/{12D6614A-56B0-C249-3A74-8A7B357536C2}.wem"
      },
      {
       "Id": "940813527",
@@ -414,6 +422,20 @@
        },
        {
         "Id": "528259336"
+       }
+      ]
+     },
+     {
+      "Id": "670662707",
+      "Name": "AkEvent_BackgroundMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_BackgroundMusic",
+      "GUID": "{D3644CD5-110F-45E1-99A2-42CCE7AC4BAD}",
+      "DurationType": "OneShot",
+      "DurationMin": "86.70309",
+      "DurationMax": "86.70309",
+      "MediaRefs": [
+       {
+        "Id": "828452664"
        }
       ]
      },
@@ -990,6 +1012,6 @@
     ]
    }
   ],
-  "FileHash": "{278A7D48-4B8A-1CCA-952B-1CD184F3E6FE}"
+  "FileHash": "{17D9FE64-9A7D-725E-9163-026B1D5D95E4}"
  }
 }
