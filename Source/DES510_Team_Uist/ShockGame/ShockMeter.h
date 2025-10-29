@@ -19,42 +19,10 @@ class DES510_TEAM_UIST_API UShockMeter : public UUserWidget
 
 public:
 
-	virtual void NativeConstruct() override;
-
-	virtual void NativeTick(const FGeometry& MyGeometry, float InDeltaTime) override;
-
 	UFUNCTION(BlueprintCallable)
-	void AddShock(float Value);
-
-	UFUNCTION(BlueprintCallable)
-	void UpdateProgressBar();
-
-	UFUNCTION(BlueprintCallable)
-	float CalculatePercentage(float Value, float Min, float Max);
-
-	UFUNCTION(BlueprintImplementableEvent)
-	void OnShockChanged(float ChangeAmount);
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, category = "Shock")
-	float CurrentShock = 0;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, category = "Shock")
-	float MinShock = 0;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, category = "Shock")
-	float MaxShock = 100;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shock")
-	float ShockDecayPerSecond = 0.5f;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shock")
-	float ShockUpdateFrequencyPerSecond = 1.f;
+	void UpdateProgressBar(float Shock);
 
 	// Bind Widget to C++
 	UPROPERTY(EditAnywhere, meta = (BindWidget))
 	class UProgressBar* ShockMeter;
-
-private:
-	// ShockTimer
-	float shockDecayTimer = 1;
 };

@@ -7,6 +7,7 @@
 #include "ShockGame/Possessable.h"
 #include "PossessableAppliance.generated.h"
 
+class ADES510_Team_UistPlayerController;
 class USpringArmComponent;
 class UCameraComponent;
 class UCapsuleComponent;
@@ -70,6 +71,7 @@ protected:
 
 protected:
 
+	ADES510_Team_UistPlayerController* PossessingPlayerController;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
 	APawn* Possessor;
@@ -92,6 +94,18 @@ protected:
 	float AbilityTwoCooldownTime = 0.f;
 
 	float AbilityTwoCooldownTimer = 0.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
+	float AbilityOneUnlockThreshold = 0.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
+	bool EnableAbilityOne = true;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
+	float AbilityTwoUnlockThreshold = 0.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
+	bool EnableAbilityTwo = true;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
 	float MinCameraDistance = 50.f;
