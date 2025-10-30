@@ -127,7 +127,7 @@ void APossessableAppliance::PossessedBy(AController* NewController)
 
 	IsPossessed = true;
 
-	//PossessingPlayerController = Cast<ADES510_Team_UistPlayerController>(NewController);
+	PossessingPlayerController = Cast<ADES510_Team_UistPlayerController>(NewController);
 
 	CallEventByName(TEXT("PossessedOutline"));
 }
@@ -138,7 +138,7 @@ void APossessableAppliance::UnPossessed()
 
 	IsPossessed = false;
 
-	//PossessingPlayerController = nullptr;
+	PossessingPlayerController = nullptr;
 
 	CallEventByName(TEXT("NeutralOutline"));
 }
