@@ -34,6 +34,7 @@ APossessableAppliance::APossessableAppliance()
 	StaticMesh->SetMobility(EComponentMobility::Static);
 	StaticMesh->SetEnableGravity(false);
 	StaticMesh->bDisallowNanite = true;
+	StaticMesh->SetCollisionProfileName(TEXT("Possessable"));
 
 	// Create a camera boom (pulls in towards the player if there is a collision)
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
