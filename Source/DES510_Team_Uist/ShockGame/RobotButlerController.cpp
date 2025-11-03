@@ -23,6 +23,7 @@ void ARobotButlerController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	// Spook
 	if (SpookCount >= MaxSpookCount)
 	{
 		IsSpooked = true;
@@ -42,4 +43,45 @@ void ARobotButlerController::Tick(float DeltaTime)
 			SpookTimer = SpookDecayTime;
 		}
 	}
+
+	// Detection
+	if (SeeingPlayer && !Detected)
+	{
+		if (GainCurve) DetectionProgress += (DeltaTime * GetCurveValueAtX(GainCurve, Distance) * GainMultiplier);
+	}
+	else if (!Detected)
+	{
+		if (DetectionProgress < 0)
+		{
+			DetectionProgress = 0;
+		}
+		else
+		{
+			if (DecayCurve) DetectionProgress -= (DeltaTime * GetCurveValueAtX(DecayCurve, DetectionProgress) * DecayMultiplier);
+		}
+	}
+
+	if (DetectionProgress > 100)
+	{
+		DetectionProgress = 100;
+		DetectedCooldownTimer = DetectedCooldown;
+		Detected = true;
+		DeathConsumed = false;
+	}
+
+	if (Detected)
+	{
+		DetectedCooldownTimer -= DeltaTime;
+
+		if (DetectedCooldownTimer <= 0)
+		{
+			DetectionProgress = 0;
+			Detected = false;
+		}
+	}
+}
+
+float ARobotButlerController::GetCurveValueAtX(TObjectPtr<UCurveFloat> curve, float x)
+{
+	return curve->GetFloatValue(x);
 }
