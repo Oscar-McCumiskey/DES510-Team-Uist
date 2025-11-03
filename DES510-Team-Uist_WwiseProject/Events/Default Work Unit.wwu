@@ -598,6 +598,36 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="AkEvent_SmokeDetectorBeeps" ID="{D1ADC4FA-D06E-4189-9297-F508C1BD7795}" ShortID="371669149">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="AkEvent_SmokeDetectorShortBeep" ID="{BEFD3290-6CB4-4913-AD51-A7ABDD2676B7}">
+							<ChildrenList>
+								<Action Name="" ID="{5F561ABF-8BFA-45EE-919B-A26BB05C69E4}" ShortID="744971735">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SmokeDetectorShortBeep" ID="{F2B3FB38-6DDB-4C88-91E8-14C6AD86C366}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AkEvent_SmokeDetectorLongBeeps" ID="{2126953C-9BCA-4498-AD14-891D408076CD}">
+							<ChildrenList>
+								<Action Name="" ID="{A2DA912E-D218-4DEF-9204-FAC0349F89EA}" ShortID="488100785">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SmokeDetectorLongBeeps" ID="{E5BCDCC4-E25A-44A8-B564-1065F61D18C6}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

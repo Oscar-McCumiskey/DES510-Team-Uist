@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{1D68D729-8EBE-3CDD-713D-144F25A560CB}",
+    "Hash": "{CBFFEBFF-9CB9-2AD6-8CDB-F2C8C0E92C93}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -336,6 +336,14 @@
       "CachePath": "92/{923D9EF4-8437-AFFE-715C-4A9CCB66B844}.wem"
      },
      {
+      "Id": "873659627",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SmokeDetectoShortBeep(LowBattery)AttemptTwo.wav",
+      "CachePath": "63/{6324830F-37B8-A400-E580-DD4CA814302F}.wem"
+     },
+     {
       "Id": "881485574",
       "Language": "SFX",
       "Streaming": "false",
@@ -438,6 +446,14 @@
       "Location": "Memory",
       "ShortName": "EnemyRobotShutdown.wav",
       "CachePath": "92/{9242711A-4870-1059-3CED-B453DF9104F1}.wem"
+     },
+     {
+      "Id": "1068777285",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SmokeDetectorLongBeeps.wav",
+      "CachePath": "FE/{FEFA59FF-0716-E9BF-6A81-0978D1BC6FAA}.wem"
      }
     ],
     "Events": [
@@ -844,6 +860,38 @@
       ]
      },
      {
+      "Id": "540144832",
+      "Name": "AkEvent_SmokeDetectorLongBeeps",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_SmokeDetectorBeeps\\AkEvent_SmokeDetectorLongBeeps",
+      "GUID": "{2126953C-9BCA-4498-AD14-891D408076CD}",
+      "Color": "4",
+      "MaxAttenuation": "1000",
+      "DurationType": "OneShot",
+      "DurationMin": "5.446508",
+      "DurationMax": "5.446508",
+      "MediaRefs": [
+       {
+        "Id": "1068777285"
+       }
+      ]
+     },
+     {
+      "Id": "1863256211",
+      "Name": "AkEvent_SmokeDetectorShortBeep",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_SmokeDetectorBeeps\\AkEvent_SmokeDetectorShortBeep",
+      "GUID": "{BEFD3290-6CB4-4913-AD51-A7ABDD2676B7}",
+      "Color": "4",
+      "MaxAttenuation": "1000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.29721087",
+      "DurationMax": "0.29721087",
+      "MediaRefs": [
+       {
+        "Id": "873659627"
+       }
+      ]
+     },
+     {
       "Id": "2328157516",
       "Name": "AkEvent_SmokeFireAlarm",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_SmokeFireAlarm",
@@ -1100,6 +1148,6 @@
     ]
    }
   ],
-  "FileHash": "{1E4EE259-2379-6079-F1F3-397B23D60001}"
+  "FileHash": "{0D63F0B4-1F2B-E397-20EF-8474E106280B}"
  }
 }
