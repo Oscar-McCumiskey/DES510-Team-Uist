@@ -49,7 +49,7 @@ void ARobotButlerController::Tick(float DeltaTime)
 	{
 		if (GainCurve) DetectionProgress += (DeltaTime * GetCurveValueAtX(GainCurve, Distance) * GainMultiplier);
 	}
-	else
+	else if (!Detected)
 	{
 		if (DetectionProgress < 0)
 		{
@@ -66,6 +66,7 @@ void ARobotButlerController::Tick(float DeltaTime)
 		DetectionProgress = 100;
 		DetectedCooldownTimer = DetectedCooldown;
 		Detected = true;
+		DeathConsumed = false;
 	}
 
 	if (Detected)

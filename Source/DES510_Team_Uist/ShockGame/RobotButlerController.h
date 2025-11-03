@@ -41,6 +41,9 @@ public:
 	bool Detected = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Detection")
+	bool DeathConsumed = true;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Detection")
 	float DetectedCooldown = 5;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Detection")
