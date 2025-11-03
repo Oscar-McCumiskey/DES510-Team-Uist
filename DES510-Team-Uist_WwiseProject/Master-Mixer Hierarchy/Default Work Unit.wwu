@@ -9,6 +9,31 @@
 							<ObjectRef Name="System" ID="{558E4D20-CD48-4F82-B4BF-3D068125BAD1}" WorkUnitID="{3C3B0F89-4813-47AE-8FCD-B7DE39489B2A}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="BackgroundMusicTrack" ID="{B96F3A44-E720-40A3-82BF-7E02A85E3EC4}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+						<Bus Name="HiFiSteroSystemMusicTrack" ID="{2E18440E-E425-4F1D-9836-D63A1D9E9CA9}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="BackgroundMusicTrack" ID="{B96F3A44-E720-40A3-82BF-7E02A85E3EC4}"/>
+									<DuckingParam>
+										<Volume>-60</Volume>
+										<FadeInTime>0.5</FadeInTime>
+										<FadeOutTime>0.5</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

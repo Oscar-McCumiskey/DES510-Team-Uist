@@ -554,6 +554,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AkEvent_BackgroundMusic" ID="{D3644CD5-110F-45E1-99A2-42CCE7AC4BAD}">
+					<ChildrenList>
+						<Action Name="" ID="{2C06A92B-78B0-44FC-96F6-C69803BD5E99}" ShortID="326824464">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BackgoundGameplayMusicTrack" ID="{E5F40A62-0501-46A5-8219-E92794A5021A}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_MicrowaveBeeps" ID="{6C278836-9177-4DD2-8E2B-E3D91EB99FB5}">
+					<ChildrenList>
+						<Action Name="" ID="{DF6C1563-EDAE-4ECB-87C9-7357727B847D}" ShortID="49992823">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MicrowaveBeeps" ID="{844C516B-6FA8-43A4-BB02-E3DF548F81C7}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_TextMessageReceived" ID="{F2C2F2F7-504A-4B79-AECB-9656F3D282C0}">
+					<ChildrenList>
+						<Action Name="" ID="{F2A805BE-4E4F-4E2B-A673-C40BFB69BB0B}" ShortID="444881778">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TextMessageAlert" ID="{686EEF9B-DAAF-47F2-8179-D97961EAF59C}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_TextMessageVibration" ID="{F58B6DF3-D9BB-4DB4-BB2C-8542E4E22C4E}">
+					<ChildrenList>
+						<Action Name="" ID="{1FA11A70-0D7D-4B3C-9A66-C857C164AAB9}" ShortID="483174606">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TextMessageVibration" ID="{2228C24A-7720-493F-A3AE-82226E50A56D}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

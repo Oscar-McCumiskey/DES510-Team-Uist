@@ -8,6 +8,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "DES510_Team_UistPlayerController.h"
 
 // Sets default values
 APossessableAppliance::APossessableAppliance()
@@ -33,6 +34,7 @@ APossessableAppliance::APossessableAppliance()
 	StaticMesh->SetMobility(EComponentMobility::Static);
 	StaticMesh->SetEnableGravity(false);
 	StaticMesh->bDisallowNanite = true;
+	StaticMesh->SetCollisionProfileName(TEXT("Possessable"));
 
 	// Create a camera boom (pulls in towards the player if there is a collision)
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
@@ -47,6 +49,9 @@ APossessableAppliance::APossessableAppliance()
 	FollowCamera->bUsePawnControlRotation = false;
 
 	AutoPossessAI = EAutoPossessAI::Disabled;
+
+	EnableAbilityOne = true;
+	EnableAbilityTwo = true;
 }
 
 // Called when the game starts or when spawned
@@ -94,6 +99,27 @@ void APossessableAppliance::Tick(float DeltaTime)
 			AbilityTwoCooldownTimer = 0;
 		}
 	}
+
+	if (PossessingPlayerController)
+	{
+		if (PossessingPlayerController->CurrentShock >= AbilityOneUnlockThreshold)
+		{
+			EnableAbilityOne = true;
+		}
+		else
+		{
+			EnableAbilityOne = false;
+		}
+
+		if (PossessingPlayerController->CurrentShock >= AbilityTwoUnlockThreshold)
+		{
+			EnableAbilityTwo = true;
+		}
+		else
+		{
+			EnableAbilityTwo = false;
+		}
+	}
 }
 
 void APossessableAppliance::PossessedBy(AController* NewController)
@@ -101,6 +127,8 @@ void APossessableAppliance::PossessedBy(AController* NewController)
 	Super::PossessedBy(NewController);
 
 	IsPossessed = true;
+
+	PossessingPlayerController = Cast<ADES510_Team_UistPlayerController>(NewController);
 
 	CallEventByName(TEXT("PossessedOutline"));
 }
@@ -110,6 +138,8 @@ void APossessableAppliance::UnPossessed()
 	Super::UnPossessed();
 
 	IsPossessed = false;
+
+	PossessingPlayerController = nullptr;
 
 	CallEventByName(TEXT("NeutralOutline"));
 }
@@ -168,7 +198,7 @@ void APossessableAppliance::Look(const FInputActionValue& Value)
 void APossessableAppliance::Ability1(const FInputActionValue& Value)
 {
 	// Use Ability One
-	if (!AbilityOneOnCooldown)
+	if (!AbilityOneOnCooldown && EnableAbilityOne)
 	{
 		AbilityOneCooldownTimer = AbilityOneCooldownTime;
 		AbilityOneOnCooldown = true;
@@ -180,7 +210,7 @@ void APossessableAppliance::Ability1(const FInputActionValue& Value)
 void APossessableAppliance::Ability2(const FInputActionValue& Value)
 {
 	// Use Ability Two
-	if (!AbilityTwoOnCooldown)
+	if (!AbilityTwoOnCooldown && EnableAbilityTwo)
 	{
 		AbilityTwoCooldownTimer = AbilityTwoCooldownTime;
 		AbilityTwoOnCooldown = true;

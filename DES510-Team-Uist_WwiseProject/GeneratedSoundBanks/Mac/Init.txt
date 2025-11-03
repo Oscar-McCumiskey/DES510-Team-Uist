@@ -1,4 +1,6 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	163641187	HiFiSteroSystemMusicTrack			\Default Work Unit\Master Audio Bus\HiFiSteroSystemMusicTrack	
+	3144753007	BackgroundMusicTrack			\Default Work Unit\Master Audio Bus\BackgroundMusicTrack	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

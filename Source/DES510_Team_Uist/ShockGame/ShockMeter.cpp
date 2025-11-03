@@ -4,63 +4,7 @@
 #include "ShockGame/ShockMeter.h"
 #include "Components/ProgressBar.h"
 
-void UShockMeter::NativeConstruct()
+void UShockMeter::UpdateProgressBar(float Shock)
 {
-	Super::NativeConstruct();
-
-	ShockMeter->SetPercent(CurrentShock);
-}
-
-void UShockMeter::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
-{
-	Super::NativeTick(MyGeometry, InDeltaTime);
-
-	shockDecayTimer -= InDeltaTime;
-
-	// reduce shock every second
-	if (shockDecayTimer <= 0)
-	{
-		float shockDecay = 0;
-		if (ShockUpdateFrequencyPerSecond < InDeltaTime)
-		{
-			shockDecayTimer += InDeltaTime;
-			shockDecay = ShockDecayPerSecond * InDeltaTime;
-		}
-		else
-		{
-			shockDecayTimer += ShockUpdateFrequencyPerSecond;
-			shockDecay = ShockDecayPerSecond * ShockUpdateFrequencyPerSecond;
-		}
-
-		AddShock(-shockDecay);
-	}
-}
-
-void UShockMeter::AddShock(float Value)
-{
-	CurrentShock += Value;
-
-	// Prevent shock dropping below minimum
-	if (CurrentShock < MinShock)
-	{
-		CurrentShock = MinShock;
-	}
-
-	UpdateProgressBar();
-	OnShockChanged(Value);
-
-}
-
-void UShockMeter::UpdateProgressBar()
-{
-	float NewPercentage = CalculatePercentage(CurrentShock, MinShock, MaxShock);
-
-	ShockMeter->SetPercent(NewPercentage);
-}
-
-float UShockMeter::CalculatePercentage(float Value, float Min, float Max)
-{
-	float Percentage = Value / (Max - Min);
-
-	return Percentage;
+	ShockMeter->SetPercent(Shock);
 }
