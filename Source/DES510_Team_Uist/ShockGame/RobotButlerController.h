@@ -37,10 +37,43 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Spook")
 	bool IsSpooked = false;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Detection")
+	bool Detected = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Detection")
+	float DetectedCooldown = 5;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Detection")
+	bool SeeingPlayer = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Detection")
+	float DetectionProgress = 0.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Detection")
+	float Distance = 0.f;
+
+	UPROPERTY(EditAnywhere, Category = "Detection")
+	TObjectPtr<UCurveFloat> GainCurve;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Detection")
+	float GainMultiplier = 1.f;
+
+	UPROPERTY(EditAnywhere, Category = "Detection")
+	TObjectPtr<UCurveFloat> DecayCurve;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Detection")
+	float DecayMultiplier = 1.f;
+
+protected:
+
+	float GetCurveValueAtX(TObjectPtr<UCurveFloat> curve, float x);
+
 protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Spook")
 	float SpookDecayTime = 10;
 
 	float SpookTimer = 0;
+
+	float DetectedCooldownTimer;
 };
