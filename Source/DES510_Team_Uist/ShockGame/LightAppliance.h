@@ -40,4 +40,9 @@ protected:
 	float lightoffTimer = 0.f;
 
 	float initialIntensity;
+
+protected:
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void SetLightMaterialIntensity(float Intensity);
 };
