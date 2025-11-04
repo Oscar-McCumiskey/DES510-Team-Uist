@@ -24,14 +24,15 @@ void ALightAppliance::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (lightoffTimer > 0)
+	/*if (lightoffTimer > 0)
 	{
 		lightoffTimer -= DeltaTime;
 	}
 	else
 	{
 		LightComponent->SetIntensity(initialIntensity);
-	}
+		SetLightMaterialIntensity(1.f);
+	}*/
 }
 
 void ALightAppliance::SetIntensity(float Intensity)
@@ -42,8 +43,9 @@ void ALightAppliance::SetIntensity(float Intensity)
 
 void ALightAppliance::DoAbility1()
 {
-	LightComponent->SetIntensity(0.f);
+	/*LightComponent->SetIntensity(0.f);
 	lightoffTimer = LightOffTime;
+	SetLightMaterialIntensity(0.f);*/
 }
 
 void ALightAppliance::DoAbility2()
