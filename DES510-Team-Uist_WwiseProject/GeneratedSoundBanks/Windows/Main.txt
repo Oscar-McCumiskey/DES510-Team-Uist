@@ -14,6 +14,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1099673533	AkEvent_RoombaLoopMAIN			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoopMAIN	
 	1188996368	AkEvent_MicrowaveBeeps			\Default Work Unit\AkEvent_MicrowaveBeeps	
 	1300947658	AkEvent_RoombaLoopSTART			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoopSTART	
+	1368225815	AkEvent_SmokeDetectorSingleBeep			\Default Work Unit\AkEvent_SmokeDetectorBeeps\AkEvent_SmokeDetectorSingleBeep	
 	1380965262	AkEvent_PlayerPossessionKeyPressed			\Default Work Unit\AkEvent_PlayerPossessionKeyPressed	
 	1409461229	AkEvent_LightSwitchActivate			\Default Work Unit\AkEvent_LightSwitchActivate	
 	1456896994	AkEvent_DoorOpen			\Default Work Unit\AkEvent_DoorOpen	
@@ -54,6 +55,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	51070462	DoorClosed(Locked)Feedback	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\D4\{D437BE9E-D238-46DE-04AC-38E0737E3D87}.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorClosed(Locked)Feedback		176496
 	53931825	VoiceLine-001	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\43\{438E222E-B25A-A044-716E-92549BCA25B1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerOneCommunicationVoiceLines\VoiceLine-001		123576
 	80070451	MicrowaveBeep-001	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\DA\{DAFB6649-4E1C-E89A-E6EC-295755109806}.wem		\Actor-Mixer Hierarchy\Default Work Unit\MicrowaveBeeps\MicrowaveBeep-001		46152
+	105319116	SmokeDetectorSingleBeep	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\D1\{D107F418-7EED-34C0-BE5A-800DBB15B1F5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SmokeDetectorBeeps\SmokeDetectorSingleBeep		84316
 	106847297	VoiceLine-004	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\48\{4899C03A-948C-36EF-2761-9FDDED3CD1FD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerOneCommunicationVoiceLines\VoiceLine-004		180060
 	122079160	HiFiStereoSystemMusic	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\BB\{BBF20FDA-73E6-A626-A9C7-53DBE52C7AAF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\HiFiStereoSystemMusic		6978232
 	123275338	PlayerPossessionKeyPressedFeedback2	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\F3\{F34F17D0-AA22-EB06-E52B-01A6BA7EE345}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback2		57132
@@ -87,7 +89,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	828452664	BackgoundGameplayMusicTrack	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\29\{298CCF65-DAB2-06ED-8BDE-4BEB6A39D72C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\BackgoundGameplayMusicTrack		15294520
 	854371143	RoombaTaunt1	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\56\{5602C594-EE49-CDB0-E2D5-5D48F50C423F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaTaunt\RoombaTaunt1		301740
 	865045964	PlayerPossessionKeyPressedFeedback3	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\92\{923D9EF4-8437-AFFE-715C-4A9CCB66B844}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback3		57764
-	873659627	SmokeDetectorShortBeep	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\63\{6324830F-37B8-A400-E580-DD4CA814302F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SmokeDetectorBeeps\SmokeDetectorShortBeep		52524
+	873659627	SmokeDetectorShortBeep	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\08\{08A44591-294E-3594-BFCB-F04330CD3729}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SmokeDetectorBeeps\SmokeDetectorShortBeep		52524
 	881485574	RoombaTaunt4	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\08\{08FDA550-D90E-C6FF-326A-220062EDAC1D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaTaunt\RoombaTaunt4		175908
 	888034445	GameTimerLowStage1	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\1A\{1A5E1502-70BA-6F05-37D7-D74D5E9C0DBB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\GameTimerStates\GameTimerLowStage1		705696
 	925937689	PlayerFeedbackScoreLost	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\13\{13091A8F-9D8C-EEF5-DC00-362E1AAF0BF3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerFeedbackScoreLost		140816

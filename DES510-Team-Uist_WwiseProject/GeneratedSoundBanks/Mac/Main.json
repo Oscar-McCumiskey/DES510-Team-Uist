@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{CBFFEBFF-9CB9-2AD6-8CDB-F2C8C0E92C93}",
+    "Hash": "{F890142F-2739-1F8C-6E27-EC6BC4EE580A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -70,6 +70,14 @@
       "Location": "Memory",
       "ShortName": "MicrowaveBeep_001.wav",
       "CachePath": "DA/{DAFB6649-4E1C-E89A-E6EC-295755109806}.wem"
+     },
+     {
+      "Id": "105319116",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SmokeDetectorSingleBeep(Repeat).wav",
+      "CachePath": "D1/{D107F418-7EED-34C0-BE5A-800DBB15B1F5}.wem"
      },
      {
       "Id": "106847297",
@@ -341,7 +349,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SmokeDetectoShortBeep(LowBattery)AttemptTwo.wav",
-      "CachePath": "63/{6324830F-37B8-A400-E580-DD4CA814302F}.wem"
+      "CachePath": "08/{08A44591-294E-3594-BFCB-F04330CD3729}.wem"
      },
      {
       "Id": "881485574",
@@ -892,6 +900,21 @@
       ]
      },
      {
+      "Id": "1368225815",
+      "Name": "AkEvent_SmokeDetectorSingleBeep",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_SmokeDetectorBeeps\\AkEvent_SmokeDetectorSingleBeep",
+      "GUID": "{96C7F8BF-360D-47C6-895A-3650B6E4D113}",
+      "Color": "4",
+      "DurationType": "OneShot",
+      "DurationMin": "0.47743765",
+      "DurationMax": "0.47743765",
+      "MediaRefs": [
+       {
+        "Id": "105319116"
+       }
+      ]
+     },
+     {
       "Id": "2328157516",
       "Name": "AkEvent_SmokeFireAlarm",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_SmokeFireAlarm",
@@ -1148,6 +1171,6 @@
     ]
    }
   ],
-  "FileHash": "{B3A0CCDF-C6F1-0693-4E7F-3655B15877E6}"
+  "FileHash": "{9EFBF81B-5939-6B12-1684-63C6E6892DC8}"
  }
 }
