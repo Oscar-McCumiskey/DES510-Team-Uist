@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{F890142F-2739-1F8C-6E27-EC6BC4EE580A}",
+    "Hash": "{14156DBE-D874-2203-BF53-C343B8C87249}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -152,6 +152,14 @@
       "CachePath": "9F/{9FE17813-3B3B-0544-F3B3-21112C666F23}.wem"
      },
      {
+      "Id": "290067809",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LightFlicker.wav",
+      "CachePath": "94/{949844CA-C732-5E64-E03F-9B4E03D79C50}.wem"
+     },
+     {
       "Id": "292192801",
       "Language": "SFX",
       "Streaming": "false",
@@ -262,6 +270,14 @@
       "Location": "Memory",
       "ShortName": "PlayerCommunication-VoiceLine-005.wav",
       "CachePath": "42/{42BD3336-50FD-647B-48BC-30C5C09E95A1}.wem"
+     },
+     {
+      "Id": "667867435",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MicrowaveHumandBeeps.wav",
+      "CachePath": "AB/{ABA775C5-87E1-31BB-FF75-664AA4D4D4E6}.wem"
      },
      {
       "Id": "683932139",
@@ -592,6 +608,20 @@
       ]
      },
      {
+      "Id": "1532566362",
+      "Name": "AkEvent_LightFlicker",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_LightFlicker",
+      "GUID": "{C7079FC5-85CD-4FA4-B9D3-6A43F8B8140D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.99129254",
+      "DurationMax": "0.99129254",
+      "MediaRefs": [
+       {
+        "Id": "290067809"
+       }
+      ]
+     },
+     {
       "Id": "1409461229",
       "Name": "AkEvent_LightSwitchActivate",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_LightSwitchActivate",
@@ -623,6 +653,20 @@
        },
        {
         "Id": "927010807"
+       }
+      ]
+     },
+     {
+      "Id": "3688182748",
+      "Name": "AkEvent_MicrowaveComplete",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_MicrowaveComplete",
+      "GUID": "{13FB0D97-DFC5-4E5D-9C84-528182564555}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.5685487",
+      "DurationMax": "4.5685487",
+      "MediaRefs": [
+       {
+        "Id": "667867435"
        }
       ]
      },
@@ -1171,6 +1215,6 @@
     ]
    }
   ],
-  "FileHash": "{9EFBF81B-5939-6B12-1684-63C6E6892DC8}"
+  "FileHash": "{E14CBCB2-5143-984D-E7F4-48058C8AC560}"
  }
 }
