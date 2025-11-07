@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{14156DBE-D874-2203-BF53-C343B8C87249}",
+    "Hash": "{FEE36EB8-BDB8-C0E5-C8FC-F57933E94959}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -88,6 +88,14 @@
       "CachePath": "48/{4899C03A-948C-36EF-2761-9FDDED3CD1FD}.wem"
      },
      {
+      "Id": "120633265",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MicrowaveExplosion.v2_001.wav",
+      "CachePath": "06/{06874787-D28B-F64A-3BE8-68CD8C909D5F}.wem"
+     },
+     {
       "Id": "122079160",
       "Language": "SFX",
       "Streaming": "false",
@@ -110,6 +118,14 @@
       "Location": "Memory",
       "ShortName": "PossessedAlexaModel-003.wav",
       "CachePath": "EB/{EB2A584B-B310-5FA6-01E9-6097DCF4A3B3}.wem"
+     },
+     {
+      "Id": "150398465",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MicrowaveLongBeep.wav",
+      "CachePath": "9F/{9FF3E2DF-5859-A135-7139-00E6BDA98540}.wem"
      },
      {
       "Id": "234143930",
@@ -637,6 +653,21 @@
       ]
      },
      {
+      "Id": "2666522927",
+      "Name": "AkEvent_MicrowaveBeepLong",
+      "ObjectPath": "\\Events\\Default Work Unit\\MicrowaveExplosion\\AkEvent_MicrowaveBeepLong",
+      "GUID": "{4BB89D7B-AE65-434F-9AA1-6002DC342A4D}",
+      "MaxAttenuation": "1000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.82191706",
+      "DurationMax": "0.82191706",
+      "MediaRefs": [
+       {
+        "Id": "150398465"
+       }
+      ]
+     },
+     {
       "Id": "1188996368",
       "Name": "AkEvent_MicrowaveBeeps",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_MicrowaveBeeps",
@@ -667,6 +698,21 @@
       "MediaRefs": [
        {
         "Id": "667867435"
+       }
+      ]
+     },
+     {
+      "Id": "242599642",
+      "Name": "AkEvent_MicrowaveExplosion",
+      "ObjectPath": "\\Events\\Default Work Unit\\MicrowaveExplosion\\AkEvent_MicrowaveExplosion",
+      "GUID": "{B9FCC84C-B99B-48A3-AE0B-FE5A7C6EB248}",
+      "MaxAttenuation": "1000",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0738627",
+      "DurationMax": "1.0738627",
+      "MediaRefs": [
+       {
+        "Id": "120633265"
        }
       ]
      },
@@ -1215,6 +1261,6 @@
     ]
    }
   ],
-  "FileHash": "{974BD0B4-0475-1D4B-6FAC-4CDA7896FB2B}"
+  "FileHash": "{EFAC8786-6A08-5244-C137-B8FEC586E045}"
  }
 }

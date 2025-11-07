@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	38563539	AkEvent_STOP_TelevisionStatic			\Default Work Unit\STOP EVENTS\AkEvent_STOP_TelevisionStatic	
+	242599642	AkEvent_MicrowaveExplosion			\Default Work Unit\MicrowaveExplosion\AkEvent_MicrowaveExplosion	
 	346358596	GameTimerLowStage2			\Default Work Unit\GameTimerStates\GameTimerLowStage2	
 	346358597	GameTimerLowStage3			\Default Work Unit\GameTimerStates\GameTimerLowStage3	
 	346358599	GameTimerLowStage1			\Default Work Unit\GameTimerStates\GameTimerLowStage1	
@@ -33,6 +34,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2328157516	AkEvent_SmokeFireAlarm			\Default Work Unit\AkEvent_SmokeFireAlarm	
 	2500557793	AkEvent_HiFiStereoSystemVinylScratch			\Default Work Unit\AkEvent_HiFiStereoSystemVinylScratch	
 	2632910505	AkEvent_RoombaLoopEND			\Default Work Unit\AkEvent_RoombaMovement\AkEvent_RoombaLoopEND	
+	2666522927	AkEvent_MicrowaveBeepLong			\Default Work Unit\MicrowaveExplosion\AkEvent_MicrowaveBeepLong	
 	2696074752	AkEvent_RobotShutdown			\Default Work Unit\AkEvent_RobotShutdown	
 	2713856965	AkEvent_PlayerTwoVoice			\Default Work Unit\AkEvent_PlayerTwoVoice	
 	3023665302	Stop_All_GameTimerEvents			\Default Work Unit\GameTimerStates\Stop_All_GameTimerEvents	
@@ -59,9 +61,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	80070451	MicrowaveBeep-001	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\DA\{DAFB6649-4E1C-E89A-E6EC-295755109806}.wem		\Actor-Mixer Hierarchy\Default Work Unit\MicrowaveBeeps\MicrowaveBeep-001		46152
 	105319116	SmokeDetectorSingleBeep	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\D1\{D107F418-7EED-34C0-BE5A-800DBB15B1F5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SmokeDetectorBeeps\SmokeDetectorSingleBeep		84316
 	106847297	VoiceLine-004	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\48\{4899C03A-948C-36EF-2761-9FDDED3CD1FD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerOneCommunicationVoiceLines\VoiceLine-004		180060
+	120633265	MicrowaveExplosion	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\06\{06874787-D28B-F64A-3BE8-68CD8C909D5F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\MicrowaveExplosionComponents\MicrowaveExplosion		189524
 	122079160	HiFiStereoSystemMusic	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\BB\{BBF20FDA-73E6-A626-A9C7-53DBE52C7AAF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\HiFiStereoSystemMusic		6978232
 	123275338	PlayerPossessionKeyPressedFeedback2	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\F3\{F34F17D0-AA22-EB06-E52B-01A6BA7EE345}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback2		57132
 	145330667	PossessedAlexaVoiceLine-002	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\EB\{EB2A584B-B310-5FA6-01E9-6097DCF4A3B3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AlexaAssistantVoiceLines\PossessedAlexaVoiceLine-002		276628
+	150398465	MicrowaveBeepLong	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\9F\{9FF3E2DF-5859-A135-7139-00E6BDA98540}.wem		\Actor-Mixer Hierarchy\Default Work Unit\MicrowaveExplosionComponents\MicrowaveBeepLong		145084
 	234143930	VoiceLine-002	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\A4\{A4BB7D69-BB66-1C9D-CCF4-C1E9B0C7BDE0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerOneCommunicationVoiceLines\VoiceLine-002		137688
 	235169657	SmokeFireAlarm	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\6C\{6C8A7D8D-29EA-F7BF-9B93-12F97C84405C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SmokeFireAlarm		704224
 	246848576	TextMessageAlert	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\91\{91F85AAE-37BD-C4F2-D60F-D75FB198D291}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TextMessageAlert		111272
