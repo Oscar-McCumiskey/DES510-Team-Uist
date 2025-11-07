@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{FEE36EB8-BDB8-C0E5-C8FC-F57933E94959}",
+    "Hash": "{7EF8DD42-6E24-342C-458D-B6947969F00D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -278,6 +278,14 @@
       "Location": "Memory",
       "ShortName": "PlayerPossessionKeyPressedFeedback.wav",
       "CachePath": "3E/{3E69B9B9-DAEF-C467-D89D-79A1A71D43FE}.wem"
+     },
+     {
+      "Id": "652965931",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "VinylScratchAbilityTwo.wav",
+      "CachePath": "9E/{9E49155B-BCC8-D287-C1AA-DED51B1E181B}.wem"
      },
      {
       "Id": "661259942",
@@ -1199,6 +1207,20 @@
       ]
      },
      {
+      "Id": "3084321804",
+      "Name": "AkEvent_VinylScratch",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_VinylScratch",
+      "GUID": "{E9753385-D86E-4E68-8598-B20ED90A0F8F}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.05",
+      "DurationMax": "1.05",
+      "MediaRefs": [
+       {
+        "Id": "652965931"
+       }
+      ]
+     },
+     {
       "Id": "3510673030",
       "Name": "GameOverTimesUp",
       "ObjectPath": "\\Events\\Default Work Unit\\GameTimerStates\\GameOverTimesUp",
@@ -1261,6 +1283,6 @@
     ]
    }
   ],
-  "FileHash": "{A9E82280-B696-E90A-1905-9C137561B764}"
+  "FileHash": "{46178AAE-AC71-7173-6D03-0F9FE0F7968A}"
  }
 }

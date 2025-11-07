@@ -687,6 +687,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="AkEvent_VinylScratch" ID="{E9753385-D86E-4E68-8598-B20ED90A0F8F}">
+					<ChildrenList>
+						<Action Name="" ID="{9A1355BD-80CC-47D1-8808-9A742E7AF548}" ShortID="231558853">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VinylScratch" ID="{4CD0157D-12FD-428C-B6B0-E592BE2A6268}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
