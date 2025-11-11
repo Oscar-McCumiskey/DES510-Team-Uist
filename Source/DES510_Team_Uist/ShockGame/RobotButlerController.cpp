@@ -9,7 +9,7 @@ ARobotButlerController::ARobotButlerController()
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	SpookTimer = SpookDecayTime;
+	//SpookTimer = SpookDecayTime;
 }
 
 // Called when the game starts or when spawned
@@ -24,7 +24,7 @@ void ARobotButlerController::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	// Spook
-	if (SpookCount >= MaxSpookCount)
+	/*if (SpookCount >= MaxSpookCount)
 	{
 		IsSpooked = true;
 		SpookTimer = SpookDecayTime;
@@ -42,7 +42,7 @@ void ARobotButlerController::Tick(float DeltaTime)
 			SpookCount -= 1;
 			SpookTimer = SpookDecayTime;
 		}
-	}
+	}*/
 
 	// Detection
 	if (SeeingPlayer && !Detected)
