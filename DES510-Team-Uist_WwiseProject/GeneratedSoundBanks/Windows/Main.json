@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{7EF8DD42-6E24-342C-458D-B6947969F00D}",
+    "Hash": "{737F33B1-CEA6-A8AA-96F6-45F48DA4443E}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MicrowaveExplosion.v2_001.wav",
-      "CachePath": "06/{06874787-D28B-F64A-3BE8-68CD8C909D5F}.wem"
+      "CachePath": "ED/{ED2065E7-53A3-2BFC-82B0-CD005B804CB1}.wem"
      },
      {
       "Id": "122079160",
@@ -125,7 +125,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MicrowaveLongBeep.wav",
-      "CachePath": "9F/{9FF3E2DF-5859-A135-7139-00E6BDA98540}.wem"
+      "CachePath": "45/{45A7013B-909D-3EDA-A0DD-6482A6663837}.wem"
      },
      {
       "Id": "234143930",
@@ -278,6 +278,14 @@
       "Location": "Memory",
       "ShortName": "PlayerPossessionKeyPressedFeedback.wav",
       "CachePath": "3E/{3E69B9B9-DAEF-C467-D89D-79A1A71D43FE}.wem"
+     },
+     {
+      "Id": "634446217",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombaDash.v2.wav",
+      "CachePath": "FC/{FC48D811-C27B-63F4-E8C4-641BF25534B0}.wem"
      },
      {
       "Id": "652965931",
@@ -867,6 +875,21 @@
       ]
      },
      {
+      "Id": "3005630996",
+      "Name": "AkEvent_RoombaCharge",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaCharge",
+      "GUID": "{A493906D-7B93-45F5-81E3-F31A4227950B}",
+      "MaxAttenuation": "1000",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3204578",
+      "DurationMax": "1.3204578",
+      "MediaRefs": [
+       {
+        "Id": "634446217"
+       }
+      ]
+     },
+     {
       "Id": "2632910505",
       "Name": "AkEvent_RoombaLoopEND",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaMovement\\AkEvent_RoombaLoopEND",
@@ -1283,6 +1306,6 @@
     ]
    }
   ],
-  "FileHash": "{F5E31E58-ED77-0FD5-5EE1-EA0EBA4F60F1}"
+  "FileHash": "{37C740D9-F3E1-479F-B9E2-FC274C869BFE}"
  }
 }
