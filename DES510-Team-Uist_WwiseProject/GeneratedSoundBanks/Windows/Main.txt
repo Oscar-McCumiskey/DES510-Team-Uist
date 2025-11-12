@@ -8,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	599745230	AkEvent_Test			\Default Work Unit\AkEvent_Test	
 	623541909	AkEvent_RobotMovement			\Default Work Unit\AkEvent_RobotMovement	
 	670662707	AkEvent_BackgroundMusic			\Default Work Unit\AkEvent_BackgroundMusic	
+	802997729	AkEvent_KnockingOnTelevisionScreen			\Default Work Unit\AkEvent_KnockingOnTelevisionScreen	
 	829898679	AkEvent_PlayerOneVoice			\Default Work Unit\AkEvent_PlayerOneVoice	
 	881733891	AkEvent_UserInterfaceMainMenuMusic			\Default Work Unit\AkEvent_UserInterface\AkEvent_UserInterfaceMainMenuMusic	
 	939926779	AkEvent_STOP_SmokeFireAlarm			\Default Work Unit\STOP EVENTS\AkEvent_STOP_SmokeFireAlarm	
@@ -50,10 +51,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	3688182748	AkEvent_MicrowaveComplete			\Default Work Unit\AkEvent_MicrowaveComplete	
 	3920598328	AkEvent_UserInterfaceHoverOver			\Default Work Unit\AkEvent_UserInterface\AkEvent_UserInterfaceHoverOver	
 	3941835537	AkEvent_TextMessageReceived			\Default Work Unit\AkEvent_TextMessageReceived	
+	4010210521	AkEvent_PossessedGhostVoicelines			\Default Work Unit\AkEvent_PossessedGhostVoicelines	
 	4075388469	AkEvent_STOP_HiFiStereoSystemMusic			\Default Work Unit\STOP EVENTS\AkEvent_STOP_HiFiStereoSystemMusic	
 	4207413152	AkEvent_TelevisionStatic			\Default Work Unit\AkEvent_TelevisionStatic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	618572	KnockingOnGlass1	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\E8\{E8CFBCAB-72A0-FFAB-78E1-546B874A1686}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PossessedTVAbilityTwoComponents\KnockingOnGlass\KnockingOnGlass1		162384
 	7384289	UserInterfaceMainMenuMusicTrack	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\F3\{F3791DD7-6C3E-DBD1-3E52-AC659332342E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UserInterfaceMainMenuMusicTrack		15406920
 	26587215	MicrowaveBeep-002	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\08\{08979245-6E4C-9B98-4B92-B2CC505869CE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\MicrowaveBeeps\MicrowaveBeep-002		41356
 	27949432	PossessedAlexaVoiceLine-001	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\5A\{5AF50C7E-600B-7B76-879E-541FD1D12665}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AlexaAssistantVoiceLines\PossessedAlexaVoiceLine-001		718740
@@ -75,8 +78,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	282995618	RoombaMovementMAIN	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\9F\{9FE17813-3B3B-0544-F3B3-21112C666F23}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaMovementLoopSections\RoombaMovementMAIN		1146744
 	290067809	LightFlicker	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\94\{949844CA-C732-5E64-E03F-9B4E03D79C50}.wem		\Actor-Mixer Hierarchy\Default Work Unit\LightFlicker		174960
 	292192801	RobotAlert	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\FC\{FC914148-2579-142F-35BF-B5614D4A5035}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RobotAlert		192372
+	319370370	PossessedGhostVoice1	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\6C\{6CA8C8C9-2622-4021-825D-8DB98C78CCD9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PossessedTVAbilityTwoComponents\PossessedGhostVoice\PossessedGhostVoice1		352896
 	330954251	HiFiStereoSystemActivate	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\E3\{E3164D89-0D26-8E5A-7831-5D35401794A8}.wem		\Actor-Mixer Hierarchy\Default Work Unit\HiFiStereoSystemActivate		375096
 	331698486	TestAudio	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\9A\{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestAudio		262440
+	343364746	PossessedGhostVoice2	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\77\{77AC3DB4-955D-A18C-3FF6-5A3ECC47F7AD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PossessedTVAbilityTwoComponents\PossessedGhostVoice\PossessedGhostVoice2		352896
 	402318428	RoombaTaunt2	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\9F\{9F3ED44C-D608-2DDA-1F9A-09104BDFDFA9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaTaunt\RoombaTaunt2		176496
 	410232314	RobotPowerOn	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\B4\{B4BA7B4F-CB0B-807C-8BDC-B9E14FFDCF0C}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RobotPowerOn		242544
 	414875261	PossessedAlexaVoiceLine-004	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\74\{746C1C5D-A36A-40C4-EE24-55B77CB05EC2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\AlexaAssistantVoiceLines\PossessedAlexaVoiceLine-004		237972
@@ -87,7 +92,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	546371997	VoiceLine-003	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\E7\{E77E0350-AC1D-CAEE-BEE8-384746FE8544}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerOneCommunicationVoiceLines\VoiceLine-003		90060
 	591468326	TelevisionStaticLoop	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\BF\{BFBD1EC4-EC81-0C39-01CF-BF0CC89D6943}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TelevisionStaticLoop		2687328
 	598436301	PlayerPossessionKeyPressedFeedback1	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\3E\{3E69B9B9-DAEF-C467-D89D-79A1A71D43FE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossessionKeyPressedFeedback\PlayerPossessionKeyPressedFeedback1		88676
-	634446217	RoombaCharge	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\FC\{FC48D811-C27B-63F4-E8C4-641BF25534B0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaCharge		233024
 	652965931	VinylScratch	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\9E\{9E49155B-BCC8-D287-C1AA-DED51B1E181B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\VinylScratch		185316
 	661259942	VoiceLine-005	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\42\{42BD3336-50FD-647B-48BC-30C5C09E95A1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerOneCommunicationVoiceLines\VoiceLine-005		166892
 	667867435	MicrowaveComplete	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\AB\{ABA775C5-87E1-31BB-FF75-664AA4D4D4E6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\MicrowaveComplete		805988
@@ -109,6 +113,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	938862900	VoiceLine-007	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\12\{12D6614A-56B0-C249-3A74-8A7B357536C2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerOneCommunicationVoiceLines\VoiceLine-007		200252
 	940813527	UserInterfaceHoverOver	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\07\{077F680F-0C97-1887-EFEB-07CA7C093777}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UserInterface\UserInterfaceHoverOver		303504
 	942405617	GameTimerLowStage2	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\76\{76BCD5B8-0183-718C-7396-255FE2F8F212}.wem		\Actor-Mixer Hierarchy\Default Work Unit\GameTimerStates\GameTimerLowStage2		705696
+	946098567	RoombaCharge	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\30\{3045BA11-6234-B501-BA7A-422633FCF4E7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaCharge		250584
 	968428471	BurglarAlarm	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\EA\{EA458466-923A-4F73-67EE-BBA8BB5AE487}.wem		\Actor-Mixer Hierarchy\Default Work Unit\BurglarAlarm		617496
 	971465599	RoombaMovementSTART	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\D9\{D93448C7-9A48-A622-EF13-96A8DA4BF75E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaMovementLoopSections\RoombaMovementSTART		441448
 	991563999	PlayerPossession	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\4E\{4E282922-9F29-392A-A994-A3E69F319CAE}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPossession		137212
@@ -116,4 +121,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1025636707	RoombaTaunt3	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\32\{3251F71F-F66C-FEF9-E553-3F20C627019D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RoombaTaunt\RoombaTaunt3		264696
 	1026510357	RobotShutdown	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\92\{9242711A-4870-1059-3CED-B453DF9104F1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\RobotShutdown		259404
 	1068777285	SmokeDetectorLongBeeps	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\FE\{FEFA59FF-0716-E9BF-6A81-0978D1BC6FAA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SmokeDetectorBeeps\SmokeDetectorLongBeeps		960860
+	1072645864	KnockingOnGlass2	D:\LocalWorkDir\2004696\DES510\DES510-Team-Uist_WwiseProject\.cache\30\{301B0693-0135-DF7A-68F6-3144405E1510}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PossessedTVAbilityTwoComponents\KnockingOnGlass\KnockingOnGlass2		162384
 

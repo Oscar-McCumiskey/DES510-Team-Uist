@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{737F33B1-CEA6-A8AA-96F6-45F48DA4443E}",
+    "Hash": "{AE83BBE7-183C-40B6-4E6E-95EE4048E095}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "618572",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "KnockHandPressOnGlassAttempt_003.wav",
+      "CachePath": "E8/{E8CFBCAB-72A0-FFAB-78E1-546B874A1686}.wem"
+     },
      {
       "Id": "7384289",
       "Language": "SFX",
@@ -184,6 +192,14 @@
       "CachePath": "FC/{FC914148-2579-142F-35BF-B5614D4A5035}.wem"
      },
      {
+      "Id": "319370370",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PossessedTV_001.wav",
+      "CachePath": "6C/{6CA8C8C9-2622-4021-825D-8DB98C78CCD9}.wem"
+     },
+     {
       "Id": "330954251",
       "Language": "SFX",
       "Streaming": "false",
@@ -198,6 +214,14 @@
       "Location": "Memory",
       "ShortName": "SFX_TestAudio.wav",
       "CachePath": "9A/{9A5451D1-8B22-9596-9D65-2C2F5B98FBEE}.wem"
+     },
+     {
+      "Id": "343364746",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PossessedTV_002.wav",
+      "CachePath": "77/{77AC3DB4-955D-A18C-3FF6-5A3ECC47F7AD}.wem"
      },
      {
       "Id": "402318428",
@@ -278,14 +302,6 @@
       "Location": "Memory",
       "ShortName": "PlayerPossessionKeyPressedFeedback.wav",
       "CachePath": "3E/{3E69B9B9-DAEF-C467-D89D-79A1A71D43FE}.wem"
-     },
-     {
-      "Id": "634446217",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "RoombaDash.v2.wav",
-      "CachePath": "FC/{FC48D811-C27B-63F4-E8C4-641BF25534B0}.wem"
      },
      {
       "Id": "652965931",
@@ -456,6 +472,14 @@
       "CachePath": "76/{76BCD5B8-0183-718C-7396-255FE2F8F212}.wem"
      },
      {
+      "Id": "946098567",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombaDash.wav",
+      "CachePath": "30/{3045BA11-6234-B501-BA7A-422633FCF4E7}.wem"
+     },
+     {
       "Id": "968428471",
       "Language": "SFX",
       "Streaming": "false",
@@ -510,6 +534,14 @@
       "Location": "Memory",
       "ShortName": "SmokeDetectorLongBeeps.wav",
       "CachePath": "FE/{FEFA59FF-0716-E9BF-6A81-0978D1BC6FAA}.wem"
+     },
+     {
+      "Id": "1072645864",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "KnockHandPressOnGlassAttempt_004.wav",
+      "CachePath": "30/{301B0693-0135-DF7A-68F6-3144405E1510}.wem"
      }
     ],
     "Events": [
@@ -636,6 +668,23 @@
       "MediaRefs": [
        {
         "Id": "772527182"
+       }
+      ]
+     },
+     {
+      "Id": "802997729",
+      "Name": "AkEvent_KnockingOnTelevisionScreen",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_KnockingOnTelevisionScreen",
+      "GUID": "{ECDA016F-9920-466D-AF90-EF9D5B84ACC2}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.92",
+      "DurationMax": "0.92",
+      "MediaRefs": [
+       {
+        "Id": "618572"
+       },
+       {
+        "Id": "1072645864"
        }
       ]
      },
@@ -816,6 +865,23 @@
       "DurationMax": "0"
      },
      {
+      "Id": "4010210521",
+      "Name": "AkEvent_PossessedGhostVoicelines",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PossessedGhostVoicelines",
+      "GUID": "{6B3BB081-E5A3-45D1-8AA2-5E38B9766076}",
+      "DurationType": "OneShot",
+      "DurationMin": "2",
+      "DurationMax": "2",
+      "MediaRefs": [
+       {
+        "Id": "319370370"
+       },
+       {
+        "Id": "343364746"
+       }
+      ]
+     },
+     {
       "Id": "1836879748",
       "Name": "AkEvent_RobotAlert",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RobotAlert",
@@ -879,13 +945,12 @@
       "Name": "AkEvent_RoombaCharge",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaCharge",
       "GUID": "{A493906D-7B93-45F5-81E3-F31A4227950B}",
-      "MaxAttenuation": "1000",
       "DurationType": "OneShot",
-      "DurationMin": "1.3204578",
-      "DurationMax": "1.3204578",
+      "DurationMin": "1.42",
+      "DurationMax": "1.42",
       "MediaRefs": [
        {
-        "Id": "634446217"
+        "Id": "946098567"
        }
       ]
      },
@@ -1306,6 +1371,6 @@
     ]
    }
   ],
-  "FileHash": "{18C2EDAF-1ECC-9B2E-05FA-B9D94412E6C0}"
+  "FileHash": "{4FF6EA2D-53B3-FD31-17F3-F4DF6822B113}"
  }
 }

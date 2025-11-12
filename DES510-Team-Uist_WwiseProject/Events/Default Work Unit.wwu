@@ -709,6 +709,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AkEvent_KnockingOnTelevisionScreen" ID="{ECDA016F-9920-466D-AF90-EF9D5B84ACC2}">
+					<ChildrenList>
+						<Action Name="" ID="{97327906-138B-4DF6-B42D-A3C765B869C4}" ShortID="640048278">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KnockingOnGlass" ID="{CE26FFA8-6FEE-4414-A073-760489C5F02B}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_PossessedGhostVoicelines" ID="{6B3BB081-E5A3-45D1-8AA2-5E38B9766076}">
+					<ChildrenList>
+						<Action Name="" ID="{2017A3A0-DA69-41F6-A73A-82D3C3B87CFA}" ShortID="542557782">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PossessedGhostVoice" ID="{FF8D0295-853F-4B3A-BB25-E1545A4D6823}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
