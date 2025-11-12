@@ -2021,6 +2021,329 @@
 								<ActiveSource Name="SmokeDetectorLongBeeps" ID="{7397FEC8-B056-4338-AAD3-ED77F76F6DCD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="SmokeDetectorSingleBeep" ID="{A6952570-9B24-47C5-BFAB-1CBD6861E02C}" ShortID="1002875294">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SmokeDetectorSingleBeep(Repeat)" ID="{7C08F0DA-12AD-4B52-88D5-F25CDC19C56E}">
+									<Language>SFX</Language>
+									<AudioFile>SmokeDetectorSingleBeep(Repeat).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="105319116"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SmokeDetectorSingleBeep(Repeat)" ID="{7C08F0DA-12AD-4B52-88D5-F25CDC19C56E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Sound Name="LightFlicker" ID="{91A5E6B9-A3A4-4E3E-81CA-A5E627F59458}" ShortID="98967084">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="LightFlicker" ID="{0F6593E7-5BBF-44C0-8609-B60439376892}">
+							<Language>SFX</Language>
+							<AudioFile>LightFlicker.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="290067809"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="LightFlicker" ID="{0F6593E7-5BBF-44C0-8609-B60439376892}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="MicrowaveComplete" ID="{A6E07DF3-F4F5-42FB-B8C5-6F17623E6FFC}" ShortID="657762285">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MicrowaveHumandBeeps" ID="{6BD6DCA0-787A-40FA-B352-EC580BE2A05E}">
+							<Language>SFX</Language>
+							<AudioFile>MicrowaveHumandBeeps.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="667867435"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="MicrowaveHumandBeeps" ID="{6BD6DCA0-787A-40FA-B352-EC580BE2A05E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Folder Name="MicrowaveExplosionComponents" ID="{14CE918E-3C9E-4ACF-A908-D0DA480AFD52}" ShortID="123567317">
+					<ChildrenList>
+						<Sound Name="MicrowaveBeepLong" ID="{83E7E997-1FEF-4000-894F-5780608C10C8}" ShortID="488117801">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MicrowaveLongBeep" ID="{906B0A82-B142-41DC-B42D-1F5207415113}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.168326171171"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.821917037172549"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MicrowaveLongBeep.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="150398465"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MicrowaveLongBeep" ID="{906B0A82-B142-41DC-B42D-1F5207415113}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MicrowaveExplosion" ID="{66D8D300-66A6-4042-9824-8F8204C21495}" ShortID="888216161">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>9</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>21</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MicrowaveExplosion_v2_001" ID="{2387FDCE-8D35-40C4-9350-D6FF348DAE72}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.07386267125862"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.07386267125862"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MicrowaveExplosion.v2_001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="120633265"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MicrowaveExplosion_v2_001" ID="{2387FDCE-8D35-40C4-9350-D6FF348DAE72}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Sound Name="VinylScratch" ID="{4CD0157D-12FD-428C-B6B0-E592BE2A6268}" ShortID="585485370">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="VinylScratchAbilityTwo" ID="{3D9C96F0-275B-4E52-B495-61C4364F21E6}">
+							<Language>SFX</Language>
+							<AudioFile>VinylScratchAbilityTwo.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="652965931"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="VinylScratchAbilityTwo" ID="{3D9C96F0-275B-4E52-B495-61C4364F21E6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="RoombaCharge" ID="{D929348F-CE51-4AAA-AF23-BAF53E5CFFBC}" ShortID="904922327">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="RoombaDash" ID="{EA195474-83D9-46E1-9C5E-AE0E3B6F42FB}">
+							<Language>SFX</Language>
+							<AudioFile>RoombaDash.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="946098567"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="RoombaDash" ID="{EA195474-83D9-46E1-9C5E-AE0E3B6F42FB}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Folder Name="PossessedTVAbilityTwoComponents" ID="{F89CDFAA-C33B-4B45-AF79-7C83D1C79423}" ShortID="228294772">
+					<ChildrenList>
+						<RandomSequenceContainer Name="KnockingOnGlass" ID="{CE26FFA8-6FEE-4414-A073-760489C5F02B}" ShortID="627462669">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="KnockingOnGlass1" ID="{F50937F7-4040-40F6-BD58-25E0FFEB0F4A}" ShortID="6520520">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="KnockHandPressOnGlassAttempt_003" ID="{A7A77F51-6617-46F7-BEB2-22BEE569CC5E}">
+											<Language>SFX</Language>
+											<AudioFile>KnockHandPressOnGlassAttempt_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="618572"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="KnockHandPressOnGlassAttempt_003" ID="{A7A77F51-6617-46F7-BEB2-22BEE569CC5E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="KnockingOnGlass2" ID="{85A61B8D-C604-41E4-BE5E-6FD4024F67BC}" ShortID="224780312">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="KnockHandPressOnGlassAttempt_004" ID="{AF7B7EB7-079A-4956-8609-12834CAA2C33}">
+											<Language>SFX</Language>
+											<AudioFile>KnockHandPressOnGlassAttempt_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1072645864"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="KnockHandPressOnGlassAttempt_004" ID="{AF7B7EB7-079A-4956-8609-12834CAA2C33}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="PossessedGhostVoice" ID="{FF8D0295-853F-4B3A-BB25-E1545A4D6823}" ShortID="274840278">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-25</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PossessedGhostVoice1" ID="{2BF04D07-7F84-4A92-9DA2-44C6977B28D3}" ShortID="611096487">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PossessedTV_001" ID="{A24E8421-B1C4-4612-9A98-F96717633CBC}">
+											<Language>SFX</Language>
+											<AudioFile>PossessedTV_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="319370370"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PossessedTV_001" ID="{A24E8421-B1C4-4612-9A98-F96717633CBC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PossessedGhostVoice2" ID="{A3B12DBA-18F1-4734-BE7D-5423140DB3BF}" ShortID="898311528">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PossessedTV_002" ID="{D709EAB4-931D-418E-9680-26C8953D8ADB}">
+											<Language>SFX</Language>
+											<AudioFile>PossessedTV_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="343364746"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PossessedTV_002" ID="{D709EAB4-931D-418E-9680-26C8953D8ADB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

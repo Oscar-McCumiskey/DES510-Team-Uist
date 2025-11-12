@@ -107,6 +107,12 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Appliance")
 	bool EnableAbilityTwo = true;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Appliance")
+	UTexture2D* AbilityOneIcon;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Appliance")
+	UTexture2D* AbilityTwoIcon;
+
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
 	float MinCameraDistance = 50.f;
 
