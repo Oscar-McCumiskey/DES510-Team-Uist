@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{737F33B1-CEA6-A8AA-96F6-45F48DA4443E}",
+    "Hash": "{F2C47522-89B5-F5EB-C31C-5A0C66500B8E}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -280,14 +280,6 @@
       "CachePath": "3E/{3E69B9B9-DAEF-C467-D89D-79A1A71D43FE}.wem"
      },
      {
-      "Id": "634446217",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "RoombaDash.v2.wav",
-      "CachePath": "FC/{FC48D811-C27B-63F4-E8C4-641BF25534B0}.wem"
-     },
-     {
       "Id": "652965931",
       "Language": "SFX",
       "Streaming": "false",
@@ -454,6 +446,14 @@
       "Location": "Memory",
       "ShortName": "GameTimerVeryLow.wav",
       "CachePath": "76/{76BCD5B8-0183-718C-7396-255FE2F8F212}.wem"
+     },
+     {
+      "Id": "946098567",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RoombaDash.wav",
+      "CachePath": "30/{3045BA11-6234-B501-BA7A-422633FCF4E7}.wem"
      },
      {
       "Id": "968428471",
@@ -879,13 +879,12 @@
       "Name": "AkEvent_RoombaCharge",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_RoombaCharge",
       "GUID": "{A493906D-7B93-45F5-81E3-F31A4227950B}",
-      "MaxAttenuation": "1000",
       "DurationType": "OneShot",
-      "DurationMin": "1.3204578",
-      "DurationMax": "1.3204578",
+      "DurationMin": "1.42",
+      "DurationMax": "1.42",
       "MediaRefs": [
        {
-        "Id": "634446217"
+        "Id": "946098567"
        }
       ]
      },
@@ -1306,6 +1305,6 @@
     ]
    }
   ],
-  "FileHash": "{18C2EDAF-1ECC-9B2E-05FA-B9D94412E6C0}"
+  "FileHash": "{0C956384-AA4B-DE17-8249-30730EBE8B0C}"
  }
 }
