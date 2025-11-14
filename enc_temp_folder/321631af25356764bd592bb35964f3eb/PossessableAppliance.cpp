@@ -53,6 +53,20 @@ APossessableAppliance::APossessableAppliance()
 
 	EnableAbilityOne = true;
 	EnableAbilityTwo = true;
+
+	UShockGameInstance* GameInstance = Cast<UShockGameInstance>(GetGameInstance());
+	if (GameInstance)
+	{
+		SetMouseSensitivity(GameInstance->MouseSensitivity);
+
+		if (GEngine)
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, TEXT("Set Sens"));
+	}
+	else
+	{
+		if (GEngine)
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, TEXT("Failed"));
+	}
 }
 
 // Called when the game starts or when spawned
@@ -71,13 +85,6 @@ void APossessableAppliance::BeginPlay()
 	if (Possessor)
 	{
 		IsPossessed = true;
-	}
-
-	UShockGameInstance* GameInstance = Cast<UShockGameInstance>(GetGameInstance());
-	if (GameInstance)
-	{
-		float Value = GameInstance->MouseSensitivity;
-		SetMouseSensitivity(Value);
 	}
 }
 
@@ -154,7 +161,7 @@ void APossessableAppliance::UnPossessed()
 
 void APossessableAppliance::SetMouseSensitivity(float Value)
 {
-	MouseSensitivity = (Value + 0.1f) / 100.f;
+	MouseSensitivity = Value / 100.f;
 }
 
 void APossessableAppliance::Interacted_Implementation()

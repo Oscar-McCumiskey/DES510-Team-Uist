@@ -51,8 +51,7 @@ ADES510_Team_UistCharacter::ADES510_Team_UistCharacter()
 	UShockGameInstance* GameInstance = Cast<UShockGameInstance>(GetGameInstance());
 	if (GameInstance)
 	{
-		float Value = GameInstance->MouseSensitivity;
-		SetMouseSensitivity(Value);
+		SetMouseSensitivity(GameInstance->MouseSensitivity);
 	}
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
@@ -84,7 +83,7 @@ void ADES510_Team_UistCharacter::SetupPlayerInputComponent(UInputComponent* Play
 
 void ADES510_Team_UistCharacter::SetMouseSensitivity(float Value)
 {
-	MouseSensitivity = (Value + 0.1f) / 100.f;
+	MouseSensitivity = Value / 100.f;
 }
 
 void ADES510_Team_UistCharacter::Move(const FInputActionValue& Value)

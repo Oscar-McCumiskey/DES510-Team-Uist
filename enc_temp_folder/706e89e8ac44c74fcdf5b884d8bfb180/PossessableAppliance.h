@@ -36,7 +36,7 @@ protected:
 	UCameraComponent* FollowCamera;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float MouseSensitivity = 1.f;
+	float MouseSensitivity = 10.f;
 
 public:
 	// Sets default values for this pawn's properties
