@@ -234,6 +234,7 @@ void APossessableAppliance::Ability2(const FInputActionValue& Value)
 
 void APossessableAppliance::Interact(const FInputActionValue& Value)
 {
+	DoInteractBlueprint();
 	DoInteract();
 }
 
@@ -254,6 +255,11 @@ void APossessableAppliance::CallEventByName(FName Name)
 			OutlineComponent->ProcessEvent(Function, nullptr);
 		}
 	}
+}
+
+void APossessableAppliance::UnPossessObject(APawn* InPawn)
+{
+	Cast<ADES510_Team_UistPlayerController>(Controller)->PossessPawn(InPawn);
 }
 
 void APossessableAppliance::GetCooldownTimes(float& AbilityOneTimeRemainingOut, float& AbilityOneCooldownTimeOut, float& AbilityTwoTimeRemainingOut, float& AbilityTwoCooldownTimeOut) const
@@ -288,7 +294,7 @@ void APossessableAppliance::DoAbility2()
 void APossessableAppliance::DoInteract()
 {
 	// Interact Logic
-	Controller->Possess(Possessor);
+	UnPossessObject(Possessor);
 }
 
 void APossessableAppliance::DoZoom(float ArmLengthChange)

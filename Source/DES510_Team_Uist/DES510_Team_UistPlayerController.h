@@ -30,6 +30,9 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void OnShockChanged(float ChangeAmount);
 
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void PossessPawn(APawn* InPawn);
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, category = "Shock")
 	float CurrentShock = 0;
 

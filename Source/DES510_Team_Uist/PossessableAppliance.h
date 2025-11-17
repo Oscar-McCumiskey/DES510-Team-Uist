@@ -162,6 +162,9 @@ private:
 
 public:
 
+	UFUNCTION(BlueprintCallable)
+	void UnPossessObject(APawn* InPawn);
+
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	void GetCooldownTimes(float& AbilityOneTimeRemainingOut, float& AbilityOneCooldownTimeOut, float& AbilityTwoTimeRemainingOut, float& AbilityTwoCooldownTimeOut) const;
 
@@ -183,6 +186,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoInteract();
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Input")
+	void DoInteractBlueprint();
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoZoom(float ArmLengthChange);
