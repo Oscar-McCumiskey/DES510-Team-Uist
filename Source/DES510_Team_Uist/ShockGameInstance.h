@@ -17,5 +17,5 @@ class DES510_TEAM_UIST_API UShockGameInstance : public UGameInstance
 public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float MouseSensitivity = 10.f;
+	float MouseSensitivity = 100.f;
 };
