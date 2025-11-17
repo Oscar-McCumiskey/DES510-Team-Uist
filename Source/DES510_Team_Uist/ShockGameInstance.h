@@ -18,4 +18,7 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float MouseSensitivity = 100.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool TutorialsActive = true;
 };
