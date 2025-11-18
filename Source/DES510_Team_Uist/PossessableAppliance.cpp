@@ -294,6 +294,13 @@ void APossessableAppliance::DoAbility2()
 void APossessableAppliance::DoInteract()
 {
 	// Interact Logic
+	FRotator NewRotaion = FRotator::ZeroRotator;
+	NewRotaion.Roll = Possessor->GetActorRotation().Roll;
+	NewRotaion.Pitch = Possessor->GetActorRotation().Pitch;
+	NewRotaion.Yaw = FollowCamera->GetComponentRotation().Yaw;
+
+	Possessor->SetActorRotation(NewRotaion, ETeleportType::TeleportPhysics);
+
 	UnPossessObject(Possessor);
 }
 
