@@ -20,5 +20,5 @@ public:
 	float MouseSensitivity = 100.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	bool TutorialsActive = true;
+	bool TutorialsActive = false;
 };
