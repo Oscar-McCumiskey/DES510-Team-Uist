@@ -120,7 +120,7 @@ protected:
 	float MinCameraDistance = 50.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
-	float MaxCameraDistance = 300.f;
+	float MaxCameraDistance = 1000.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
 	float ZoomSpeed = 20.f;

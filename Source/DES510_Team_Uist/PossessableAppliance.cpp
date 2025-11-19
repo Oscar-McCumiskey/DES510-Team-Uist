@@ -149,6 +149,8 @@ void APossessableAppliance::UnPossessed()
 
 	PossessingPlayerController = nullptr;
 
+	CameraBoom->TargetArmLength = 200.f;
+
 	CallEventByName(TEXT("NeutralOutline"));
 }
 
