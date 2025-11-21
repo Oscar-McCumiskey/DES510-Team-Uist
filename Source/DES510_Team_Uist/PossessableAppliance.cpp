@@ -9,6 +9,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "DES510_Team_UistPlayerController.h"
+#include "ShockGameInstance.h"
 
 // Sets default values
 APossessableAppliance::APossessableAppliance()
@@ -70,6 +71,13 @@ void APossessableAppliance::BeginPlay()
 	if (Possessor)
 	{
 		IsPossessed = true;
+	}
+
+	UShockGameInstance* GameInstance = Cast<UShockGameInstance>(GetGameInstance());
+	if (GameInstance)
+	{
+		float Value = GameInstance->MouseSensitivity;
+		SetMouseSensitivity(Value);
 	}
 }
 
@@ -141,7 +149,14 @@ void APossessableAppliance::UnPossessed()
 
 	PossessingPlayerController = nullptr;
 
+	CameraBoom->TargetArmLength = 200.f;
+
 	CallEventByName(TEXT("NeutralOutline"));
+}
+
+void APossessableAppliance::SetMouseSensitivity(float Value)
+{
+	MouseSensitivity = (Value + 0.1f) / 100.f;
 }
 
 void APossessableAppliance::Interacted_Implementation()
@@ -221,6 +236,7 @@ void APossessableAppliance::Ability2(const FInputActionValue& Value)
 
 void APossessableAppliance::Interact(const FInputActionValue& Value)
 {
+	DoInteractBlueprint();
 	DoInteract();
 }
 
@@ -243,6 +259,11 @@ void APossessableAppliance::CallEventByName(FName Name)
 	}
 }
 
+void APossessableAppliance::UnPossessObject(APawn* InPawn)
+{
+	Cast<ADES510_Team_UistPlayerController>(Controller)->PossessPawn(InPawn);
+}
+
 void APossessableAppliance::GetCooldownTimes(float& AbilityOneTimeRemainingOut, float& AbilityOneCooldownTimeOut, float& AbilityTwoTimeRemainingOut, float& AbilityTwoCooldownTimeOut) const
 {
 	AbilityOneCooldownTimeOut = AbilityOneCooldownTime;
@@ -257,8 +278,8 @@ void APossessableAppliance::DoLook(float Yaw, float Pitch)
 	if (GetController() != nullptr)
 	{
 		// add yaw and pitch input to controller
-		AddControllerYawInput(Yaw);
-		AddControllerPitchInput(Pitch);
+		AddControllerYawInput(Yaw * MouseSensitivity);
+		AddControllerPitchInput(Pitch * MouseSensitivity);
 	}
 }
 
@@ -275,7 +296,14 @@ void APossessableAppliance::DoAbility2()
 void APossessableAppliance::DoInteract()
 {
 	// Interact Logic
-	Controller->Possess(Possessor);
+	FRotator NewRotaion = FRotator::ZeroRotator;
+	NewRotaion.Roll = Possessor->GetActorRotation().Roll;
+	NewRotaion.Pitch = Possessor->GetActorRotation().Pitch;
+	NewRotaion.Yaw = FollowCamera->GetComponentRotation().Yaw;
+
+	Possessor->SetActorRotation(NewRotaion, ETeleportType::TeleportPhysics);
+
+	UnPossessObject(Possessor);
 }
 
 void APossessableAppliance::DoZoom(float ArmLengthChange)

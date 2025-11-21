@@ -33,6 +33,9 @@ class ADES510_Team_UistCharacter : public ACharacter
 	
 protected:
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float MouseSensitivity = 1.f;
+
 	/** Jump Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Input")
 	UInputAction* JumpAction;
@@ -58,6 +61,8 @@ protected:
 
 	/** Initialize input action bindings */
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	virtual void SetMouseSensitivity(float Value);
 
 protected:
 

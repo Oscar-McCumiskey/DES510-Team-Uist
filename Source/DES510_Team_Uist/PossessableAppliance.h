@@ -35,6 +35,9 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FollowCamera;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float MouseSensitivity = 1.f;
+
 public:
 	// Sets default values for this pawn's properties
 	APossessableAppliance();
@@ -117,7 +120,7 @@ protected:
 	float MinCameraDistance = 50.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
-	float MaxCameraDistance = 300.f;
+	float MaxCameraDistance = 1000.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera")
 	float ZoomSpeed = 20.f;
@@ -137,6 +140,9 @@ public:
 	virtual void Interacted_Implementation() override;
 
 protected:
+
+	virtual void SetMouseSensitivity(float Value);
+
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
@@ -155,6 +161,9 @@ private:
 	void CallEventByName(FName Name);
 
 public:
+
+	UFUNCTION(BlueprintCallable)
+	void UnPossessObject(APawn* InPawn);
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	void GetCooldownTimes(float& AbilityOneTimeRemainingOut, float& AbilityOneCooldownTimeOut, float& AbilityTwoTimeRemainingOut, float& AbilityTwoCooldownTimeOut) const;
@@ -177,6 +186,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoInteract();
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Input")
+	void DoInteractBlueprint();
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoZoom(float ArmLengthChange);

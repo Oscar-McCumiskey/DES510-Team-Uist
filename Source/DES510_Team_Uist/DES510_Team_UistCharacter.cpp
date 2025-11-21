@@ -10,6 +10,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "ShockGameInstance.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -47,6 +48,13 @@ ADES510_Team_UistCharacter::ADES510_Team_UistCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
 
+	UShockGameInstance* GameInstance = Cast<UShockGameInstance>(GetGameInstance());
+	if (GameInstance)
+	{
+		float Value = GameInstance->MouseSensitivity;
+		SetMouseSensitivity(Value);
+	}
+
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 }
@@ -72,6 +80,11 @@ void ADES510_Team_UistCharacter::SetupPlayerInputComponent(UInputComponent* Play
 	{
 		UE_LOG(LogTemplateCharacter, Error, TEXT("'%s' Failed to find an Enhanced Input component! This template is built to use the Enhanced Input system. If you intend to use the legacy system, then you will need to update this C++ file."), *GetNameSafe(this));
 	}
+}
+
+void ADES510_Team_UistCharacter::SetMouseSensitivity(float Value)
+{
+	MouseSensitivity = (Value + 0.1f) / 100.f;
 }
 
 void ADES510_Team_UistCharacter::Move(const FInputActionValue& Value)
@@ -121,8 +134,8 @@ void ADES510_Team_UistCharacter::DoLook(float Yaw, float Pitch)
 	if (GetController() != nullptr)
 	{
 		// add yaw and pitch input to controller
-		AddControllerYawInput(Yaw);
-		AddControllerPitchInput(Pitch);
+		AddControllerYawInput(Yaw * MouseSensitivity);
+		AddControllerPitchInput(Pitch * MouseSensitivity);
 	}
 }
 
