@@ -10,6 +10,7 @@
 class ADES510_Team_UistPlayerController;
 class USpringArmComponent;
 class UCameraComponent;
+class UArrowComponent;
 class UCapsuleComponent;
 class UInputMappingContext;
 class UInputAction;
@@ -34,6 +35,9 @@ protected:
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FollowCamera;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UArrowComponent> ArrowComponent;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float MouseSensitivity = 1.f;
