@@ -2375,6 +2375,106 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="PlayerSpotted" ID="{F216A20F-CDB9-43D1-B6FB-29DA4D01F68B}" ShortID="381585666">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="RobotAI-PlayerSpotted-001" ID="{3A5C6EF5-9396-49B8-9A3C-CFCD473B946E}">
+							<Language>SFX</Language>
+							<AudioFile>RobotAI-PlayerSpotted-001.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="396016536"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="RobotAI-PlayerSpotted-001" ID="{3A5C6EF5-9396-49B8-9A3C-CFCD473B946E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PlayerLost" ID="{9DA8E504-2D9B-4011-95B9-C9607763ED2A}" ShortID="122997435">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="RobotAI-PlayerLost-001" ID="{EFEB0AA3-8EE8-4FD8-8C75-D2AF93937543}">
+							<Language>SFX</Language>
+							<AudioFile>RobotAI-PlayerLost-001.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="208855793"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="RobotAI-PlayerLost-001" ID="{EFEB0AA3-8EE8-4FD8-8C75-D2AF93937543}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="AlexaAbilityTwoVoiceLines" ID="{7712C4A3-4EE4-4E0D-92F5-75D2DA90FC91}" ShortID="215304609">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Voice-001" ID="{06518A1F-3504-4524-BD1E-AD00F1CAE29D}" ShortID="53831846">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PossessedAlexaAbilityTwoVoiceLine-001" ID="{E65F4207-BD31-4D4E-934E-C3136AFE4C13}">
+									<Language>SFX</Language>
+									<AudioFile>PossessedAlexaAbilityTwoVoiceLine-001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="210574126"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PossessedAlexaAbilityTwoVoiceLine-001" ID="{E65F4207-BD31-4D4E-934E-C3136AFE4C13}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Voice-002" ID="{1F97E94C-9F2E-42D6-810E-A311655C5144}" ShortID="837474703">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PossessedAlexaAbilityTwoVoiceLine-002" ID="{AC44430F-1BCF-4BF6-A55C-11D8082FBE28}">
+									<Language>SFX</Language>
+									<AudioFile>PossessedAlexaAbilityTwoVoiceLine-002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1022847614"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PossessedAlexaAbilityTwoVoiceLine-002" ID="{AC44430F-1BCF-4BF6-A55C-11D8082FBE28}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
