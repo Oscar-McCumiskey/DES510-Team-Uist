@@ -3,12 +3,7 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{A1E7D14A-A1AB-43A1-96B4-2C45777B1333}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="SoundEffectsVolume" ID="{64C8920B-3166-4EA6-B75D-A340DA4D310E}">
-					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
-					</PropertyList>
-				</GameParameter>
-				<GameParameter Name="VoiceVolume" ID="{57BB205C-E8C7-4A52-8B74-9D4E3F51329D}">
+				<GameParameter Name="MasterVolume" ID="{654FE945-72A7-403F-B70C-2B20A5269985}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>

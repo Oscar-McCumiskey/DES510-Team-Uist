@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{69EA684C-4000-C66C-E9E1-5873D4761A8C}",
+    "Hash": "{3B368380-2A3E-BDFF-5981-2A13F64FAEA3}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -58,20 +58,14 @@
     ],
     "GameParameters": [
      {
-      "Id": "414646191",
-      "Name": "VoiceVolume",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\VoiceVolume",
-      "GUID": "{57BB205C-E8C7-4A52-8B74-9D4E3F51329D}"
-     },
-     {
-      "Id": "3402092638",
-      "Name": "SoundEffectsVolume",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SoundEffectsVolume",
-      "GUID": "{64C8920B-3166-4EA6-B75D-A340DA4D310E}"
+      "Id": "2918011349",
+      "Name": "MasterVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MasterVolume",
+      "GUID": "{654FE945-72A7-403F-B70C-2B20A5269985}"
      }
     ]
    }
   ],
-  "FileHash": "{102F03EF-52EA-ACE0-E82C-2B2BE492E630}"
+  "FileHash": "{5B049548-4D4E-6E8E-7C81-C84B366A9DC4}"
  }
 }
