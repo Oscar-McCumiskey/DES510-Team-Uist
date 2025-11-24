@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{2CC35BE2-7DEC-057B-1B42-B72151DCDFE7}",
+    "Hash": "{F3556AC7-E147-6996-9594-F1F245B01DE7}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -43,23 +43,11 @@
       "Color": "2"
      },
      {
-      "Id": "978636652",
-      "Name": "Sound Effects",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Sound Effects",
-      "GUID": "{6674AF94-A60D-4502-93E9-EBEC2A003735}"
-     },
-     {
       "Id": "3144753007",
       "Name": "BackgroundMusicTrack",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\BackgroundMusicTrack",
       "GUID": "{B96F3A44-E720-40A3-82BF-7E02A85E3EC4}",
       "Color": "10"
-     },
-     {
-      "Id": "3170124113",
-      "Name": "Voice",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Voice",
-      "GUID": "{0EA9384B-00C1-41FD-9E04-0DD43457A748}"
      },
      {
       "Id": "3803692087",
@@ -84,6 +72,6 @@
     ]
    }
   ],
-  "FileHash": "{1A6AA6B8-22E9-BC3B-CD9B-C21806727E39}"
+  "FileHash": "{145E2943-B6F3-F810-1AEB-AEE4FB6BB13C}"
  }
 }
