@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{AE83BBE7-183C-40B6-4E6E-95EE4048E095}",
+    "Hash": "{5FA582C5-1226-3AC0-2434-83EC9691626F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -70,14 +70,6 @@
       "Location": "Memory",
       "ShortName": "PlayerCommunication-VoiceLine-001.wav",
       "CachePath": "43/{438E222E-B25A-A044-716E-92549BCA25B1}.wem"
-     },
-     {
-      "Id": "80070451",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "MicrowaveBeep_001.wav",
-      "CachePath": "DA/{DAFB6649-4E1C-E89A-E6EC-295755109806}.wem"
      },
      {
       "Id": "105319116",
@@ -739,13 +731,13 @@
       "GUID": "{6C278836-9177-4DD2-8E2B-E3D91EB99FB5}",
       "DurationType": "OneShot",
       "DurationMin": "0.23390558",
-      "DurationMax": "0.26108727",
+      "DurationMax": "0.99129254",
       "MediaRefs": [
        {
         "Id": "26587215"
        },
        {
-        "Id": "80070451"
+        "Id": "290067809"
        },
        {
         "Id": "927010807"
@@ -1371,6 +1363,6 @@
     ]
    }
   ],
-  "FileHash": "{4FF6EA2D-53B3-FD31-17F3-F4DF6822B113}"
+  "FileHash": "{36B42F67-D8C2-BB71-DDB6-72279717CA6E}"
  }
 }
