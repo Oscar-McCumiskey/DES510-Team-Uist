@@ -360,7 +360,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-7</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -2030,6 +2030,11 @@
 						<Sound Name="SmokeDetectorLongBeeps" ID="{E5BCDCC4-E25A-44A8-B564-1065F61D18C6}" ShortID="272480819">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -2061,6 +2066,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SmokeDetectorSingleBeep" ID="{A6952570-9B24-47C5-BFAB-1CBD6861E02C}" ShortID="1002875294">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
