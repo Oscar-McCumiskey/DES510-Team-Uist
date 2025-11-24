@@ -731,6 +731,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="AkEvent_Robot_PlayerLocated" ID="{C1F60352-6E80-4754-BBDC-7BC4DB073124}">
+					<ChildrenList>
+						<Action Name="" ID="{3851440B-20A1-4B16-A825-E7CC56FA3566}" ShortID="980674063">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerSpotted" ID="{F216A20F-CDB9-43D1-B6FB-29DA4D01F68B}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_Robot_PlayerLost" ID="{11630C2B-06E3-4B0D-8B69-43B4A544416E}">
+					<ChildrenList>
+						<Action Name="" ID="{3CCAC0DC-BDA8-4F21-8095-97361EF43716}" ShortID="122446794">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerLost" ID="{9DA8E504-2D9B-4011-95B9-C9607763ED2A}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_AlexaAbilityTwoVoiceLines" ID="{A15CDCB9-08FD-4402-9BF2-F7D2D61DD144}">
+					<ChildrenList>
+						<Action Name="" ID="{A23B6737-2B2A-4B60-9D35-08CAAB239690}" ShortID="920553894">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AlexaAbilityTwoVoiceLines" ID="{7712C4A3-4EE4-4E0D-92F5-75D2DA90FC91}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

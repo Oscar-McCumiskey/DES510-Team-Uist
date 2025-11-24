@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{DAEAE7E5-B933-9530-1862-581FAB6DD1B5}",
+    "Hash": "{60BF32F6-F899-B45B-EBBF-3DA35D5470EF}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -128,6 +128,22 @@
       "CachePath": "45/{45A7013B-909D-3EDA-A0DD-6482A6663837}.wem"
      },
      {
+      "Id": "208855793",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RobotAI-PlayerLost-001.wav",
+      "CachePath": "0C/{0C0BB36B-8540-CF2E-3C52-0ECD5D6F7F3B}.wem"
+     },
+     {
+      "Id": "210574126",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PossessedAlexaAbilityTwoVoiceLine-001.wav",
+      "CachePath": "6F/{6F35CD22-BECF-80F4-027B-A7E04577D28B}.wem"
+     },
+     {
       "Id": "234143930",
       "Language": "SFX",
       "Streaming": "false",
@@ -214,6 +230,14 @@
       "Location": "Memory",
       "ShortName": "PossessedTV_002.wav",
       "CachePath": "77/{77AC3DB4-955D-A18C-3FF6-5A3ECC47F7AD}.wem"
+     },
+     {
+      "Id": "396016536",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RobotAI-PlayerSpotted-001.wav",
+      "CachePath": "4A/{4A3611BE-10F4-DBB7-488D-6495AE42F628}.wem"
      },
      {
       "Id": "402318428",
@@ -504,6 +528,14 @@
       "CachePath": "EC/{ECAD0247-A4E4-0826-0EFA-3D816C74C75F}.wem"
      },
      {
+      "Id": "1022847614",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PossessedAlexaAbilityTwoVoiceLine-002.wav",
+      "CachePath": "EE/{EE9F1E58-C853-9C59-99EE-35070FA49D54}.wem"
+     },
+     {
       "Id": "1025636707",
       "Language": "SFX",
       "Streaming": "false",
@@ -537,6 +569,23 @@
      }
     ],
     "Events": [
+     {
+      "Id": "1556402956",
+      "Name": "AkEvent_AlexaAbilityTwoVoiceLines",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_AlexaAbilityTwoVoiceLines",
+      "GUID": "{A15CDCB9-08FD-4402-9BF2-F7D2D61DD144}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.26",
+      "DurationMax": "1.32",
+      "MediaRefs": [
+       {
+        "Id": "210574126"
+       },
+       {
+        "Id": "1022847614"
+       }
+      ]
+     },
      {
       "Id": "3595515414",
       "Name": "AkEvent_AlexaAssistantVoiceLines",
@@ -870,6 +919,34 @@
        },
        {
         "Id": "343364746"
+       }
+      ]
+     },
+     {
+      "Id": "353117448",
+      "Name": "AkEvent_Robot_PlayerLocated",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_Robot_PlayerLocated",
+      "GUID": "{C1F60352-6E80-4754-BBDC-7BC4DB073124}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.25",
+      "DurationMax": "1.25",
+      "MediaRefs": [
+       {
+        "Id": "396016536"
+       }
+      ]
+     },
+     {
+      "Id": "318158800",
+      "Name": "AkEvent_Robot_PlayerLost",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_Robot_PlayerLost",
+      "GUID": "{11630C2B-06E3-4B0D-8B69-43B4A544416E}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.25",
+      "DurationMax": "1.25",
+      "MediaRefs": [
+       {
+        "Id": "208855793"
        }
       ]
      },
@@ -1363,6 +1440,6 @@
     ]
    }
   ],
-  "FileHash": "{A7336F51-FF64-2C5A-759D-2DB3ABCE5E41}"
+  "FileHash": "{D13BF2B7-767E-561E-7824-719ADB9DAEF6}"
  }
 }
