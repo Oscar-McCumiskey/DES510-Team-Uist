@@ -1,3 +1,6 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2918011349	MasterVolume			\Default Work Unit\MasterVolume	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	163641187	HiFiSteroSystemMusicTrack			\Default Work Unit\Master Audio Bus\HiFiSteroSystemMusicTrack	
 	3144753007	BackgroundMusicTrack			\Default Work Unit\Master Audio Bus\BackgroundMusicTrack	
