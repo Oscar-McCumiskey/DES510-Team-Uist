@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{88828DB6-7D1D-FA9E-F6EF-D1260805D6BD}",
+    "Hash": "{B460E1EC-C8E2-1E38-B484-6EA71D5AD973}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -888,7 +888,6 @@
       "Name": "AkEvent_PlayerPossession",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_PlayerPossession",
       "GUID": "{4415C4ED-9727-4BFC-9D0C-5E0890015B11}",
-      "MaxAttenuation": "1000",
       "DurationType": "OneShot",
       "DurationMin": "0.7773016",
       "DurationMax": "0.7773016",
@@ -1494,6 +1493,6 @@
     ]
    }
   ],
-  "FileHash": "{BB0242BC-25DC-75E8-F6ED-2AF908B42559}"
+  "FileHash": "{07D37848-301A-AF48-8AD6-DA4E78617A8B}"
  }
 }
