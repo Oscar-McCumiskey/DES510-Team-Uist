@@ -7,6 +7,8 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="AkEvent_AlexaAssistantVoiceLines" ID="{49A112B4-275E-4001-A0F5-7B6DE12C2C78}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_TelevisionStatic" ID="{8A6A223B-D8AC-400D-A39B-F1FF64CF3030}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_KnockingOnDoor" ID="{F64AF053-E67A-40EB-B7C0-2D6B1A032ED4}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_STOP_BackgroundMusic" ID="{2D6521E1-C7E3-40F6-83CD-51C26E5E6249}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GameTimerLowStage2" ID="{2095A19B-213D-418E-8989-52A0208EA980}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_STOP_RoombaLoopSTART" ID="{C5CE653D-98CC-4234-B41F-E46EB6ADE973}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GameTimerLowStage1" ID="{D9A33542-9FAA-429D-B295-EADAF3E46E9E}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
@@ -23,6 +25,7 @@
 						<ObjectRef Name="AkEvent_BackgroundMusic" ID="{D3644CD5-110F-45E1-99A2-42CCE7AC4BAD}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_RoombaCharge" ID="{A493906D-7B93-45F5-81E3-F31A4227950B}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_UserInterfaceSelect" ID="{55F895FD-BAF4-4626-BD75-D90E178E2E8C}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AkEvent_WhooshFeedback" ID="{C489E11C-36D1-465A-9480-92CCFFFB94D2}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_PlayerTwoVoice" ID="{6936692B-109F-465F-A21B-2A0AC1EE8EB4}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="AkEvent_KnockingOnTelevisionScreen" ID="{ECDA016F-9920-466D-AF90-EF9D5B84ACC2}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GameOverTimesUp" ID="{C56E2F95-D512-4694-A5FC-8486F33084F6}" WorkUnitID="{7D54BBAA-F61D-47B2-8EC2-1B9645287FD4}" Origin="Manual" Filter="7"/>

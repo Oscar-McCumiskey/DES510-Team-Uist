@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{60BF32F6-F899-B45B-EBBF-3DA35D5470EF}",
+    "Hash": "{8ADC094C-EB56-443C-C16F-CF4EF985BB24}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -166,6 +166,14 @@
       "Location": "Memory",
       "ShortName": "TextMessageAlert.wav",
       "CachePath": "91/{91F85AAE-37BD-C4F2-D60F-D75FB198D291}.wem"
+     },
+     {
+      "Id": "263419634",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "KnockOnDoorSoundEffect.wav",
+      "CachePath": "19/{19738B23-FF77-778E-384E-C603501D7E72}.wem"
      },
      {
       "Id": "277609695",
@@ -504,6 +512,14 @@
       "CachePath": "EA/{EA458466-923A-4F73-67EE-BBA8BB5AE487}.wem"
      },
      {
+      "Id": "969642978",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WhooshFeedback.wav",
+      "CachePath": "BB/{BB16CBD0-00BD-6E95-AE31-C3B4E290B083}.wem"
+     },
+     {
       "Id": "971465599",
       "Language": "SFX",
       "Streaming": "false",
@@ -709,6 +725,20 @@
       "MediaRefs": [
        {
         "Id": "772527182"
+       }
+      ]
+     },
+     {
+      "Id": "2057596041",
+      "Name": "AkEvent_KnockingOnDoor",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_KnockingOnDoor",
+      "GUID": "{F64AF053-E67A-40EB-B7C0-2D6B1A032ED4}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.21489796",
+      "DurationMax": "0.21489796",
+      "MediaRefs": [
+       {
+        "Id": "263419634"
        }
       ]
      },
@@ -1185,6 +1215,17 @@
       ]
      },
      {
+      "Id": "1512798754",
+      "Name": "AkEvent_STOP_BackgroundMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\STOP EVENTS\\AkEvent_STOP_BackgroundMusic",
+      "GUID": "{2D6521E1-C7E3-40F6-83CD-51C26E5E6249}",
+      "Color": "10",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "4075388469",
       "Name": "AkEvent_STOP_HiFiStereoSystemMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\STOP EVENTS\\AkEvent_STOP_HiFiStereoSystemMusic",
@@ -1378,6 +1419,21 @@
       ]
      },
      {
+      "Id": "3173249533",
+      "Name": "AkEvent_WhooshFeedback",
+      "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_WhooshFeedback",
+      "GUID": "{C489E11C-36D1-465A-9480-92CCFFFB94D2}",
+      "MaxAttenuation": "1000",
+      "DurationType": "OneShot",
+      "DurationMin": "2.0089796",
+      "DurationMax": "2.0089796",
+      "MediaRefs": [
+       {
+        "Id": "969642978"
+       }
+      ]
+     },
+     {
       "Id": "3510673030",
       "Name": "GameOverTimesUp",
       "ObjectPath": "\\Events\\Default Work Unit\\GameTimerStates\\GameOverTimesUp",
@@ -1440,6 +1496,6 @@
     ]
    }
   ],
-  "FileHash": "{D13BF2B7-767E-561E-7824-719ADB9DAEF6}"
+  "FileHash": "{83E5E8A3-A8A5-AAED-7186-5451B7C97A67}"
  }
 }

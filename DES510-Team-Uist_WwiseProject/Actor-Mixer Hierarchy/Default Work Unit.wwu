@@ -2475,6 +2475,68 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="KnockingOnDoorSoundEffect" ID="{285DB292-38BF-4588-9D0C-90C46C0583B2}" ShortID="436132945">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="KnockOnDoorSoundEffect" ID="{966B2665-6EE0-4AED-BE9A-30F75244FB90}">
+							<Language>SFX</Language>
+							<AudioFile>KnockOnDoorSoundEffect.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="263419634"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="KnockOnDoorSoundEffect" ID="{966B2665-6EE0-4AED-BE9A-30F75244FB90}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="WhooshFeedback" ID="{D0C09120-605C-448E-9DA4-D5A607DC626D}" ShortID="388769451">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="New Attenuation" ID="{B6602ECB-5CCB-442B-BDC6-88AE5375DD89}" WorkUnitID="{D00A1F22-35AD-4806-9D82-1DA4F87D98B9}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F8F429CC-821F-4AF9-B45F-CD52A2C78DDF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="WhooshFeedback" ID="{D1949E96-33CF-40C9-B4CE-47C2C6E6914F}">
+							<Language>SFX</Language>
+							<AudioFile>WhooshFeedback.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="969642978"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="WhooshFeedback" ID="{D1949E96-33CF-40C9-B4CE-47C2C6E6914F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
