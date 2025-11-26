@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<GameParameter Name="MasterVolume" ID="{654FE945-72A7-403F-B70C-2B20A5269985}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>
