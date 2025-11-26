@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F5DD3F53-3C9F-4087-8E93-7C5C4AEA4141}",
     "Language": "SFX",
-    "Hash": "{5A9C29B4-D21E-4B0B-7B65-45E54DF4E674}",
+    "Hash": "{88828DB6-7D1D-FA9E-F6EF-D1260805D6BD}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -413,7 +413,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "BackgroundMusicTrack.wav",
-      "CachePath": "29/{298CCF65-DAB2-06ED-8BDE-4BEB6A39D72C}.wem"
+      "CachePath": "7C/{7CA26930-26C1-86C9-4B9C-36B96C7FFA8C}.wem"
      },
      {
       "Id": "854371143",
@@ -631,9 +631,7 @@
       "Name": "AkEvent_BackgroundMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\AkEvent_BackgroundMusic",
       "GUID": "{D3644CD5-110F-45E1-99A2-42CCE7AC4BAD}",
-      "DurationType": "OneShot",
-      "DurationMin": "86.70309",
-      "DurationMax": "86.70309",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "828452664"
@@ -1496,6 +1494,6 @@
     ]
    }
   ],
-  "FileHash": "{F6BB51F2-4788-9D03-14D8-2AF210B8C1F4}"
+  "FileHash": "{BB0242BC-25DC-75E8-F6ED-2AF908B42559}"
  }
 }
