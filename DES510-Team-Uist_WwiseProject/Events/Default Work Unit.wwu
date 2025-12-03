@@ -383,6 +383,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="AkEvent_STOP_BackgroundMusic" ID="{2D6521E1-C7E3-40F6-83CD-51C26E5E6249}">
+							<ChildrenList>
+								<Action Name="" ID="{6BF342A3-1403-45D6-BDFA-CE9C9492B122}" ShortID="775448313">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BackgroundMusicTrack" ID="{B96F3A44-E720-40A3-82BF-7E02A85E3EC4}" WorkUnitID="{F7C09A25-FE10-456A-A4D4-C2403EDB0C18}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="AkEvent_HiFiStereoSystemVinylScratch" ID="{C68C6DAE-E7B8-4BC4-BCA8-9E80545ABEA3}">
@@ -759,6 +773,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="AlexaAbilityTwoVoiceLines" ID="{7712C4A3-4EE4-4E0D-92F5-75D2DA90FC91}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_WhooshFeedback" ID="{C489E11C-36D1-465A-9480-92CCFFFB94D2}">
+					<ChildrenList>
+						<Action Name="" ID="{4331B4DE-B39E-4825-A2AB-1FD31EA6FE0E}" ShortID="332960572">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WhooshFeedback" ID="{D0C09120-605C-448E-9DA4-D5A607DC626D}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AkEvent_KnockingOnDoor" ID="{F64AF053-E67A-40EB-B7C0-2D6B1A032ED4}">
+					<ChildrenList>
+						<Action Name="" ID="{F57CB335-E728-48FF-881E-428D4DAA6CF3}" ShortID="63413388">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KnockingOnDoorSoundEffect" ID="{285DB292-38BF-4588-9D0C-90C46C0583B2}" WorkUnitID="{ECC5F669-2998-479F-BA97-C01842248947}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
